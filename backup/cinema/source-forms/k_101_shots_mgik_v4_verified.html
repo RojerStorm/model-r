@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>МГИК · K · 101 выстрел · v4 verified</title>
+<style>
+:root{--bg:#0a2d63;--bg2:#0c3f88;--panel:#0f2f63;--panel2:#12386f;--panel3:#0b244b;--text:#f6f8fd;--muted:#c9d6eb;--line:rgba(255,255,255,.16);--gold:#ffbe3c;--orange:#ff9f2f;--red:#e34b4b;--blue:#5ab0ff;--green:#53c56b;--shadow:0 24px 58px rgba(0,0,0,.26);}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#07224a 70%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:22px 16px 32px}
+.brandrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.brand{font-size:34px;font-weight:950;letter-spacing:.02em}
+.redline{width:40px;height:6px;border-radius:999px;background:var(--red)}
+.brandtext{font-size:17px;font-weight:820;color:#e5eef9}
+.version{margin-left:auto;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-size:12px;font-weight:800}
+.hero{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero:before{content:'';position:absolute;right:-90px;bottom:-80px;width:320px;height:320px;background:linear-gradient(180deg,rgba(90,176,255,.16),rgba(227,75,75,.13));transform:rotate(18deg);clip-path:polygon(36% 0,100% 0,100% 100%,0 100%);pointer-events:none}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:.94;margin:0 0 14px;font-weight:950;letter-spacing:-.02em;max-width:860px}
+.lead{font-size:19px;line-height:1.55;color:var(--muted);max-width:860px}
+.goldline{height:4px;width:min(900px,100%);border-radius:999px;background:linear-gradient(90deg,var(--gold),rgba(255,190,60,.08));margin:22px 0}
+.infogrid{display:grid;grid-template-columns:2fr 1fr;gap:14px;align-items:start}
+.box{background:rgba(4,18,42,.42);border:1px solid var(--line);border-radius:18px;padding:16px}
+.box h3{margin:0 0 8px;font-size:16px;color:var(--gold)}
+.box p,.box li{margin:0;color:#d9e4f2;line-height:1.55;font-size:14px}
+.box ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.startBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{border:1px solid var(--line);background:rgba(255,255,255,.07);border-radius:16px;color:#fff;padding:12px 18px;font-weight:860;cursor:pointer;transition:.15s}
+.btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.3)}
+.btn.primary{background:rgba(255,190,60,.16);border-color:rgba(255,190,60,.5)}
+.btn.secondary{background:rgba(90,176,255,.12);border-color:rgba(90,176,255,.35)}
+.btn.ghost{background:rgba(255,255,255,.05)}
+.btn.danger{background:rgba(227,75,75,.12);border-color:rgba(227,75,75,.33)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.statustext{margin-top:12px;color:#d6e1f1;font-size:13px}
+#quiz,#done{display:none}
+.topbar{display:flex;align-items:end;gap:16px;justify-content:space-between;margin:18px 0 12px;flex-wrap:wrap}
+.topbar h2{margin:0;font-size:34px;font-weight:950}
+.topbar p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.counter{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-size:13px;font-weight:800}
+.progress{height:12px;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.08);margin-bottom:16px;border:1px solid rgba(255,255,255,.06)}
+.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--gold),#ffe292);transition:width .16s ease}
+.card{background:rgba(6,22,48,.5);border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:var(--shadow)}
+.main{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:18px;align-items:start}
+.kind{font-size:26px;font-weight:950;color:var(--orange);text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px}
+.title{font-size:clamp(28px,4vw,46px);line-height:1.02;font-weight:950;letter-spacing:-.02em;margin-bottom:6px}
+.ru{font-size:21px;color:#eff5fe;margin-bottom:10px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);font-size:12px;font-weight:820;color:#d9e5f4}
+.annotation{background:rgba(4,16,36,.62);border:1px solid rgba(255,190,60,.18);border-left:4px solid var(--gold);border-radius:14px;padding:15px 16px;font-size:15.5px;line-height:1.62;color:#f0f5fe}
+.ratings{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) 92px;gap:10px}
+.ratingline{border:1px solid var(--line);border-radius:13px;background:rgba(5,18,39,.6);padding:10px 12px;font-size:13px;line-height:1.42;color:#d8e2f0}
+.avgbox{border:1px solid var(--line);border-radius:13px;background:#273651;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:8px}
+.avgbox strong{font-size:14px;font-weight:900}
+.avgbox small{font-size:10px;color:#d3ddeb;margin-top:2px}
+.sectiontitle{font-size:18px;font-weight:950;margin:18px 0 9px}
+.optgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px}
+.opt{border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;border-radius:15px;padding:13px 10px;font-weight:860;cursor:pointer;transition:.12s;min-height:54px}
+.opt:hover{border-color:rgba(255,255,255,.32)}
+.opt.sel{outline:2px solid var(--blue);background:rgba(90,176,255,.16)}
+.opt.fire.sel{outline-color:var(--gold);background:rgba(255,190,60,.16)}
+.nav{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:20px;flex-wrap:wrap}
+.note{margin-top:10px;font-size:12px;line-height:1.45;color:#d2ddef}
+.visuals{display:flex;flex-direction:column;gap:12px}
+.posterCard{display:grid;grid-template-columns:170px minmax(0,1fr);gap:12px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));padding:12px;min-height:360px}
+.posterMedia{display:flex;align-items:center;justify-content:center}
+.posterMedia img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.1);background:#17345e}
+.posterMeta{display:flex;flex-direction:column;gap:10px;min-width:0}
+.posterMeta h3{margin:0;font-size:16px;color:var(--gold)}
+.mini{font-size:13px;line-height:1.5;color:#dde7f4}
+.linkrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.linkbtn{display:flex;align-items:center;justify-content:center;text-align:center;min-height:44px;padding:10px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.06);font-size:13px;font-weight:850}
+.linkbtn:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.09)}
+.framegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.frame{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.05);min-height:86px}
+.frame img{width:70px;height:58px;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#133057}
+.frameInfo b{display:block;font-size:13px;margin-bottom:2px}
+.frameInfo small{font-size:11px;color:#d0dceb;line-height:1.3}
+.masterBox{border:1px solid rgba(255,190,60,.25);background:rgba(255,190,60,.08);border-radius:14px;padding:12px 13px}
+.masterBox b{display:block;color:var(--gold);margin-bottom:5px}
+.masterBox span{font-size:13px;line-height:1.48;color:#f3f6fc}
+.doneCard{background:rgba(6,22,48,.5);border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--shadow)}
+.doneCard h2{font-size:38px;margin:0 0 8px;font-weight:950}
+.result{width:100%;min-height:720px;border-radius:16px;border:1px solid var(--line);background:#081a39;color:#f4f7ff;padding:15px;font:14px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;resize:vertical}
+.doneBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.badge{display:inline-flex;align-items:center;gap:7px}.pulse{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,190,60,.12)}
+@media(max-width:1080px){.main{grid-template-columns:1fr}.infogrid{grid-template-columns:1fr}.posterCard{grid-template-columns:150px 1fr}}
+@media(max-width:640px){.wrap{padding:14px 10px 24px}.hero,.card,.doneCard{padding:14px}.brand{font-size:28px}.brandtext{font-size:14px}.hero h1{font-size:48px}.posterCard{grid-template-columns:1fr}.posterMedia{max-width:210px}.posterMedia img{max-width:210px}.linkrow{grid-template-columns:1fr 1fr}.framegrid{grid-template-columns:1fr}.optgrid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brandrow">
+    <div class="brand">МГИК</div>
+    <div class="redline"></div>
+    <div class="brandtext">учебный исследовательский опрос · K</div>
+    <div class="version">«101 выстрел» · v4 verified</div>
+  </div>
+
+  <section id="start">
+    <div class="hero">
+      <h1>101 тайтл<br>для самого крутого критика K</h1>
+      <div class="lead">Новая сборка без фальшивых подстановок: локальный опрос, честная логика, аккуратные карточки, кнопки без автопрыжков, быстрые внешние ссылки на постер/кадры/трейлер и отдельная рамка под мастерскую И.В. Порублёва.</div>
+      <div class="goldline"></div>
+      <div class="infogrid">
+        <div class="box">
+          <h3>Что внутри</h3>
+          <ul>
+            <li>101 карточка: фильмы + сериалы, микс РФ и зарубежных тайтлов.</li>
+            <li>Для каждого тайтла: аннотация без спойлеров, визуальный слот постера, 4 быстрые ссылки на кадры, кнопка трейлера.</li>
+            <li>Оценивание: статус просмотра → оценка K 1–5 → огоньки 0–3.</li>
+            <li>Финал: обычное текстовое окно, которое можно просто скопировать в чат.</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Рамка мастерской</h3>
+          <p><b>И.В. Порублёв</b> — доцент кафедры киноискусства МГИК; сценарист и режиссёр. В карточках отдельно помечены тайтлы, связанные с его фильмографией и учебной рамкой.</p>
+        </div>
+      </div>
+      <div class="startBtns">
+        <button id="newBtn" class="btn primary">Новый проход K →</button>
+        <button id="resumeBtn" class="btn secondary">Продолжить сохранённый</button>
+        <button id="clearBtn" class="btn danger">Сбросить сохранение</button>
+      </div>
+      <div class="statustext" id="startStatus">Файл собран локально. Готово к запуску.</div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="topbar">
+      <div>
+        <h2>101 выстрел · K</h2>
+        <p>Локальная версия: надёжный проход, автосохранение, внешние ссылки только как ссылки.</p>
+      </div>
+      <div class="counter" id="counter">1 / 101</div>
+    </div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div class="card">
+      <div class="main">
+        <div>
+          <div class="kind" id="kind"></div>
+          <div class="title" id="title"></div>
+          <div class="ru" id="ru"></div>
+          <div class="meta">
+            <div class="chip" id="year"></div>
+            <div class="chip">K · шкала 1–5</div>
+            <div class="chip">Heat · 0–3 🔥</div>
+            <div class="chip" id="masterChip" style="display:none"></div>
+          </div>
+          <div class="annotation" id="desc"></div>
+          <div class="ratings">
+            <div class="ratingline"><span class="badge"><span class="pulse"></span><b>Внешние оценки:</b></span> IMDb / КП / RT / Metacritic / Letterboxd / TMDb — <b>в обработке</b>. В этой версии они не мешают прохождению и не ломают карточки.</div>
+            <div class="avgbox"><strong>В обработке</strong><small>средняя</small></div>
+          </div>
+
+          <div class="sectiontitle">Смотрела?</div>
+          <div class="optgrid" id="statusGrid">
+            <button class="opt" data-group="status" data-v="watched">Да</button>
+            <button class="opt" data-group="status" data-v="notwatched">Не смотрела</button>
+            <button class="opt" data-group="status" data-v="forgot">Смотрела, но не помнит</button>
+            <button class="opt" data-group="status" data-v="partial">Бросила / не досмотрела</button>
+          </div>
+
+          <div id="ratingWrap" style="display:none">
+            <div class="sectiontitle">Оценка K</div>
+            <div class="optgrid" id="ratingGrid">
+              <button class="opt" data-group="rating" data-v="1">1</button>
+              <button class="opt" data-group="rating" data-v="2">2</button>
+              <button class="opt" data-group="rating" data-v="3">3</button>
+              <button class="opt" data-group="rating" data-v="4">4</button>
+              <button class="opt" data-group="rating" data-v="5">5</button>
+            </div>
+            <div class="sectiontitle">Огонёк</div>
+            <div class="optgrid" id="heatGrid">
+              <button class="opt fire" data-group="heat" data-v="0">без огонька</button>
+              <button class="opt fire" data-group="heat" data-v="1">🔥</button>
+              <button class="opt fire" data-group="heat" data-v="2">🔥🔥</button>
+              <button class="opt fire" data-group="heat" data-v="3">🔥🔥🔥</button>
+            </div>
+          </div>
+
+          <div class="nav">
+            <button id="prevBtn" class="btn ghost">← Назад</button>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <button id="restartBtn" class="btn danger">Перезапуск</button>
+              <button id="nextBtn" class="btn primary">Дальше →</button>
+            </div>
+          </div>
+          <div class="note">Логика прохода: сначала статус просмотра. Если тайтл смотрели или бросили — далее оценка 1–5 и огоньки 0–3. После завершения будет обычный копируемый итог.</div>
+        </div>
+
+        <div class="visuals">
+          <div class="posterCard">
+            <div class="posterMedia">
+              <img id="posterImg" alt="Визуальная карточка тайтла">
+            </div>
+            <div class="posterMeta">
+              <div>
+                <h3>Визуальный блок</h3>
+                <div class="mini">Справа всегда есть аккуратный визуальный слот. Если реальный постер не встроен, внутри показывается локальная карточка-заглушка без поломок. Ни одной битой картинки.</div>
+              </div>
+              <div class="linkrow">
+                <a id="posterLink" class="linkbtn" target="_blank" rel="noopener">Открыть постер</a>
+                <a id="trailerLink" class="linkbtn" target="_blank" rel="noopener">Открыть трейлер</a>
+              </div>
+              <div class="masterBox" id="masterBox" style="display:none">
+                <b>Связь с мастерской</b>
+                <span id="masterText"></span>
+              </div>
+            </div>
+          </div>
+          <div class="framegrid">
+            <a id="frameLink1" class="frame" target="_blank" rel="noopener"><img id="frameImg1" alt="Кадр 1"><span class="frameInfo"><b>Кадр 1</b><small>Открыть подборку кадров</small></span></a>
+            <a id="frameLink2" class="frame" target="_blank" rel="noopener"><img id="frameImg2" alt="Кадр 2"><span class="frameInfo"><b>Кадр 2</b><small>Открыть подборку кадров</small></span></a>
+            <a id="frameLink3" class="frame" target="_blank" rel="noopener"><img id="frameImg3" alt="Кадр 3"><span class="frameInfo"><b>Кадр 3</b><small>Открыть подборку кадров</small></span></a>
+            <a id="frameLink4" class="frame" target="_blank" rel="noopener"><img id="frameImg4" alt="Кадр 4"><span class="frameInfo"><b>Кадр 4</b><small>Открыть подборку кадров</small></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="done">
+    <div class="doneCard">
+      <h2>Готово</h2>
+      <div class="lead" style="font-size:16px;max-width:none">Ниже — готовый итог для вставки в чат. Формат совместим с вашим проектом.</div>
+      <textarea id="result" class="result"></textarea>
+      <div class="doneBtns">
+        <button id="copyBtn" class="btn primary">Скопировать результат</button>
+        <button id="backBtn" class="btn secondary">Вернуться к последней карточке</button>
+        <button id="newFromDoneBtn" class="btn danger">Начать заново</button>
+      </div>
+      <div class="statustext" id="copyStatus"></div>
+    </div>
+  </section>
+</div>
+
+<script>
+const ITEMS = [{"title": "Parasite", "ru": "Паразиты", "year": 2019, "type": "ФИЛЬМ", "media": "movie", "desc": "Семья с окраины постепенно устраивается на работу в богатый дом, выдавая себя за незаменимых специалистов. Остроумная социальная сатира быстро превращается в напряжённую игру характеров, статуса и скрытых мотивов."}, {"title": "The Menu", "ru": "Меню", "year": 2022, "type": "ФИЛЬМ", "media": "movie", "desc": "Молодая пара приезжает на закрытый остров ради ужина у легендарного шефа. Роскошный гастрономический вечер быстро обрастает тревогой, чёрным юмором и весьма неприятными сюрпризами."}, {"title": "The Invisible Man", "ru": "Человек-невидимка", "year": 2020, "type": "ФИЛЬМ", "media": "movie", "desc": "Женщина пытается начать жизнь заново после токсичных отношений, но ощущение преследования не отпускает её ни на минуту. Паранойя, контроль и страх здесь работают сильнее любого прямого монстра."}, {"title": "Strange Darling", "ru": "Сталкер", "year": 2024, "type": "ФИЛЬМ", "media": "movie", "desc": "История случайной ночной встречи развивается так, что зрителю постоянно приходится перестраивать собственные ожидания. Формально это триллер, а по ощущению — хитрая игра с восприятием, опасностью и масками."}, {"title": "Companion", "ru": "Компаньон", "year": 2025, "type": "ФИЛЬМ", "media": "movie", "desc": "Выходные за городом быстро превращаются в историю о доверии, контроле и природе близости. Фильм одновременно работает как жанровый аттракцион и как размышление о человеческих отношениях и технологии."}, {"title": "Obsession", "ru": "Обсессия", "year": 2025, "type": "ФИЛЬМ", "media": "movie", "desc": "Невинное желание быть любимым запускает цепочку последствий, которые становятся всё опаснее и мрачнее. Психологический хоррор о том, как романтическая одержимость легко превращается в угрозу."}, {"title": "Drop", "ru": "Дроп", "year": 2025, "type": "ФИЛЬМ", "media": "movie", "desc": "Обычный вечер начинает рушиться из-за серии тревожных сообщений и нарастающего чувства ловушки. Это камерный триллер, где напряжение держится на героине, ритме и постоянном ощущении чужого контроля."}, {"title": "Fight or Flight", "ru": "Рейс навылет", "year": 2025, "type": "ФИЛЬМ", "media": "movie", "desc": "Полёт превращается в хаотичную бойню, где выживание зависит от скорости реакции и готовности драться изо всех сил. Кровавый боевик с чёрным юмором, бешеной музыкой и намеренно безумной энергетикой."}, {"title": "Knives Out", "ru": "Достать ножи", "year": 2019, "type": "ФИЛЬМ", "media": "movie", "desc": "После смерти знаменитого писателя в богатом семействе начинается расследование, где каждый кажется подозрительным. Умный и очень игривый детектив, в котором интрига не мешает удовольствию от персонажей."}, {"title": "Glass Onion: A Knives Out Mystery", "ru": "Достать ножи: Стеклянная луковица", "year": 2022, "type": "ФИЛЬМ", "media": "movie", "desc": "Экстравагантный миллиардер приглашает друзей на островную игру в убийство, но всё быстро становится неигрушечным. Продолжение работает как сатирический детектив с яркой постановкой и самоиронией."}, {"title": "A Haunting in Venice", "ru": "Призраки в Венеции", "year": 2023, "type": "ФИЛЬМ", "media": "movie", "desc": "Эркюль Пуаро вынужден вернуться к делу, когда спиритический вечер в старинном дворце оборачивается убийством. Здесь детектив переплетается с готической атмосферой и почти мистическим настроением."}, {"title": "Murder on the Orient Express", "ru": "Убийство в Восточном экспрессе", "year": 2017, "type": "ФИЛЬМ", "media": "movie", "desc": "Роскошный поезд застревает в снегу, а среди пассажиров скрывается убийца. Классическая закрытая детективная конструкция, где важны и интрига, и галерея характеров."}, {"title": "Death on the Nile", "ru": "Смерть на Ниле", "year": 2022, "type": "ФИЛЬМ", "media": "movie", "desc": "Свадебное путешествие по Нилу превращается в расследование, когда роскошный круиз оказывается сценой преступления. Фильм опирается на гламурную картинку, ревность, тайны и старый добрый детектив."}, {"title": "Prisoners", "ru": "Пленницы", "year": 2013, "type": "ФИЛЬМ", "media": "movie", "desc": "После исчезновения детей отец одной из девочек идёт дальше закона, пытаясь добиться правды любой ценой. Мрачный триллер о страхе, бессилии и том, как отчаяние меняет человека."}, {"title": "Zodiac", "ru": "Зодиак", "year": 2007, "type": "ФИЛЬМ", "media": "movie", "desc": "Журналисты и следователи годами пытаются вычислить серийного убийцу, который словно издевается над всей системой. Это не столько традиционный триллер, сколько медленное и очень цепкое погружение в обсессию расследованием."}, {"title": "Shutter Island", "ru": "Остров проклятых", "year": 2010, "type": "ФИЛЬМ", "media": "movie", "desc": "Маршал приезжает на закрытый островной объект, чтобы расследовать исчезновение пациентки. Туманная атмосфера, недоверие и ощущение, что реальность постоянно ускользает, делают фильм особенно липким."}, {"title": "The Girl with the Dragon Tattoo", "ru": "Девушка с татуировкой дракона", "year": 2011, "type": "ФИЛЬМ", "media": "movie", "desc": "Журналист и необычная хакерша берутся за старую семейную тайну, которая тянет за собой куда более мрачные подробности. Холодный, собранный и очень цепкий триллер-расследование."}, {"title": "Wind River", "ru": "Ветреная река", "year": 2017, "type": "ФИЛЬМ", "media": "movie", "desc": "Следователь приезжает в снежную резервацию, где местный охотник помогает расследовать смерть молодой девушки. Фильм совмещает криминальную интригу с сильным чувством места, холода и боли."}, {"title": "Searching", "ru": "Поиск", "year": 2018, "type": "ФИЛЬМ", "media": "movie", "desc": "Когда дочь пропадает, отец пытается собрать всю правду по цифровым следам на экране ноутбука и телефона. Формат экранного повествования здесь не трюк, а полноценный источник напряжения."}, {"title": "Missing", "ru": "Пропавшая без вести", "year": 2023, "type": "ФИЛЬМ", "media": "movie", "desc": "Девушка начинает собственное онлайн-расследование, когда её мать исчезает во время поездки. История снова строится через экраны и переписки, но делает ставку на более личную и нервную динамику."}, {"title": "The Outfit", "ru": "Костюм", "year": 2022, "type": "ФИЛЬМ", "media": "movie", "desc": "Незаметный портной оказывается в центре опасной ночной разборки с криминальным миром. Камерный фильм, где всё держится на тексте, хитрости и умении героя выживать за счёт ума."}, {"title": "The Accountant", "ru": "Расплата", "year": 2016, "type": "ФИЛЬМ", "media": "movie", "desc": "Гениальный бухгалтер с очень необычным набором навыков оказывается втянут в опасную историю вокруг финансовых махинаций. Боевик и триллер собраны вокруг тихого, но нестандартного героя."}, {"title": "Bullet Train", "ru": "Быстрее пули", "year": 2022, "type": "ФИЛЬМ", "media": "movie", "desc": "В одном скоростном поезде сталкиваются наёмники, чемодан с секретом и целая цепочка нелепо-смертельных совпадений. Комедийный экшен с высоким темпом и любовью к стильному хаосу."}, {"title": "Nobody", "ru": "Никто", "year": 2021, "type": "ФИЛЬМ", "media": "movie", "desc": "Незаметный семьянин внезапно оказывается человеком с прошлым, о котором лучше было не знать. Фильм строится на удовольствии от неожиданного раскрытия героя и очень точного экшена."}, {"title": "Baby Driver", "ru": "Малыш на драйве", "year": 2017, "type": "ФИЛЬМ", "media": "movie", "desc": "Талантливый водитель на криминальных заданиях живёт в собственном музыкальном ритме и мечтает вырваться из этой жизни. Очень музыкальный, кинетичный фильм, где монтаж и саундтрек работают как отдельный двигатель."}, {"title": "The Nice Guys", "ru": "Славные парни", "year": 2016, "type": "ФИЛЬМ", "media": "movie", "desc": "Неуклюжий частный сыщик и грубый решала вынуждены вместе распутывать странное дело в Лос-Анджелесе 1970-х. Комедийный детектив с отличной парной химией и вкусной атмосферой эпохи."}, {"title": "The Man from U.N.C.L.E.", "ru": "Агенты А.Н.К.Л.", "year": 2015, "type": "ФИЛЬМ", "media": "movie", "desc": "Агентам из враждующих лагерей приходится сотрудничать, чтобы остановить опасную угрозу. Шпионское ретро со стилем, юмором и постоянным соревнованием харизм."}, {"title": "Palm Springs", "ru": "Палм-Спрингс", "year": 2020, "type": "ФИЛЬМ", "media": "movie", "desc": "Двое гостей на свадьбе застревают в одном и том же дне и вынуждены искать смысл внутри бесконечного повтора. Ромком с петлёй времени неожиданно выходит на очень живые эмоции."}, {"title": "Game Night", "ru": "Ночные игры", "year": 2018, "type": "ФИЛЬМ", "media": "movie", "desc": "Дружеский игровой вечер внезапно становится слишком реалистичным и опасным. Комедия держится на бешеном темпе, парной химии и постоянном ощущении, что ситуация выходит из-под контроля."}, {"title": "La La Land", "ru": "Ла-Ла Ленд", "year": 2016, "type": "ФИЛЬМ", "media": "movie", "desc": "Два мечтателя пытаются удержать любовь и собственные амбиции в городе, где все гонятся за шансом. Яркий музыкальный фильм о таланте, выборе и цене мечты."}, {"title": "Moulin Rouge!", "ru": "Мулен Руж", "year": 2001, "type": "ФИЛЬМ", "media": "movie", "desc": "В парижском кабаре сталкиваются любовь, ревность, сцена и разрушительная страсть. Экстравертный мюзикл, в котором эмоции подаются на максимальной громкости и через музыку, и через визуальный стиль."}, {"title": "Bohemian Rhapsody", "ru": "Богемская рапсодия", "year": 2018, "type": "ФИЛЬМ", "media": "movie", "desc": "История взлёта Queen и сложного пути их фронтмена проходит через сцену, успех, кризисы и музыку. Это прежде всего мощное зрительское переживание, завязанное на харизме и хитах."}, {"title": "Rocketman", "ru": "Рокетмен", "year": 2019, "type": "ФИЛЬМ", "media": "movie", "desc": "Музыкальная биография Элтона Джона превращает реальные события в яркое сценическое переживание. Фильм свободнее обращается с формой и делает ставку на эмоциональную откровенность."}, {"title": "Jojo Rabbit", "ru": "Кролик Джоджо", "year": 2019, "type": "ФИЛЬМ", "media": "movie", "desc": "Мальчик, воспитанный пропагандой, сталкивается с реальностью, которая не укладывается в его наивный мир. Сатирическая форма здесь соседствует с очень живой историей взросления и переосмысления."}, {"title": "The Grand Budapest Hotel", "ru": "Отель «Гранд Будапешт»", "year": 2014, "type": "ФИЛЬМ", "media": "movie", "desc": "Легендарный консьерж и его юный помощник оказываются втянуты в абсурдно-изящное приключение с наследством, погонями и политическим фоном. Фильм знаменит авторским стилем и вниманием к композиции."}, {"title": "Everything Everywhere All at Once", "ru": "Всё везде и сразу", "year": 2022, "type": "ФИЛЬМ", "media": "movie", "desc": "Обычная женщина в момент личного и семейного кризиса внезапно сталкивается с хаосом бесконечных вариантов собственной жизни. Безумная форма соединяет экшен, абсурд, драму и очень человеческую тему выбора."}, {"title": "Barbie", "ru": "Барби", "year": 2023, "type": "ФИЛЬМ", "media": "movie", "desc": "Кукольный мир оказывается не таким стабильным, как кажется, и героиня отправляется в реальность искать ответы. Зрелищная сатира, которая маскируется под поп-развлечение, но активно спорит с ожиданиями."}, {"title": "Oppenheimer", "ru": "Оппенгеймер", "year": 2023, "type": "ФИЛЬМ", "media": "movie", "desc": "История физика, стоявшего в центре создания атомной бомбы, подаётся как масштабная драма об ответственности, власти и последствиях. Это биографический фильм, работающий почти как интеллектуальный триллер."}, {"title": "Dune", "ru": "Дюна", "year": 2021, "type": "ФИЛЬМ", "media": "movie", "desc": "Наследник великого дома оказывается в эпицентре борьбы за пустынную планету, определяющую судьбы империи. Медленная, густая фантастика, построенная на мире, ритуале и предчувствии большой истории."}, {"title": "Dune: Part Two", "ru": "Дюна: Часть вторая", "year": 2024, "type": "ФИЛЬМ", "media": "movie", "desc": "Продолжение усиливает масштаб конфликта и доводит путь героя до куда более опасной точки. Здесь больше динамики, больше эмоций и ещё сильнее ощущение мифа в большом кино."}, {"title": "Ex Machina", "ru": "Из машины", "year": 2015, "type": "ФИЛЬМ", "media": "movie", "desc": "Молодой программист приезжает к загадочному миллиардеру, чтобы протестировать необычную систему искусственного интеллекта. Камерная фантастика превращается в тонкую игру разума, власти и симпатии."}, {"title": "Arrival", "ru": "Прибытие", "year": 2016, "type": "ФИЛЬМ", "media": "movie", "desc": "Лингвистку привлекают к контакту с внеземным разумом, и задача быстро выходит далеко за рамки перевода слов. Очень человечная научная фантастика о языке, времени и принятии."}, {"title": "Silo", "ru": "Укрытие", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "Тысячи людей живут под землёй и верят строгим правилам, запрещающим задавать лишние вопросы о внешнем мире. Сериал строит интригу на тайне системы, недоверии и медленном раскрытии устройства мира."}, {"title": "Severance", "ru": "Разделение", "year": 2022, "type": "СЕРИАЛ", "media": "series", "desc": "Сотрудники корпорации соглашаются на процедуру, разделяющую рабочую и личную память, но цена такого удобства оказывается пугающей. Идея подана с холодным стилем, иронией и нарастанием тревоги."}, {"title": "Black Mirror", "ru": "Чёрное зеркало", "year": 2011, "type": "СЕРИАЛ", "media": "series", "desc": "Антология самостоятельных историй о технологиях, человеческих слабостях и том, как легко привычный мир становится пугающим. Каждый эпизод предлагает свой угол атаки — от сатиры до почти чистого хоррора."}, {"title": "Dark", "ru": "Тьма", "year": 2017, "type": "СЕРИАЛ", "media": "series", "desc": "Исчезновение ребёнка в маленьком немецком городке запускает цепочку событий, связанных с несколькими семьями и большой тайной. Сериал ценят за атмосферу, сложную структуру и серьёзный подход к головоломке."}, {"title": "Chernobyl", "ru": "Чернобыль", "year": 2019, "type": "СЕРИАЛ", "media": "series", "desc": "История аварии на ЧАЭС показана как сочетание личных драм, институциональной катастрофы и страшной цены лжи. Это очень собранный сериал, где ужас рождается из правдоподобия и масштаба последствий."}, {"title": "The Last of Us", "ru": "Одни из нас", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "Мужчина и девочка отправляются через разрушенную Америку, где заражение и люди одинаково опасны. Постапокалипсис здесь важен, но в центре всегда остаются отношения, доверие и потери."}, {"title": "Fallout", "ru": "Fallout", "year": 2024, "type": "СЕРИАЛ", "media": "series", "desc": "Героиня из убежища впервые выходит в жёсткий мир после катастрофы и сталкивается с его абсурдом, жестокостью и правилами. Сериал соединяет приключение, сатиру и очень узнаваемую игровую вселенную."}, {"title": "Wednesday", "ru": "Уэнсдэй", "year": 2022, "type": "СЕРИАЛ", "media": "series", "desc": "Уэнсдэй Аддамс попадает в необычную академию, где ей приходится разбираться и с местными тайнами, и с собственной семейной историей. Детективная линия здесь подана через готику и подростковую иронию."}, {"title": "Lockwood & Co.", "ru": "Агентство «Локвуд и компания»", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "В Лондоне, где опасные призраки стали нормой, подростки-охотники за сверхъестественным открывают собственное агентство. Сериал хорошо балансирует между мистикой, приключением и симпатичной командной динамикой."}, {"title": "Stranger Things", "ru": "Очень странные дела", "year": 2016, "type": "СЕРИАЛ", "media": "series", "desc": "Исчезновение мальчика раскрывает существование опасного параллельного ужаса, скрытого за фасадом обычного городка. Ностальгический жанровый микс из дружбы, монстров и приключения."}, {"title": "The Mandalorian", "ru": "Мандалорец", "year": 2019, "type": "СЕРИАЛ", "media": "series", "desc": "Одинокий наёмник получает задание, которое меняет его маршрут и превращает путешествие по галактике в личную историю защиты. Космический вестерн с сильной атмосферой и удачной эмоциональной связкой героя с Грогу."}, {"title": "Andor", "ru": "Андор", "year": 2022, "type": "СЕРИАЛ", "media": "series", "desc": "История человека, который из одиночки постепенно превращается в часть сопротивления. Один из самых взрослых и политически точных проектов во вселенной Star Wars, построенный на характерах и системе."}, {"title": "Loki", "ru": "Локи", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "Хитрый антигерой попадает в бюрократический аппарат, контролирующий разные варианты времени и реальности. Сериал удачно сочетает ироничную харизму, фантастику и тему самоопределения."}, {"title": "Foundation", "ru": "Основание", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "На фоне распада гигантской империи несколько людей пытаются изменить ход цивилизационной истории. Масштабный сериал, который делает ставку на идеи, визуальную архитектуру и большие временные дуги."}, {"title": "Dark Matter", "ru": "Тёмная материя", "year": 2024, "type": "СЕРИАЛ", "media": "series", "desc": "Жизнь обычного преподавателя внезапно рассыпается, когда его выбрасывает в пугающе знакомую, но чужую версию собственной реальности. Это фантастика о выборе, идентичности и цене нереализованных возможностей."}, {"title": "Arcane", "ru": "Аркейн", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "История двух сестёр разворачивается на фоне конфликта между блестящим верхним городом и суровым нижним. Один из самых визуально сильных анимационных сериалов последних лет, где зрелищность поддержана сильной драмой."}, {"title": "Love, Death & Robots", "ru": "Любовь. Смерть. Роботы", "year": 2019, "type": "СЕРИАЛ", "media": "series", "desc": "Антология коротких анимационных историй прыгает от научной фантастики к хоррору, абсурду и экшену. Уровень и тон меняются от эпизода к эпизоду, но разнообразие здесь и есть главный плюс."}, {"title": "Fleabag", "ru": "Дрянь", "year": 2016, "type": "СЕРИАЛ", "media": "series", "desc": "Остроумная и саморазрушительная героиня пытается жить, любить и скрывать боль за потоком шуток и провокаций. Очень авторский сериал, где юмор и уязвимость существуют одновременно."}, {"title": "Better Call Saul", "ru": "Лучше звоните Солу", "year": 2015, "type": "СЕРИАЛ", "media": "series", "desc": "История адвоката, который шаг за шагом превращается в знакомого зрителям персонажа из другой легендарной вселенной. Сериал ценят за тонкую драматургию и внимание к моральным компромиссам."}, {"title": "Fargo", "ru": "Фарго", "year": 2014, "type": "СЕРИАЛ", "media": "series", "desc": "Каждый сезон предлагает новую историю преступления, абсурда и неожиданных последствий в фирменной манере чёрного юмора. Сериал умеет одновременно быть криминальным, странным и очень человечным."}, {"title": "Slow Horses", "ru": "Медленные лошади", "year": 2022, "type": "СЕРИАЛ", "media": "series", "desc": "Команда списанных британских разведчиков вынуждена разбираться с очень реальными угрозами, несмотря на собственную репутацию неудачников. Шпионский сериал выигрывает именно героями и юмором."}, {"title": "Mindhunter", "ru": "Охотник за разумом", "year": 2017, "type": "СЕРИАЛ", "media": "series", "desc": "В начале новой эпохи криминальной психологии агенты ФБР пытаются понять, как думают серийные убийцы. Сериал держится на диалогах, холодной атмосфере и умном исследовании зла."}, {"title": "Mare of Easttown", "ru": "Мейр из Исттауна", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "Детектив расследует убийство в маленьком городе, где все связаны друг с другом прошлым, болью и слухами. Это одновременно криминальная интрига и сильная драма сообщества."}, {"title": "Presumed Innocent", "ru": "Презумпция невиновности", "year": 2024, "type": "СЕРИАЛ", "media": "series", "desc": "Прокурор оказывается в центре дела, которое слишком тесно переплетается с его собственной жизнью. Судебная интрига сочетается с психологическим давлением и семейной драмой."}, {"title": "The Talented Mr. Ripley", "ru": "Талантливый мистер Рипли", "year": 1999, "type": "ФИЛЬМ", "media": "movie", "desc": "Скромный молодой человек получает шанс прикоснуться к чужой роскошной жизни и постепенно начинает хотеть от неё гораздо больше. Психологическая история об очаровании, зависти и опасном присвоении чужой идентичности."}, {"title": "Ripley", "ru": "Рипли", "year": 2024, "type": "СЕРИАЛ", "media": "series", "desc": "Новая экранная версия истории о человеке, который слишком легко умеет входить в чужое пространство и становиться тем, кем не является. Чёрно-белая стилистика делает сюжет ещё холоднее и тревожнее."}, {"title": "The Sopranos", "ru": "Клан Сопрано", "year": 1999, "type": "СЕРИАЛ", "media": "series", "desc": "Криминальный босс одновременно держит семейную и мафиозную жизнь, пока внутренние трещины становятся всё заметнее. Один из фундаментальных сериалов о сложном антигерое, власти и самообмане."}, {"title": "The Big Lebowski", "ru": "Большой Лебовски", "year": 1998, "type": "ФИЛЬМ", "media": "movie", "desc": "Самый ленивый человек в Лос-Анджелесе внезапно оказывается втянут в абсурдно запутанное дело из-за путаницы с именем. Культовая комедия положений, характера и неповторимого ритма братьев Коэн."}, {"title": "Barton Fink", "ru": "Бартон Финк", "year": 1991, "type": "ФИЛЬМ", "media": "movie", "desc": "Амбициозный драматург приезжает в Голливуд писать сценарий, но очень быстро сталкивается с творческим и личным тупиком. Странный, нервный и многослойный фильм о блоке, амбиции и кошмаре среды."}, {"title": "L.A. Confidential", "ru": "Секреты Лос-Анджелеса", "year": 1997, "type": "ФИЛЬМ", "media": "movie", "desc": "Три очень разных полицейских оказываются втянуты в сеть коррупции, насилия и глянцевой лжи послевоенного Лос-Анджелеса. Образцовый неонуар, в котором интрига и персонажи одинаково сильны."}, {"title": "Rain Man", "ru": "Человек дождя", "year": 1988, "type": "ФИЛЬМ", "media": "movie", "desc": "Самовлюблённый молодой человек узнаёт о существовании старшего брата и отправляется с ним в поездку, меняющую обоих. Это история о родстве, выгоде, принятии и реальном контакте между очень разными людьми."}, {"title": "Le Fabuleux destin d'Amélie Poulain", "ru": "Амели", "year": 2001, "type": "ФИЛЬМ", "media": "movie", "desc": "Наблюдательная и очень особенная девушка решает незаметно менять жизнь окружающих к лучшему и параллельно учится выходить из собственной скорлупы. Очаровательный фильм, в котором стиль, музыка и доброта образуют целый мир."}, {"title": "Six-String Samurai", "ru": "Шестиструнный самурай", "year": 1998, "type": "ФИЛЬМ", "media": "movie", "desc": "В постапокалиптическом мире музыкант-самурай идёт через пустоши к городу мечты, отбиваясь от врагов и странностей мира. Безумное культовое кино, где роуд-муви, рок-н-ролл и стиль работают на одной волне."}, {"title": "Pirates of the Caribbean: The Curse of the Black Pearl", "ru": "Пираты Карибского моря: Проклятие «Чёрной жемчужины»", "year": 2003, "type": "ФИЛЬМ", "media": "movie", "desc": "Кузнец, губернаторская дочь и эксцентричный пират оказываются втянуты в историю с похищением, проклятием и морской легендой. Один из самых удачных приключенческих блокбастеров — с юмором, харизмой и драйвом."}, {"title": "Волшебный участок", "ru": "", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "Современный город сталкивается с очень узнаваемой, но неожиданно ожившей сказочной стихией. Сериал ценят за сочетание юмора, приключения, мрачноватой сказки и живых героев."}, {"title": "Вампиры средней полосы", "ru": "", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "Обычная с виду семья из Смоленска ведёт не совсем обычную жизнь и старается сохранить хрупкое равновесие между бытом и сверхъестественным. Уютная, смешная и обаятельная фантастическая история."}, {"title": "Пищеблок", "ru": "", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "В пионерлагере начинают происходить странные и тревожные вещи, которые выглядят всё менее объяснимыми. Сериал соединяет советскую атмосферу, подростковое приключение и хоррор-мотивы."}, {"title": "Перевал Дятлова", "ru": "", "year": 2020, "type": "СЕРИАЛ", "media": "series", "desc": "Реконструкция одной из самых загадочных историй советского времени строится как смесь расследования, исторической драмы и почти мистической атмосферы. Сериал балансирует между версией, тайной и человеческой историей."}, {"title": "Мастер и Маргарита", "ru": "", "year": 2024, "type": "ФИЛЬМ", "media": "movie", "desc": "Новая интерпретация знаменитого романа переплетает московскую сатиру, любовную линию и фантастическое измерение. Проект интересен как литературная адаптация и как большое визуальное высказывание."}, {"title": "Бригада", "ru": "", "year": 2002, "type": "СЕРИАЛ", "media": "series", "master": "И.В. Порублев · сценарий", "desc": "Четверо друзей проходят путь от дворовой компании до опасного криминального бизнеса, и с каждым шагом цена их союза становится выше. Большая сага о дружбе, власти, выборе и последствиях, построенная на сильных характерах и длинной драматургической дуге."}, {"title": "Живой", "ru": "", "year": 2006, "type": "ФИЛЬМ", "media": "movie", "master": "И.В. Порублев · сценарий · «Ника» за лучшую сценарную работу", "desc": "Вернувшийся с войны солдат пытается снова войти в мир обычной жизни, но прошлое не отпускает его буквально и метафорически. Мистическая драма о вине, памяти и невозможности просто вернуться домой после пережитого."}, {"title": "Тайга. Курс выживания", "ru": "", "year": 2002, "type": "СЕРИАЛ", "media": "series", "master": "И.В. Порублев · сценарий и режиссура", "desc": "После аварии группа очень разных людей оказывается отрезана от цивилизации и вынуждена выживать вместе. Приключенческая конструкция постепенно становится проверкой характеров, лидерства и человеческих границ."}, {"title": "Переводчик", "ru": "", "year": 2013, "type": "СЕРИАЛ", "media": "series", "master": "И.В. Порублев · сценарий", "desc": "Обычный школьный учитель немецкого языка во время оккупации вынужден работать переводчиком при штабе, пытаясь защитить семью и не потерять себя. Военная драма строится на моральных компромиссах и постоянном давлении обстоятельств."}, {"title": "22 минуты", "ru": "", "year": 2014, "type": "ФИЛЬМ", "media": "movie", "master": "И.В. Порублев · сценарий", "desc": "Захват российского судна пиратами превращается в операцию, где время и подготовка важнее красивых жестов. Жанровый боевик о командной работе, риске и решении задачи в условиях жёсткого ограничения по времени."}, {"title": "Закон", "ru": "", "year": 2002, "type": "СЕРИАЛ", "media": "series", "master": "И.В. Порублев · сценарий", "desc": "Судебные и криминальные истории показывают, как формальный закон сталкивается с человеческими интересами, слабостями и давлением системы. Сериал интересен прежде всего конфликтами, выбором и моральной неоднозначностью персонажей."}, {"title": "Нелюбовь", "ru": "", "year": 2017, "type": "ФИЛЬМ", "media": "movie", "desc": "Супруги заняты тяжёлым разводом и почти не замечают, что их ребёнок остаётся между ними совершенно один. Холодная и очень точная драма о разрыве связей, ответственности и эмоциональной глухоте."}, {"title": "Левиафан", "ru": "", "year": 2014, "type": "ФИЛЬМ", "media": "movie", "desc": "Житель северного города пытается отстоять дом и землю перед лицом системы, которая гораздо сильнее отдельного человека. Жёсткая социальная драма о власти, бессилии и разрушении частной жизни."}, {"title": "Аритмия", "ru": "", "year": 2017, "type": "ФИЛЬМ", "media": "movie", "desc": "Врач скорой помощи умеет спасать других, но почти не умеет справляться с собственной жизнью и отношениями. Очень живая драма о профессии, браке и людях, которые любят друг друга, но не всегда умеют это показать."}, {"title": "Капитан Волконогов бежал", "ru": "", "year": 2021, "type": "ФИЛЬМ", "media": "movie", "desc": "Сотрудник репрессивной системы внезапно понимает, что сам стал следующей целью, и начинает отчаянную гонку за возможностью искупить совершённое. Мрачная притча о вине, страхе и невозможности спрятаться от собственного прошлого."}, {"title": "Дылда", "ru": "", "year": 2019, "type": "ФИЛЬМ", "media": "movie", "desc": "Две женщины пытаются восстановить жизнь в послевоенном Ленинграде, где физические и психологические травмы остаются частью повседневности. Медленная, визуально точная драма о близости, боли и власти друг над другом."}, {"title": "Петровы в гриппе", "ru": "", "year": 2021, "type": "ФИЛЬМ", "media": "movie", "desc": "Обычная семья переживает несколько лихорадочных дней, в которых реальность всё сильнее смешивается с воспоминаниями, фантазиями и культурными ассоциациями. Фильм работает как поток сознания с очень узнаваемой бытовой фактурой."}, {"title": "Нулевой пациент", "ru": "", "year": 2022, "type": "СЕРИАЛ", "media": "series", "desc": "В СССР 1980-х врачи сталкиваются с опасной инфекцией, о которой системе проще молчать, чем говорить вслух. Медицинская драма превращается в историю о профессиональной ответственности, страхе и цене правды."}, {"title": "Хрустальный", "ru": "", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "Следователь возвращается в родной город расследовать серию преступлений и сталкивается с собственным тяжёлым прошлым. Мрачный детектив, где личная травма героя становится частью расследования."}, {"title": "Фишер", "ru": "", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "Следователи пытаются остановить серийного убийцу, действующего рядом с благополучными подмосковными посёлками. Тяжёлый криминальный сериал делает ставку на атмосферу, процедуру расследования и психологическое напряжение."}, {"title": "Топи", "ru": "", "year": 2021, "type": "СЕРИАЛ", "media": "series", "desc": "Группа молодых людей приезжает в далёкий монастырь, надеясь спрятаться от собственных проблем, но место оказывается гораздо страннее ожидаемого. Мистика постепенно смешивается с личными страхами и ощущением, что правила мира перестали быть понятными."}, {"title": "Слово пацана. Кровь на асфальте", "ru": "", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "Подросток оказывается втянут в уличную иерархию позднесоветской Казани, где принадлежность к группе быстро становится вопросом силы и выживания. Сериал строится на среде, характере и цене выбора, который сначала кажется почти игровым."}, {"title": "Чики", "ru": "", "year": 2020, "type": "СЕРИАЛ", "media": "series", "desc": "Четыре подруги из небольшого южного города решают резко изменить жизнь и начать собственное дело. Трагикомедия держится на ансамбле, провинциальной среде и сочетании смешного с болезненно реальным."}, {"title": "Кибердеревня", "ru": "", "year": 2023, "type": "СЕРИАЛ", "media": "series", "desc": "Фермер на Марсе пытается сохранить свой уклад жизни в мире, где высокие технологии стали бытовой нормой. Лёгкая фантастическая комедия играет с российской культурой, роботами и идеей будущего без обязательного пафоса."}, {"title": "Сто лет тому вперёд", "ru": "", "year": 2024, "type": "ФИЛЬМ", "media": "movie", "desc": "Современный подросток оказывается связан с будущим и Алисой Селезнёвой через приключение, в котором прошлое и будущее неожиданно зависят друг от друга. Свободная новая версия мира Кира Булычёва делает ставку на динамику, эмоции и зрелищность."}];
+const KEY = 'mgik_k_101_v4_verified';
+let state = { idx: 0, answers: {} };
+
+const $ = (s) => document.querySelector(s);
+const $$ = (s) => Array.from(document.querySelectorAll(s));
+
+function defaultState(){ return { idx: 0, answers: {} }; }
+function loadState(){
+  try {
+    const raw = localStorage.getItem(KEY);
+    if(!raw) return defaultState();
+    const parsed = JSON.parse(raw);
+    return { idx: Number(parsed.idx)||0, answers: parsed.answers||{} };
+  } catch(e) { return defaultState(); }
+}
+function saveState(){ localStorage.setItem(KEY, JSON.stringify(state)); updateStartStatus(); }
+function clearState(){ localStorage.removeItem(KEY); state = defaultState(); updateStartStatus(); }
+function hasProgress(){ return Object.keys(state.answers||{}).length > 0; }
+function currentAnswer(){ if(!state.answers[state.idx]) state.answers[state.idx] = {}; return state.answers[state.idx]; }
+function getItem(){ return ITEMS[state.idx]; }
+
+function updateStartStatus(){
+  const answered = Object.keys(state.answers||{}).length;
+  const msg = answered ? `Найдено сохранение: карточек с ответами — ${answered}, позиция — ${Math.min(state.idx+1, ITEMS.length)} / ${ITEMS.length}.` : 'Сохранённого прогресса нет. Файл готов к чистому запуску.';
+  $('#startStatus').textContent = msg;
+  $('#resumeBtn').disabled = !answered;
+}
+
+function show(section){
+  ['#start','#quiz','#done'].forEach(id => $(id).style.display = 'none');
+  $(section).style.display = 'block';
+}
+
+function safeLabel(item){ return item.title + (item.ru ? ` (${item.ru})` : ''); }
+function q(term){ return encodeURIComponent(term); }
+function posterSearchUrl(item){ return `https://www.google.com/search?tbm=isch&q=${q(item.title + ' ' + (item.ru||'') + ' poster')}`; }
+function trailerSearchUrl(item){ return `https://www.youtube.com/results?search_query=${q(item.title + ' trailer')}`; }
+function frameSearchUrl(item,n){ return `https://www.google.com/search?tbm=isch&q=${q(item.title + ' ' + (item.ru||'') + ' кадр ' + n)}`; }
+function esc(s){ return String(s||'').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+function posterSvg(item){
+  const title = esc(item.title || 'Title');
+  const ru = esc(item.ru || '');
+  const year = esc(item.year || '');
+  const type = esc(item.type || 'ФИЛЬМ');
+  const master = item.master ? esc(item.master) : 'МГИК · 101 выстрел';
+  const svg = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="480" height="720" viewBox="0 0 480 720">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2b5fa0"/><stop offset="1" stop-color="#132f58"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9f2f" stop-opacity=".22"/><stop offset="1" stop-color="#5ab0ff" stop-opacity=".08"/></linearGradient>
+    </defs>
+    <rect width="480" height="720" fill="url(#g)"/>
+    <path d="M375 0h105v720H190z" fill="url(#g2)"/>
+    <rect x="32" y="34" width="116" height="14" rx="7" fill="#e34b4b"/>
+    <text x="32" y="92" font-size="46" font-weight="800" font-family="Arial, Helvetica, sans-serif" fill="#ffb23f">МГИК</text>
+    <text x="32" y="126" font-size="18" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#eaf1fb">учебный опрос · K</text>
+    <text x="32" y="214" font-size="20" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#ffd57a">${type}</text>
+    <foreignObject x="32" y="232" width="416" height="240">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,Helvetica,sans-serif;color:#ffffff;font-weight:900;font-size:38px;line-height:1.05;">${title}</div>
+    </foreignObject>
+    <foreignObject x="32" y="440" width="416" height="120">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,Helvetica,sans-serif;color:#e7eef9;font-weight:700;font-size:24px;line-height:1.15;">${ru ? '('+ru+')' : ''}</div>
+    </foreignObject>
+    <text x="32" y="600" font-size="28" font-weight="800" font-family="Arial, Helvetica, sans-serif" fill="#ffffff">${year}</text>
+    <foreignObject x="32" y="618" width="416" height="76">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,Helvetica,sans-serif;color:#d7e4f5;font-size:16px;line-height:1.25;">${master}</div>
+    </foreignObject>
+  </svg>`;
+  return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+}
+
+function frameSvg(item, n){
+  const title = esc(item.title || 'Title');
+  const svg = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#163861"/><stop offset="1" stop-color="#0b2346"/></linearGradient></defs>
+    <rect width="320" height="200" fill="url(#g)"/>
+    <rect x="0" y="144" width="320" height="56" fill="rgba(0,0,0,.35)"/>
+    <text x="18" y="32" font-size="18" font-weight="800" font-family="Arial, Helvetica, sans-serif" fill="#ffb23f">МГИК · кадр ${n}</text>
+    <foreignObject x="18" y="84" width="284" height="92"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,Helvetica,sans-serif;color:#e8f0fb;font-size:20px;font-weight:800;line-height:1.18">${title}</div></foreignObject>
+    <text x="18" y="176" font-size="13" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#d6e1f1">В обработке — открыть подборку кадров</text>
+  </svg>`;
+  return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+}
+
+function setSelection(gridId, value){
+  $$(gridId + ' [data-v]').forEach(btn => btn.classList.toggle('sel', String(btn.dataset.v) === String(value)));
+}
+
+function render(){
+  const item = getItem();
+  const ans = currentAnswer();
+  $('#counter').textContent = `${state.idx + 1} / ${ITEMS.length}`;
+  $('#progressBar').style.width = `${((state.idx + 1)/ITEMS.length)*100}%`;
+  $('#kind').textContent = item.type || 'ФИЛЬМ';
+  $('#title').textContent = item.title || '';
+  $('#ru').textContent = item.ru ? `(${item.ru})` : '';
+  $('#year').textContent = item.year || '—';
+  $('#desc').textContent = item.desc || 'Аннотация в обработке.';
+
+  const chip = $('#masterChip');
+  if(item.master){ chip.style.display = 'inline-flex'; chip.textContent = item.master; } else { chip.style.display = 'none'; chip.textContent = ''; }
+  const mbox = $('#masterBox');
+  if(item.master){ $('#masterText').textContent = item.master; mbox.style.display = 'block'; } else { $('#masterText').textContent=''; mbox.style.display='none'; }
+
+  setSelection('#statusGrid', ans.status);
+  setSelection('#ratingGrid', ans.rating);
+  setSelection('#heatGrid', ans.heat);
+  $('#ratingWrap').style.display = (ans.status === 'watched' || ans.status === 'partial') ? 'block' : 'none';
+  $('#prevBtn').disabled = state.idx === 0;
+  $('#nextBtn').textContent = state.idx === ITEMS.length - 1 ? 'Завершить' : 'Дальше →';
+
+  $('#posterImg').src = posterSvg(item);
+  $('#posterLink').href = posterSearchUrl(item);
+  $('#trailerLink').href = trailerSearchUrl(item);
+  for(let i=1;i<=4;i++){
+    $('#frameImg'+i).src = frameSvg(item, i);
+    $('#frameLink'+i).href = frameSearchUrl(item, i);
+  }
+
+  saveState();
+  window.scrollTo({top:0, behavior:'instant'});
+}
+
+function validateCurrent(){
+  const ans = currentAnswer();
+  if(!ans.status){ alert('Сначала отметь статус просмотра.'); return false; }
+  if(ans.status === 'watched' || ans.status === 'partial'){
+    if(ans.rating === undefined){ alert('Поставь оценку K по шкале 1–5.'); return false; }
+    if(ans.heat === undefined){ alert('Выбери уровень огонька: 0–3.'); return false; }
+  }
+  return true;
+}
+
+function finish(){
+  const lines = ['K — FAST 101 · MGIK v4', ''];
+  ITEMS.forEach((item, index) => {
+    const ans = state.answers[index] || {};
+    const name = safeLabel(item);
+    if(ans.status === 'notwatched') lines.push(`${index+1}. ${name} — не смотрела`);
+    else if(ans.status === 'forgot') lines.push(`${index+1}. ${name} — смотрела, оценку не помнит`);
+    else if(ans.status === 'watched' || ans.status === 'partial'){
+      const fire = Number(ans.heat) > 0 ? ' ' + '🔥'.repeat(Number(ans.heat)) : ' / без огонька';
+      const tail = ans.status === 'partial' ? ' [не досмотрела]' : '';
+      lines.push(`${index+1}. ${name} — K=${ans.rating}${fire}${tail}`);
+    } else lines.push(`${index+1}. ${name} — без ответа`);
+  });
+  $('#result').value = lines.join('\n');
+  show('#done');
+  saveState();
+  setTimeout(() => { $('#result').focus(); $('#result').select(); }, 50);
+}
+
+function startFresh(){ state = defaultState(); saveState(); show('#quiz'); render(); }
+function startResume(){ state = loadState(); show('#quiz'); render(); }
+function restartNow(){ if(confirm('Точно начать заново и стереть текущий прогресс?')) startFresh(); }
+
+$('#newBtn').addEventListener('click', startFresh);
+$('#resumeBtn').addEventListener('click', startResume);
+$('#clearBtn').addEventListener('click', () => { clearState(); alert('Сохранение очищено.'); });
+$('#restartBtn').addEventListener('click', restartNow);
+$('#prevBtn').addEventListener('click', () => { if(state.idx > 0){ state.idx -= 1; render(); } });
+$('#nextBtn').addEventListener('click', () => { if(!validateCurrent()) return; if(state.idx < ITEMS.length - 1){ state.idx += 1; render(); } else finish(); });
+$('#backBtn').addEventListener('click', () => { state.idx = ITEMS.length - 1; show('#quiz'); render(); });
+$('#newFromDoneBtn').addEventListener('click', restartNow);
+$('#copyBtn').addEventListener('click', async () => {
+  const t = $('#result');
+  try{ await navigator.clipboard.writeText(t.value); $('#copyStatus').textContent = 'Результат скопирован в буфер.'; }
+  catch(e){ t.focus(); t.select(); $('#copyStatus').textContent = 'Автокопирование не сработало — текст выделен, можно скопировать вручную.'; }
+});
+
+function onGroupClick(e){
+  const btn = e.target.closest('[data-v]'); if(!btn) return;
+  const ans = currentAnswer();
+  const group = btn.dataset.group; const raw = btn.dataset.v;
+  if(group === 'status'){
+    ans.status = raw;
+    if(raw === 'notwatched' || raw === 'forgot'){ delete ans.rating; delete ans.heat; }
+  } else if(group === 'rating') ans.rating = Number(raw);
+  else if(group === 'heat') ans.heat = Number(raw);
+  saveState(); render();
+}
+$('#statusGrid').addEventListener('click', onGroupClick);
+$('#ratingGrid').addEventListener('click', onGroupClick);
+$('#heatGrid').addEventListener('click', onGroupClick);
+
+state = loadState();
+updateStartStatus();
+show('#start');
+</script>
+</body>
+</html>
