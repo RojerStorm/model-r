@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Семейная коллекция фильмов и сериалов: оценки, впечатления и заметки о базе.">
+  <title>Наше кино — фильмы, сериалы и впечатления</title>
+  <style>
+    :root{color-scheme:light;--paper:#f6f3ec;--card:#fffefa;--ink:#282b25;--muted:#666a60;--line:#e0dfd5;--green:#405c46;--soft:#eaf0e6;--gold:#b68a43;--radius:18px}
+    *{box-sizing:border-box}
+    [hidden]{display:none!important}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+    a{color:var(--green);text-underline-offset:4px}
+    button,input,select{font:inherit;color:inherit}
+    button,select{cursor:pointer}
+    button,a,input,select,summary{-webkit-tap-highlight-color:transparent}
+    :focus-visible{outline:3px solid #b5893c;outline-offset:4px}
+    button{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:10px 16px}
+    button:hover{background:var(--soft)}
+    .wrap{width:min(1100px,calc(100% - 56px));margin:auto}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:27px 0;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;font-weight:750;font-size:20px;letter-spacing:-.5px}
+    .mark{display:grid;place-items:center;width:36px;height:36px;background:var(--green);color:white;border-radius:10px;font-size:19px;line-height:1}
+    .top-note{font-size:13px;color:var(--muted)}
+    .intro{padding:44px 0 25px}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--green);font-weight:700}
+    h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(36px,5vw,52px);letter-spacing:-1.4px;line-height:1.15;margin:10px 0 14px}
+    .intro p{margin:0;color:var(--muted);max-width:660px;font-size:17px}
+    .tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin-bottom:25px}
+    .tabs a{display:block;padding:13px 18px;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;font-weight:600}
+    .tabs a[aria-current="page"]{color:var(--green);border-color:var(--green)}
+    .tabs a:hover{color:var(--green);background:#efeee6}
+    .toolbar{display:flex;align-items:end;gap:16px}
+    .field{display:flex;flex-direction:column;gap:7px}
+    .field label{font-size:13px;font-weight:600;color:var(--muted)}
+    .search-field{flex:1}
+    .search{position:relative}
+    .search svg{position:absolute;left:16px;top:17px;color:var(--muted);pointer-events:none}
+    input[type="search"]{width:100%;padding:13px 16px 13px 46px}
+    input,select{border:1px solid #cecfc3;border-radius:12px;background:var(--card);min-height:50px}
+    select{padding:12px 40px 12px 15px;max-width:100%}
+    .list-info{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:22px 0 15px;font-size:13px;color:var(--muted)}
+    .list-info p{margin:0}
+    .list-info #count{font-size:14px;font-weight:650;color:var(--ink);white-space:nowrap}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:23px 24px 21px;display:flex;flex-direction:column;min-width:0}
+    .meta{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:9px;margin-bottom:9px}
+    .meta span+span::before{content:'·';margin-right:9px}
+    .card h2{font-size:21px;line-height:1.3;letter-spacing:-.4px;margin:0 0 4px;font-weight:650;overflow-wrap:anywhere}
+    .original{margin:0 0 18px;color:var(--muted);font-size:13px;min-height:20px;overflow-wrap:anywhere}
+    .ratings{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+    .rating{display:flex;flex-wrap:wrap;gap:5px;align-items:center;background:#f4f4ed;border:1px solid #e8e8de;padding:7px 10px;border-radius:9px;font-size:13px}
+    .rating .name{color:#575b52}
+    .rating strong{font-size:14px;font-weight:700}
+    .rating .meaning{color:var(--muted);font-size:12px}
+    .rating.high{background:var(--soft);border-color:#dbe4d5}
+    .rating.high strong{color:#2f553b}
+    .reaction{font-size:12px;white-space:nowrap}
+    .no-data{color:var(--muted);font-size:12px;padding:7px 2px}
+    .status{display:inline-block;margin:0 0 14px;color:var(--green);font-size:12px;font-weight:600}
+    .card details{margin-top:16px;border-top:1px solid var(--line);padding-top:11px;font-size:13px;color:var(--muted)}
+    summary{cursor:pointer;color:var(--green);width:fit-content}
+    .card details p{margin:8px 0 0;line-height:1.6}
+    .notice{border:1px solid #dce2d4;border-left:3px solid var(--green);border-radius:10px;background:#edf0e7;padding:14px 18px;margin:28px 0;color:#545e4d;font-size:14px}
+    .notice a{font-weight:600;white-space:nowrap}
+    .state{grid-column:1/-1;text-align:center;padding:50px 20px;border:1px dashed #c9cdbe;border-radius:var(--radius);background:#faf9f4;color:var(--muted)}
+    .state h2{color:var(--ink);font-size:21px;font-weight:650;margin:0 0 8px}
+    .state p{margin:0 0 18px}
+    .doc-toolbar{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px}
+    .doc-toolbar a{font-size:13px;margin-bottom:10px;white-space:nowrap}
+    .document{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,5vw,52px);max-width:900px;margin:0 auto;overflow-wrap:anywhere}
+    .document h1{font-size:34px;letter-spacing:-.7px;line-height:1.25;margin:0 0 25px}
+    .document h2{font-size:23px;line-height:1.35;margin:32px 0 13px;letter-spacing:-.4px}
+    .document h3{font-size:18px;margin:27px 0 10px}
+    .document p{margin:0 0 17px}
+    .document ul,.document ol{padding-left:24px;margin:15px 0 22px}
+    .document li{margin:8px 0}
+    .document code{font:13px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f1e9;border-radius:4px;padding:2px 5px;overflow-wrap:anywhere}
+    .document pre{overflow:auto;background:#f0f1e9;padding:18px;border-radius:10px}
+    .document pre code{padding:0}
+    .document blockquote{margin:20px 0;padding:12px 20px;border-left:3px solid var(--green);background:var(--soft)}
+    .table-scroll{overflow-x:auto;margin:20px 0 25px}
+    table{width:100%;border-collapse:collapse;font-size:14px;text-align:left;line-height:1.55}
+    th{background:#edf0e7;font-weight:650}
+    th,td{padding:12px 14px;border:1px solid var(--line);vertical-align:top;min-width:130px}
+    .document hr{border:0;border-top:1px solid var(--line);margin:25px 0}
+    footer{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);margin-top:38px;padding:23px 0 32px;font-size:12px;color:var(--muted)}
+    footer a{color:var(--muted)}
+    .skip{position:absolute;top:-80px;left:16px;background:white;padding:10px;z-index:10}
+    .skip:focus{top:10px}
+    @media(max-width:680px){.wrap{width:calc(100% - 32px)}.top{padding:20px 0}.top-note{display:none}.intro{padding:30px 0 22px}.intro p{font-size:15px}.tabs{gap:0}.tabs a{font-size:14px;padding:12px}.toolbar{flex-direction:column;align-items:stretch;gap:12px}.cards{grid-template-columns:1fr}.card{padding:20px}.card h2{font-size:20px}.list-info{align-items:start;flex-direction:column;gap:4px}.doc-toolbar{align-items:stretch;flex-direction:column;gap:8px}.doc-toolbar a{align-self:start;margin:0}.document{padding:23px 19px}.document h1{font-size:28px}.document h2{font-size:21px}footer{flex-direction:column;gap:6px}.notice a{white-space:normal}}
+    @media(prefers-reduced-motion:no-preference){button,a{transition:background .15s,color .15s}}
+    @media print{.top,.tabs,.toolbar,.doc-toolbar,footer,.notice{display:none}.wrap{width:100%}.document{padding:0;border:0}.card{break-inside:avoid}.cards{gap:10px}body{background:white}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#films" aria-label="Наше кино — главная"><span class="mark" aria-hidden="true">▶</span>Наше кино</a>
+      <span class="top-note">Семейная коллекция</span>
+    </header>
+    <div class="intro">
+      <span class="eyebrow">Роджер · Юля · Катерина · Маруся</span>
+      <h1>Кино, которое мы помним</h1>
+      <p>Фильмы, сериалы и наши впечатления. Найди знакомое название или просто полистай коллекцию.</p>
+    </div>
+    <nav class="tabs" aria-label="Разделы">
+      <a href="#films" id="films-link" aria-current="page">Фильмы и сериалы</a>
+      <a href="#notes" id="notes-link">Заметки о базе</a>
+    </nav>
+    <main id="main">
+      <section id="films" aria-label="Фильмы и сериалы">
+        <div class="toolbar">
+          <div class="field search-field">
+            <label for="search">Поиск по названию</label>
+            <div class="search">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+              <input type="search" id="search" placeholder="Например, Интерстеллар" autocomplete="off">
+            </div>
+          </div>
+          <div class="field">
+            <label for="collection">Что показать</label>
+            <select id="collection">
+              <option value="main">Основная коллекция</option>
+              <option value="legacy">Ранние оценки Роджера и Юли</option>
+              <option value="marusya">Список Маруси</option>
+            </select>
+          </div>
+        </div>
+        <div class="list-info"><p id="count" role="status" aria-live="polite">Загружаем коллекцию…</p><p id="legend">Оценки — от 1 до 5. Огоньки — сила впечатления.</p></div>
+        <div class="cards" id="cards" aria-busy="true"></div>
+        <div class="notice">Часть старых ответов ещё восстанавливается. Если оценки нет, она пока не найдена. <a href="#notes">Что уже сохранено →</a></div>
+      </section>
+      <section id="notes" aria-label="Заметки о базе" hidden>
+        <div class="doc-toolbar">
+          <div class="field">
+            <label for="document">Что почитать</label>
+            <select id="document">
+              <option value="inventory">Итоги проверки — 29 сентября</option>
+              <option value="recovery">Восстановление анкет FAST 101</option>
+              <option value="readme">О резервной копии</option>
+            </select>
+          </div>
+          <a id="download" href="Kino_inventory_2026-09-29.md" download>Скачать текст</a>
+        </div>
+        <article id="document-body" class="document" aria-busy="true"></article>
+      </section>
+      <noscript><p class="notice">Для просмотра карточек включи JavaScript в браузере. Отчёт можно <a href="Kino_inventory_2026-09-29.md">скачать здесь</a>.</p></noscript>
+    </main>
+    <footer><span>Наше кино · сохранённые данные на 29 сентября 2026</span><a href="https://github.com/RojerStorm/model-r/tree/main/backup/cinema" target="_blank" rel="noopener noreferrer">Исходные файлы ↗</a></footer>
+  </div>
+  <script>
+    'use strict';
+    const $ = id => document.getElementById(id);
+    const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const normalize = value => String(value ?? '').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[’‘]/g,"'").trim();
+    const people = [['R','Роджер'],['J','Юля'],['K','Катерина'],['M','Маруся']];
+    const docs = {inventory:'Kino_inventory_2026-09-29.md',recovery:'FAST101-recovery-status-2026-09-29.md',readme:'README.md'};
+    const textCache = new Map();
+    const dataCache = new Map();
+    let listRequest = 0, docRequest = 0;
+
+    async function readText(file) {
+      if (textCache.has(file)) return textCache.get(file);
+      const response = await fetch(file,{cache:'no-cache'});
+      if (!response.ok) throw new Error('Не удалось загрузить файл');
+      const text = await response.text();
+      if (/^\s*<!doctype html/i.test(text)) throw new Error('Вместо данных получена страница');
+      textCache.set(file,text);
+      return text;
+    }
+
+    // The source snapshot is CSV inside named sheet sections. Quoted commas and newlines are preserved.
+    function parseDelimited(text, separator=',') {
+      const rows=[];let row=[],field='',quoted=false;
+      for(let i=0;i<text.length;i++) {
+        const c=text[i];
+        if(c==='"' && (quoted || field==='')) {
+          if(quoted && text[i+1]==='"'){field+='"';i++;}else quoted=!quoted;
+        } else if(c===separator && !quoted){row.push(field);field='';}
+        else if((c==='\n'||c==='\r')&&!quoted){
+          if(c==='\r'&&text[i+1]==='\n')i++;
+          row.push(field);if(row.some(x=>x!==''))rows.push(row);row=[];field='';
+        } else field+=c;
+      }
+      if(field!==''||row.length){row.push(field);rows.push(row);}
+      return rows;
+    }
+
+    function sheet(text,name) {
+      const marker='TAB NAME: '+name+'>';
+      const start=text.indexOf(marker);
+      if(start<0)throw new Error('Вкладка не найдена');
+      const body=text.slice(start+marker.length).split('<PARSED TEXT FOR SHEET:')[0].trim();
+      const [headers,...rows]=parseDelimited(body);
+      if(!headers || !headers.includes('Title'))throw new Error('Неизвестный формат данных');
+      return rows.map(row=>Object.fromEntries(headers.map((key,i)=>[key,row[i]??''])));
+    }
+
+    async function collection(kind) {
+      if(dataCache.has(kind))return dataCache.get(kind);
+      let rows;
+      if(kind==='legacy') {
+        const [, ...raw]=parseDelimited(await readText('legacy-rj-76.tsv'),'\t');
+        rows=raw.map(row=>{
+          const match=row[1].match(/^(.*?)\s+\((.*)\)(.*)$/);
+          return {Title:match?match[1]:row[1], 'RU title':match?match[2]+match[3]:row[1],R:row[3],J:row[5]};
+        });
+      } else {
+        const text=await readText('model-rjkm-master-2026-09-29.txt');
+        rows=sheet(text,kind==='marusya'?'M_watchlist':'Ratings');
+        if(kind==='marusya')rows=rows.map(row=>({...row,M:row['M rating'],onlyM:true}));
+      }
+      dataCache.set(kind,rows);
+      return rows;
+    }
+
+    function rating(code,name,value,reaction) {
+      const v=String(value??'').trim();
+      if(!v)return '';
+      let detail;
+      if(v==='0')detail='<span class="meaning">'+(code==='R'?'не смотрел':'не смотрела')+'</span>';
+      else if(v==='?')detail='<span class="meaning">оценку не помнит</span>';
+      else detail='<strong>'+escapeHTML(v)+'/5</strong>';
+      const heat=String(reaction??'').match(/🔥|🧊/gu)?.join('')??'';
+      const heatLabel=heat.includes('🧊')?'Холодное впечатление':('Сила впечатления: '+Array.from(heat).length+' из 3');
+      return '<span class="rating'+(v==='5'?' high':'')+'"><span class="name">'+name+'</span>'+detail+(heat?'<span class="reaction" role="img" aria-label="'+heatLabel+'">'+heat+'</span>':'')+'</span>';
+    }
+
+    function card(row) {
+      const title=row['RU title']||row.Title;
+      const year=row.Year?String(row.Year).replace(/\.0$/,''):'';
+      const type={film:'Фильм',series:'Сериал',animation:'Мультфильм','film franchise':'Серия фильмов'}[row.Type]||'';
+      const scores=(row.onlyM?[people[3]]:people).map(([code,name])=>rating(code,name,row[code],row['Reaction '+code])).join('');
+      const status={recommended:'В планах',candidate:'На примете',watched:'Уже смотрела',not_watched:'Ещё не смотрела',season_pending:'Ждём новый сезон',watched_unclear:'Просмотр уточняется'}[row['Status for M']]||'';
+      let note=row.Notes||'';
+      // Internal English recovery notes are provenance, not film impressions.
+      if(!/[а-яА-ЯёЁ]/.test(note))note='';
+      note=note.replace(/watchlist/gi,'список просмотра');
+      return '<article class="card"><div class="meta">'+[type,year].filter(Boolean).map(x=>'<span>'+escapeHTML(x)+'</span>').join('')+'</div><h2>'+escapeHTML(title)+'</h2><p class="original">'+(row.Title!==title?escapeHTML(row.Title):'')+'</p>'+(status?'<span class="status">'+status+'</span>':'')+'<div class="ratings">'+(scores||'<span class="no-data">Оценка пока не указана</span>')+'</div>'+(note?'<details><summary>Наши впечатления</summary><p>'+escapeHTML(note)+'</p></details>':'')+'</article>';
+    }
+
+    async function showCards() {
+      const request=++listRequest;
+      $('cards').setAttribute('aria-busy','true');
+      try {
+        const kind=$('collection').value;
+        const rows=await collection(kind);
+        if(request!==listRequest)return;
+        const q=normalize($('search').value);
+        const filtered=rows.filter(row=>normalize(row.Title+' '+row['RU title']).includes(q));
+        $('count').textContent=q?'Найдено: '+filtered.length+' из '+rows.length:'Всего в списке: '+rows.length;
+        $('legend').textContent=kind==='legacy'?'Ранние оценки хранятся отдельно и могут отличаться от более поздних.':'Оценки — от 1 до 5. Огоньки — сила впечатления.';
+        $('cards').innerHTML=filtered.length?filtered.map(card).join(''):'<div class="state"><h2>Такого названия пока нет</h2><p>Попробуй другое слово или выбери другой список.</p><button type="button" id="clear-search">Очистить поиск</button></div>';
+        $('clear-search')?.addEventListener('click',()=>{$('search').value='';showCards();$('search').focus();});
+      } catch(error) {
+        if(request!==listRequest)return;
+        $('count').textContent='Коллекция не загрузилась';
+        $('cards').innerHTML='<div class="state" role="alert"><h2>Не получилось открыть коллекцию</h2><p>Проверь соединение и попробуй ещё раз.</p><button type="button" id="retry-list">Попробовать снова</button></div>';
+        $('retry-list').addEventListener('click',showCards);
+      } finally {if(request===listRequest)$('cards').setAttribute('aria-busy','false');}
+    }
+
+    function safeURL(url) {
+      const trimmed=url.trim();
+      if(/^(?:https?:\/\/|#)/i.test(trimmed))return trimmed;
+      if(!/^[a-z][a-z\d+.-]*:/i.test(trimmed)&&!trimmed.startsWith('//'))return trimmed;
+      return '#';
+    }
+
+    // Small, escaped Markdown reader for the text files in this folder. No remote scripts or HTML execution.
+    function inline(text) {
+      const tokens=[];
+      let source=text.replace(/`([^`]+)`|\[([^\]]+)\]\(([^\s)]+)\)/g,(match,code,label,url)=>{
+        const html=code!==undefined?'<code>'+escapeHTML(code)+'</code>':'<a href="'+escapeHTML(safeURL(url))+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(label)+'</a>';
+        tokens.push(html);return '\u0000'+(tokens.length-1)+'\u0000';
+      });
+      source=escapeHTML(source).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
+      return source.replace(/\u0000(\d+)\u0000/g,(_,i)=>tokens[Number(i)]);
+    }
+
+    function markdown(text) {
+      const lines=text.replace(/\r\n?/g,'\n').split('\n');
+      const html=[];let i=0;
+      const tableRow=line=>line.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(x=>x.trim());
+      const startsBlock=line=>/^(#{1,6}\s|[-*]\s|\d+\.\s|```|>\s|---+$)/.test(line);
+      while(i<lines.length) {
+        const line=lines[i].trim();
+        if(!line){i++;continue;}
+        if(line.startsWith('```')){const body=[];i++;while(i<lines.length&&!lines[i].trim().startsWith('```'))body.push(lines[i++]);i++;html.push('<pre><code>'+escapeHTML(body.join('\n'))+'</code></pre>');continue;}
+        const heading=line.match(/^(#{1,6})\s+(.+)$/);
+        if(heading){const level=heading[1].length;html.push('<h'+level+'>'+inline(heading[2])+'</h'+level+'>');i++;continue;}
+        if(/^---+$/.test(line)){html.push('<hr>');i++;continue;}
+        if(line.includes('|')&&i+1<lines.length&&/^\|?\s*:?-+:?\s*\|/.test(lines[i+1].trim())){
+          const head=tableRow(line);i+=2;const body=[];
+          while(i<lines.length&&lines[i].trim().includes('|'))body.push(tableRow(lines[i++]));
+          html.push('<div class="table-scroll"><table><thead><tr>'+head.map(x=>'<th scope="col">'+inline(x)+'</th>').join('')+'</tr></thead><tbody>'+body.map(row=>'<tr>'+row.map(x=>'<td>'+inline(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>');continue;
+        }
+        if(/^[-*]\s|^\d+\.\s/.test(line)){
+          const ordered=/^\d+\./.test(line),tag=ordered?'ol':'ul',pattern=ordered?/^\d+\.\s+/:/^[-*]\s+/;const items=[];
+          while(i<lines.length&&pattern.test(lines[i].trim()))items.push('<li>'+inline(lines[i++].trim().replace(pattern,''))+'</li>');
+          html.push('<'+tag+'>'+items.join('')+'</'+tag+'>');continue;
+        }
+        if(line.startsWith('> ')){html.push('<blockquote>'+inline(line.slice(2))+'</blockquote>');i++;continue;}
+        const paragraph=[line];i++;
+        while(i<lines.length&&lines[i].trim()&&!startsBlock(lines[i].trim())&&!(lines[i].includes('|')&&lines[i+1]?.includes('---')))paragraph.push(lines[i++].trim());
+        html.push('<p>'+inline(paragraph.join(' '))+'</p>');
+      }
+      return html.join('\n');
+    }
+
+    async function showDocument() {
+      const request=++docRequest;
+      const file=docs[$('document').value];
+      $('download').href=file;
+      $('document-body').setAttribute('aria-busy','true');
+      $('document-body').innerHTML='<p role="status">Открываем заметку…</p>';
+      try {
+        const text=await readText(file);
+        if(request!==docRequest)return;
+        $('document-body').innerHTML=markdown(text);
+      } catch(error) {
+        if(request!==docRequest)return;
+        $('document-body').innerHTML='<div class="state" role="alert"><h2>Не получилось открыть заметку</h2><p>Попробуй загрузить её ещё раз.</p><button type="button" id="retry-doc">Попробовать снова</button></div>';
+        $('retry-doc').addEventListener('click',showDocument);
+      } finally {if(request===docRequest)$('document-body').setAttribute('aria-busy','false');}
+    }
+
+    function navigate() {
+      const notes=location.hash==='#notes';
+      $('films').hidden=notes;$('notes').hidden=!notes;
+      for(const [id,active] of [['films-link',!notes],['notes-link',notes]]){
+        if(active)$(id).setAttribute('aria-current','page');else $(id).removeAttribute('aria-current');
+      }
+      if(notes)showDocument();else showCards();
+    }
+    $('search').addEventListener('input',showCards);
+    $('collection').addEventListener('change',()=>{$('search').value='';showCards();});
+    $('document').addEventListener('change',showDocument);
+    window.addEventListener('hashchange',navigate);
+    navigate();
+  </script>
+</body>
+</html>
