@@ -1,0 +1,188 @@
+<PARSED TEXT FOR SHEET: 1 / 6 TABS
+TAB NAME: README>
+
+index,#Кино — восстановленная база,v0.1 recovery • 2026-09-29
+0,Назначение,Постоянная база оценок и watchlist. R — основная модель; J/K/M — семейный контрольный фон.
+1,Участники,R=Роджер; J=Юля; K=Катерина; M=Маруся
+2,Шкала,"1–5 = оценка; 0 = явно не смотрел; ? = смотрел, но оценка не помнится; пусто = данных нет."
+3,Reaction,🔥 / 🔥🔥 / 🔥🔥🔥 — сила попадания; 🧊 — холодная/негативная эмоциональная реакция при указанной числовой оценке.
+4,Статусы,watched / not_watched / recommended / candidate / season_pending / watched_unclear
+5,Ключевое правило,"Obsession («Обсессия») ≠ Absentia (2011, «Отсутствие»). Не путать."
+6,Метод восстановления,Собрано из доступного контекста прошлых разговоров. Неизвестные значения не заполнялись предположениями.
+7,Важно,Часть старой большой базы (в т.ч. полный список 101 фильма) доступна в контексте фрагментарно; известные пробелы вынесены в Recovery_log.
+
+<PARSED TEXT FOR SHEET: 2 / 6 TABS
+TAB NAME: Profiles>
+
+index,Code,Person,Role in model,Notes
+0,R,Роджер,Primary,Главный сигнал для гипотез вкуса.
+1,J,Юля,Control / family,Контроль качества и семейный фон.
+2,K,Катерина,Control / family,Семейный фон.
+3,M,Маруся,Control / family + own watchlist,Отдельно хранить рекомендации и уже просмотренное; повторно не предлагать.
+
+<PARSED TEXT FOR SHEET: 3 / 6 TABS
+TAB NAME: Ratings>
+
+index,Title,RU title,Year,Type,Status,R,J,K,M,Reaction R,Reaction J,Reaction K,Reaction M,Notes,Recovery source
+0,The Sopranos,Клан Сопрано,1999.0,series,watched,4,?,4,0,,,,,V1 family matrix,Past chat recovery: V1
+1,The Big Lebowski,Большой Лебовски,1998.0,film,watched,5,?,5,0,🔥🔥🔥,,,,Later R reaction updated to 🔥🔥🔥,V1 + 2026-09-16
+2,L.A. Confidential,Секреты Лос-Анджелеса,1997.0,film,watched,5,?,5,0,🔥🔥🔥,,,,,V1 + 2026-09-16
+3,Rain Man,Человек дождя,1988.0,film,watched,5,5,4,0,🔥🔥🔥,,,,,V1 + 2026-09-16
+4,Minority Report,Особое мнение,2002.0,film,watched,5,?,4,0,,,,,,V1
+5,Once Upon a Time... in Hollywood,Однажды в… Голливуде,2019.0,film,watched,5,5,5,?,🔥🔥🔥,,,,,V1 + 2026-09-16
+6,American Beauty,Красота по-американски,1999.0,film,watched,5,4,4,?,,,,,,V1
+7,The Road,Дорога,2009.0,film,watched,5,?,3,0,,,,,,V1
+8,The Perfect Storm,Идеальный шторм,2000.0,film,watched,5,5,3,4,,,,,,V1
+9,Dead Man,Мертвец,1995.0,film,watched,5,?,5,2,,,,,,V1
+10,The Imitation Game,Игра в имитацию,2014.0,film,watched,5,0,?,0,,,,,,V1
+11,The Prestige,Престиж,2006.0,film,watched,5,0,,,,,,,,V2 R/J + later explicit updates
+12,Inception,Начало,2010.0,film,watched,5,5,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+13,Interstellar,Интерстеллар,2014.0,film,watched,5,4,,,🔥🔥,,,,R later explicitly updated upward from older V2 value.,V2 R/J + later explicit updates
+14,Edge of Tomorrow,Грань будущего,2014.0,film,watched,5,0,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+15,Source Code,Исходный код,2011.0,film,watched,5,0,,,,,,,,V2 R/J + later explicit updates
+16,Ex Machina,Из машины,2014.0,film,watched,?,0,,,,,,,,V2 R/J + later explicit updates
+17,Arrival,Прибытие,2016.0,film,watched,5,3,,,🔥,,,,R later explicitly updated upward from older V2 value.,V2 R/J + later explicit updates
+18,Children of Men,Дитя человеческое,2006.0,film,not_watched,0,0,,,,,,,,V2 R/J + later explicit updates
+19,District 9,Район №9,2009.0,film,watched,5,0,,,🔥🔥,,,,R later explicitly updated upward from older V2 value.,V2 R/J + later explicit updates
+20,The Martian,Марсианин,2015.0,film,watched,5,4,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+21,Prisoners,Пленницы,2013.0,film,not_watched,0,0,,,,,,,,V2 R/J + later explicit updates
+22,Gone Girl,Исчезнувшая,2014.0,film,watched,5,4,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+23,Nightcrawler,Стрингер,2014.0,film,not_watched,0,0,,,,,,,,V2 R/J + later explicit updates
+24,The Green Mile,Зелёная миля,1999.0,film,watched,5,5,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+25,The Shawshank Redemption,Побег из Шоушенка,1994.0,film,watched,5,5,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+26,The Wolf of Wall Street,Волк с Уолл-стрит,2013.0,film,watched,5,5,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+27,Snatch,Большой куш,2000.0,film,watched,5,5,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+28,The Gentlemen,Джентльмены,2019.0,film,watched,5,0,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+29,John Wick,Джон Уик,2014.0,film,watched,5,5,,,🔥🔥🔥,,,,,V2 R/J + later explicit updates
+30,The Dark Knight,Тёмный рыцарь,2008.0,film,watched,4,4,,,,,,,,V2 R/J + later explicit updates
+31,Black Mirror,Чёрное зеркало,2011.0,series,watched,4,5,,,,,,,Latest explicit R=4; older summaries conflicted.,V2 R/J + later explicit updates
+32,Lost,Остаться в живых,2004.0,series,watched,4,5,,,,,,,,V2 R/J + later explicit updates
+33,Mr. Robot,Мистер Робот,2015.0,series,watched,5,0,,,,,,,,V2 R/J + later explicit updates
+34,The Expanse,Пространство,2015.0,series,not_watched,0,0,,,,,,,,V2 R/J + later explicit updates
+35,Peaky Blinders,Острые козырьки,2013.0,series,not_watched,0,0,,,,,,,,V2 R/J + later explicit updates
+36,Obsession,Обсессия,2025.0,film,watched,5,5,5,,🔥🔥🔥,,,,"Ключевое попадание: «100/100», «взрыв мозга», сильная игра главной героини и эмоциональное сопереживание.",2026-09-07..29
+37,Companion,Компаньон,2025.0,film,watched,5,5,,,🔥🔥🔥,🔥🔥🔥,,,"Максимально понравился; отношения человек–машина, ассоциация с Detroit: Become Human.",2026-09-13/29
+38,Mayday,Mayday,2026.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16
+39,Wrecking Crew,Wrecking Crew,2026.0,film,watched,5,,,,🧊,,,,,2026-09-16
+40,Drop,Дроп,2025.0,film,watched,4,4,4,,🧊,,,,"По частям: 4/5/3 — начало нудноватое, середина взрывная, финал провален после встречи.",2026-09-13..16
+41,Fight or Flight,Fight or Flight,2025.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16
+42,Death of a Unicorn,Смерть единорога,2025.0,film,watched,1,,,,🧊,,,,,2026-09-16
+43,The Dead Don't Die,Мёртвые не умирают,2019.0,film,watched,1,,,,🧊,,,,,2026-09-16
+44,Police Academy 1–6,Полицейская академия 1–6,,film franchise,watched,5,,,,🔥🔥🔥,,,,Любимые ностальгические фильмы.,2026-09-23
+45,K-9,К-9: Собачья работа,1989.0,film,watched,5,,,,🔥🔥🔥,,,,Любимая ностальгическая комедия; особенно сцена hand signal / Edwin Moses / carpool.,2026-09-29
+46,Oblivion,Обливион,2013.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+47,Gattaca,Гаттака,1997.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+48,Blade Runner 2049,Бегущий по лезвию 2049,2017.0,film,watched,5,,,,🔥🔥,,,,,2026-09-16 consolidated
+49,Equilibrium,Эквилибриум,2002.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+50,The Fifth Element,Пятый элемент,1997.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+51,The Terminator,Терминатор,1984.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+52,Terminator 2: Judgment Day,Терминатор 2: Судный день,1991.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+53,Back to the Future,Назад в будущее,1985.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+54,Back to the Future Part II,Назад в будущее 2,1989.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+55,Back to the Future Part III,Назад в будущее 3,1990.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+56,Point Break,На гребне волны,1991.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+57,Amélie,Амели,2001.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+58,Ghost,Привидение,1990.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+59,Cabaret,Кабаре,1972.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+60,Moulin Rouge!,Мулен Руж!,2001.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+61,Mamma Mia!,Мамма Mia!,2008.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+62,Six-String Samurai,Шестиструнный самурай,1998.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+63,Se7en,Семь,1995.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+64,Memento,Помни,2000.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+65,The Game,Игра,1997.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+66,Shutter Island,Остров проклятых,2010.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+67,Nobody,Никто,2021.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+68,The Grand Budapest Hotel,Отель «Гранд Будапешт»,2014.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+69,Oppenheimer,Оппенгеймер,2023.0,film,watched,5,,,,🔥🔥🔥,,,,,2026-09-16 consolidated
+70,1408,1408,2007.0,film,watched,5,,,,🔥,,,,,2026-09-16 consolidated
+71,Snowpiercer,Сквозь снег,2013.0,film,watched,3,,,,🔥🔥,,,,,2026-09-16 consolidated
+72,The Substance,Субстанция,2024.0,film,watched,3,,,,🧊,,,,,2026-09-16 consolidated
+73,Barbie,Барби,2023.0,film,watched,4,,,,🔥,,,,,2026-09-16 consolidated
+74,"Three Billboards Outside Ebbing, Missouri","Три билборда на границе Эббинга, Миссури",2017.0,film,watched,4,,,,🔥🔥,,,,,2026-09-16 consolidated
+75,Foundation,Основание,2021.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+76,Dark Matter,Тёмная материя,2024.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+77,Stranger Things,Очень странные дела,2016.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+78,Silo,Укрытие,2023.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+79,Severance,Разделение,2022.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+80,The Last of Us,Одни из нас,2023.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+81,Fallout,Fallout,2024.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+82,The Ark,Ковчег,2023.0,series,watched,5,,,,,,,,"S1–2 ≈5; S3 после первых 2 серий просел примерно к 3, итог сезона не зафиксирован.",2026-08-30 / 2026-09-16
+83,For All Mankind,Ради всего человечества,2019.0,series,watched,5,3,,,,,,,,2026-08-30 / 2026-09-16
+84,Breaking Bad,Во все тяжкие,2008.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+85,Chernobyl,Чернобыль,2019.0,series,watched,5,,,,,,,,,2026-08-30 / 2026-09-16
+86,True Detective,Настоящий детектив,2014.0,series,watched,5,,,,,,,,Later updated from 4.,2026-08-30 / 2026-09-16
+87,Fargo,Фарго,2014.0,series,watched,5,,,,,,,,Later updated from 4.,2026-08-30 / 2026-09-16
+88,House of the Dragon,Дом дракона,2022.0,series,watched,3,,,,,,,,,2026-08-30 / 2026-09-16
+89,The Boys,Пацаны,2019.0,series,watched,4,,,,,,,,,2026-08-30 / 2026-09-16
+90,The Queen's Gambit,Ход королевы,2020.0,series,watched,4,,,,,,,,,2026-08-30 / 2026-09-16
+91,The White Lotus,Белый лотос,2021.0,series,watched,?,,,,,,,,"Смотрел, но оценка не помнится.",2026-08-30 / 2026-09-16
+92,Ted Lasso,Тед Лассо,2020.0,series,not_watched,0,,,,,,,,,2026-08-30 / 2026-09-16
+93,Dark,Тьма,2017.0,series,watched,3,,,,,,,,,2026-08-30 / 2026-09-16
+
+<PARSED TEXT FOR SHEET: 4 / 6 TABS
+TAB NAME: M_watchlist>
+
+index,Title,RU title,Type,Status for M,M rating,Reaction M,Notes,Recovery source
+0,Dungeons & Dragons: Honor Among Thieves,Подземелья и драконы: Честь среди воров,film,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+1,Togo,Того,film,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+2,Big Hero 6,Город героев,animation,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+3,Free Guy,Главный герой,film,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+4,Rescued by Ruby,Спасение Руби,film,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+5,Star Wars: Skeleton Crew,Звёздные войны: Опорная команда,series,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+6,The Owl House,Дом совы,series,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+7,Star Wars Rebels,Звёздные войны: Повстанцы,series,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+8,A Good Girl’s Guide to Murder,Руководство по убийству для хорошей девочки,series,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+9,Percy Jackson and the Olympians,Перси Джексон и Олимпийцы,series,recommended,,,Не смотрела; основной watchlist,2026-09-15/18
+10,The Mitchells vs. the Machines,Митчеллы против машин,animation,candidate,,,Дополнительный кандидат,2026-09-18
+11,One Piece,Ван-Пис,series,candidate,,,Дополнительный кандидат,2026-09-18
+12,Финник,Финник,animation,candidate,,,Дополнительный кандидат,2026-09-18
+13,Коты Эрмитажа,Коты Эрмитажа,animation,candidate,,,Дополнительный кандидат,2026-09-18
+14,Домовёнок Кузя,Домовёнок Кузя,film,candidate,,,2024; дополнительный кандидат,2026-09-18
+15,Последний богатырь: Наследие,Последний богатырь: Наследие,series,candidate,,,Дополнительный кандидат,2026-09-18
+16,Wednesday,Уэнсдэй,series,watched,5,🔥🔥🔥,,2026-09-15
+17,Moana,Моана,animation,watched,5,🔥🔥🔥,,2026-09-15
+18,Coco,Тайна Коко,animation,watched,5,🔥🔥🔥,,2026-09-15
+19,Hachi: A Dog's Tale,Хатико: Самый верный друг,film,watched,5,🔥🔥🔥,,2026-09-15
+20,A Dog's Purpose,Собачья жизнь,film,watched,5,🔥🔥🔥,,2026-09-15
+21,How to Train Your Dragon,Как приручить дракона,animation,watched,5,🔥🔥🔥,,2026-09-15
+22,Манюня,Манюня,series,watched,5,,,2026-09-18
+23,Vampires of the Middle Zone,Вампиры средней полосы,series,watched,5,,,2026-09-18
+24,Полярный,Полярный,series,watched,,,,2026-09-18
+25,Пищеблок,Пищеблок,series,watched,,,,2026-09-18
+26,Очень странная деревня,Очень странная деревня,series,watched,,,,2026-09-18
+27,Pirates of the Caribbean (series),Пираты Карибского моря — вся серия,film franchise,watched,,,,2026-09-18
+28,Сто лет тому вперёд,Сто лет тому вперёд,film,watched,5,,,2026-09-18
+29,Чебурашка,Чебурашка,film,watched,4–5,,,2026-09-18
+
+<PARSED TEXT FOR SHEET: 5 / 6 TABS
+TAB NAME: Dashboard>
+
+index,#Кино — контрольная панель,Unnamed: 1,Unnamed: 2,Unnamed: 3
+0,,,,
+1,Метрика,Значение,,
+2,Записей в Ratings,94,,
+3,R=5,71,,
+4,R=4,9,,
+5,R=3,4,,
+6,R=1,2,,
+7,Явно не просмотрено R (0),6,,
+8,,,,
+9,,,,
+10,Ключевые якоря,R,J/K,Комментарий
+11,Obsession,5,J5 / K5,"100/100, 🔥🔥🔥"
+12,Companion,5,J5,🔥🔥🔥
+13,Police Academy 1–6,5,,ностальгия
+14,K-9,5,,"🔥🔥🔥, ностальгия"
+15,The Ark,5,,S3 early ≈3
+
+<PARSED TEXT FOR SHEET: 6 / 6 TABS
+TAB NAME: Recovery_log>
+
+index,Area,Status,What is known,Gap / action
+0,Project schema,Recovered,"R primary; J/K/M control; scale 1–5, 0, ?, reaction separate.",
+1,V1,Partial but exact subset,11 title mappings with R/J/K/M recovered.,Full V1 matrix/title set not fully available in current context.
+2,V2,Recovered,25 titles with exact R/J matrix; later explicit R updates applied.,K/M were not present in that V2 source.
+3,Large 101-film list,Partial,"Many explicit R ratings/reactions recovered, including major 5🔥🔥🔥 anchors.",Full positions 40–101 are not reconstructable from current context without original transcript/export.
+4,M model,Recovered well,"Current watchlist, extra candidates, and multiple explicit 5🔥🔥🔥 watched titles.",Some watched items have no numeric M rating in recovered context.
+5,Obsession / Absentia,Corrected,Obsession=«Обсессия»; Absentia (2011)=«Отсутствие».,Do not merge them.
+6,Persistence,Created,This workbook is designed as the durable source of truth.,Future ratings should be appended here rather than relying on chat memory alone.
