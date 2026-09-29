@@ -1,1 +1,76 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+№	Тайтл		R		J	Блок
+1	Le Fabuleux destin d'Amélie Poulain (Амели)	-	5	-	5	Anchor
+2	Six-String Samurai (Шестиструнный самурай)	-	5	-	5	Anchor
+3	Back to the Future (Назад в будущее), трилогия	-	5	-	5	Anchor
+4	K-9 (К-9: Собачья работа)	-	5	-	5	Anchor
+5	Silo (Укрытие)	-	5	-	5	Anchor
+6	Severance (Разделение)	-	5	-	5	Anchor
+7	Breaking Bad (Во все тяжкие)	-	5	-	5	Anchor
+8	Chernobyl (Чернобыль)	-	5	-	5	Anchor
+9	Oblivion (Обливион)	-	5	-	5	Anchor
+10	The Boys (Пацаны)	-	4	-	0	Calibration
+11	The Last of Us (Одни из нас)	-	5	-	5	Calibration
+12	Fallout (Fallout)	-	5	-	5	Calibration
+13	House of the Dragon (Дом дракона)	-	3	-	0	Calibration
+14	Dark (Тьма)	-	3	-	3	Calibration
+15	Ted Lasso (Тед Лассо)	-	0	-	0	Calibration
+16	Narcos (Нарко)	-	?	-	0	V6
+17	Ripley (Рипли)	-	?	-	?	V6
+18	Homeland (Родина)	-	5	-	5	V6
+19	Tehran (Тегеран)	-	5	-	4	V6
+20	Fauda (Фауда)	-	5	-	3	V6
+21	The Night Manager (Ночной администратор)	-	0	-	0	V6
+22	Sliders (Параллельные миры)	-	5	-	5	V6
+23	The Ark (Ковчег)	-	5	-	5	V6
+24	What We Do in the Shadows (Чем мы заняты в тени)	-	5	-	4	V6
+25	Fleabag (Дрянь)	-	0	-	4	V6
+26	Blast from the Past (Взрыв из прошлого)	-	5	-	4	V6
+27	George of the Jungle (Джордж из джунглей)	-	5	-	4	V6
+28	Men at Work (Мужчины за работой)	-	5	-	?	V6
+29	Encino Man (Замороженный калифорниец)	-	5	-	?	V6
+30	Le grand bleu (Голубая бездна)	-	?	-	?	V6
+31	Les parapluies de Cherbourg (Шербурские зонтики)	-	5	-	5	V6
+32	99 francs (99 франков)	-	5	-	5	V6
+33	Cabaret (Кабаре)	-	4	-	5	V6
+34	1883 (1883)	-	0	-	0	V6
+35	Deadwood (Дэдвуд)	-	4	-	0	V6
+36	Ёлки 9	-	1	-	2	KP-1
+37	Игры	-	1	-	2	KP-1
+38	Небриллиантовая рука	-	1	-	1	KP-1
+39	Extremely Wicked, Shockingly Evil and Vile (Красивый, плохой, злой)	-	?	-	0	KP-1
+40	Бабки	-	1	-	0	KP-1
+41	Разрешите обратиться	-	1	-	2	KP-1
+42	Овечка Долли была злая и рано умерла	-	1	-	1	KP-1
+43	Cats & Peachtopia (Большой кошачий побег)	-	?	-	3	KP-1
+44	Новая тёща	-	?	-	3	KP-1
+45	Полярный	-	5	-	4	KP-1
+46	Кракен	-	4	-	4	KP-1
+47	Батя	-	3	-	0	KP-1
+48	Перевал Дятлова	-	5	-	5	KP-1
+49	Библиотекарь	-	5	-	5	KP-1
+50	Обратная сторона Луны	-	4	-	4	KP-1
+51	Эпидемия	-	5	-	5	KP-1
+52	Les Gouttes de Dieu (Капли бога)	-	5	-	5	KP-1
+53	Мастер и Маргарита	-	5	-	5	KP-1
+54	Виноделы	-	5	-	4	KP-1
+55	Волшебный участок	-	5	-	5	KP-1
+56	Макрон	-	?	-	4	KP-2
+57	Один день в Стамбуле	-	3	-	3	KP-2
+58	Руки Вверх!	-	4	-	4	KP-2
+59	Наша Russia. 8 марта	-	?	-	?	KP-2
+60	Уралочка	-	3	-	3	KP-2
+61	Контакт	-	?	-	4	KP-2
+62	Постучись в мою Тверь	-	2	-	2	KP-2
+63	Трепачи	-	5	-	5	KP-2
+64	Красная Поляна	-	4	-	4	KP-2
+65	Встретимся вчера	-	3	-	3	KP-2
+66	Red One (Миссия: Красный)	-	5	-	3	KP-2
+67	Очевидное невероятное	-	3	-	3	KP-2
+68	«Везёт»	-	5	-	5	KP-2
+69	Холоп 2	-	4	-	4	KP-2
+70	Крутая перемена	-	3	-	4	KP-2
+71	Мистер Ноготь	-	3	-	3	KP-2
+72	Normal (Нормал)	-	5	-	5	KP-2
+73	Кулинарный техникум	-	5	-	4	KP-2
+74	Химкинские ведьмы	-	4	-	3	KP-2
+75	Гудбай, Америка	-	5	-	4	KP-2
