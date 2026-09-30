@@ -209,7 +209,7 @@
       return '🔥'.repeat(Number(o.heat));
     }
     function sourceLabel(o){
-      return {master:'master',legacy:'legacy',fast101_recovery:'FAST 101',master_watchlist:'M watchlist'}[o.source_layer]||o.source_layer;
+      return {master:'master',legacy:'legacy',fast101_recovery:'FAST 101',master_watchlist:'M watchlist',user_explicit:'текущая оценка'}[o.source_layer]||o.source_layer;
     }
     function statusText(s){
       return {watched:'просмотрено',not_watched:'не смотрел(а)',watched_forgot:'оценка не помнится',partial:'не досмотрено',unanswered:'без ответа',recommended:'рекомендовано',candidate:'кандидат',season_pending:'ждём сезон',watched_unclear:'статус уточняется'}[s]||s||'';
@@ -217,15 +217,15 @@
     function profileSummary(title,profile){
       const s=title.summary?.[profile]; if(!s)return '';
       const values=s.values||[];
-      const text=values.length?values.map(v=>ratingText(v,profile)).join(' / '):'есть запись';
+      const text=s.current_value!==undefined&&s.current_value!==null?ratingText(s.current_value,profile):(values.length?values.map(v=>ratingText(v,profile)).join(' / '):'есть запись');
       return '<span class="profile-score'+(s.conflict?' conflict':'')+'"><span>'+profile+'</span><strong>'+escapeHTML(text)+'</strong>'+(s.conflict?'<span class="conflict-note">⚠</span>':'')+'</span>';
     }
     function sourceRow(o){
-      const recovered=o.verification==='recovered_secondary_final';
+      const recovered=o.verification==='recovered_secondary_final', explicit=o.verification==='current_user_explicit';
       return '<div class="source-row"><div class="source-head"><strong>'+escapeHTML(o.profile+' · '+ratingText(o.rating,o.profile))+'</strong>'+
         (heatText(o)?'<span>'+escapeHTML(heatText(o))+'</span>':'')+
         '<span class="pill '+(recovered?'warn':'ok')+'">'+escapeHTML(sourceLabel(o))+'</span>'+
-        (recovered?'<span class="pill warn">восстановлено по истории</span>':'<span class="pill ok">снимок сохранён</span>')+
+        (explicit?'<span class="pill ok">подтверждено пользователем</span>':(recovered?'<span class="pill warn">восстановлено по истории</span>':'<span class="pill ok">снимок сохранён</span>'))+
         '</div><div class="source-meta">'+
         [statusText(o.status),o.source_locator,o.source_time,o.evidence_ids?('evidence: '+o.evidence_ids):'',o.source_note,o.notes].filter(Boolean).map(escapeHTML).join(' · ')+
         '</div></div>';
