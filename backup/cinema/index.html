@@ -89,6 +89,7 @@
     footer a{color:var(--muted)}
     .skip{position:absolute;top:-80px;left:16px;background:white;padding:10px;z-index:10}
     .skip:focus{top:10px}
+    .source-list{display:grid;gap:8px;margin-top:10px}.source-row{padding:10px 11px;border:1px solid var(--line);border-radius:10px;background:#faf9f4}.source-head{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:4px}.pill{display:inline-flex;align-items:center;border:1px solid #e1d4c6;border-radius:999px;background:var(--peach);color:var(--orange-text);padding:2px 7px;font-size:11px;font-weight:650}.pill.ok{background:var(--soft);border-color:#dbe4d5;color:#35543d}.pill.warn{background:#fff3db;border-color:#ecd4a2;color:#79591e}.profile-score.conflict{border-color:#e2ae83;background:#fff2e7}.conflict-note{color:var(--orange-text);font-size:12px;font-weight:700}.source-meta{font-size:12px;color:var(--muted);overflow-wrap:anywhere}.profile-score{display:flex;gap:6px;align-items:center;background:#f4f4ed;border:1px solid #e8e8de;padding:7px 10px;border-radius:9px;font-size:13px}.profile-score strong{font-size:14px}.sources-count{font-size:12px;color:var(--muted);margin-left:auto}
     @media(max-width:680px){.wrap{width:calc(100% - 32px)}.top{padding:20px 0}.top-note{display:none}.intro{padding:30px 0 22px}.intro p{font-size:15px}.tabs{gap:0}.tabs a{font-size:14px;padding:12px}.toolbar{flex-direction:column;align-items:stretch;gap:12px}.cards{grid-template-columns:1fr}.card{padding:20px}.card h2{font-size:20px}.list-info{align-items:start;flex-direction:column;gap:4px}.doc-toolbar{align-items:stretch;flex-direction:column;gap:8px}.doc-toolbar a{align-self:start;margin:0}.document{padding:23px 19px}.document h1{font-size:28px}.document h2{font-size:21px}footer{flex-direction:column;gap:6px}.notice a{white-space:normal}}
     @media(prefers-reduced-motion:no-preference){button,a{transition:background .15s,color .15s}}
     @media print{.top,.tabs,.toolbar,.doc-toolbar,footer,.notice{display:none}.wrap{width:100%}.document{padding:0;border:0}.card{break-inside:avoid}.cards{gap:10px}body{background:white}}
@@ -112,21 +113,33 @@
     </nav>
     <main id="main">
       <section id="films" aria-label="Фильмы и сериалы">
-        <div class="notice"><strong>База пока неполная.</strong> Часть старых списков и ответов на анкеты ещё не восстановлена. <a href="#notes">Что уже сохранено →</a></div>
+        <div class="notice"><strong>Объединённый каталог.</strong> Master, legacy и FAST 101 связаны по тайтлам; каждое значение хранится вместе с источником. FAST 101 пока помечен как «не подтверждено» до дословного экспорта двух исходных чатов. <a href="#notes">Что осталось проверить →</a></div>
         <div class="toolbar">
           <div class="field search-field">
             <label for="search">Поиск по названию</label>
             <div class="search">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
-              <input type="search" id="search" placeholder="Например, Интерстеллар" autocomplete="off">
+              <input type="search" id="search" placeholder="Например, Престиж" autocomplete="off">
             </div>
           </div>
           <div class="field">
-            <label for="collection">Что показать</label>
-            <select id="collection">
-              <option value="main">Основная коллекция</option>
-              <option value="legacy">Ранние оценки Роджера и Юли</option>
-              <option value="marusya">Список Маруси</option>
+            <label for="profile">Профиль</label>
+            <select id="profile">
+              <option value="all">Все R/J/K/M</option>
+              <option value="R">R · Роджер</option>
+              <option value="J">J · Юля</option>
+              <option value="K">K · Катерина</option>
+              <option value="M">M · Маруся</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="view">Режим</label>
+            <select id="view">
+              <option value="all">Все тайтлы</option>
+              <option value="conflicts">Только расхождения</option>
+              <option value="fast">Есть FAST 101</option>
+              <option value="unconfirmed">Есть неподтверждённое</option>
+              <option value="watchlist">Watchlist M</option>
             </select>
           </div>
         </div>
@@ -138,8 +151,10 @@
           <div class="field">
             <label for="document">Что почитать</label>
             <select id="document">
+              <option value="recovery30">Восстановление FAST 101 — 30 сентября</option>
+              <option value="conflicts">Расхождения объединённого каталога</option>
               <option value="inventory">Итоги проверки — 29 сентября</option>
-              <option value="recovery">Восстановление анкет FAST 101</option>
+              <option value="recovery">Старый статус FAST 101 — 29 сентября</option>
               <option value="readme">О резервной копии</option>
             </select>
           </div>
@@ -149,195 +164,157 @@
       </section>
       <noscript><p class="notice">Для просмотра карточек включи JavaScript в браузере. Отчёт можно <a href="Kino_inventory_2026-09-29.md">скачать здесь</a>.</p></noscript>
     </main>
-    <footer><span>Наше кино · сохранённые данные на 29 сентября 2026</span><a href="https://github.com/RojerStorm/model-r/tree/main/backup/cinema" target="_blank" rel="noopener noreferrer">Исходные файлы ↗</a></footer>
+    <footer><span>Наше кино · объединённый каталог на 30 сентября 2026</span><a href="https://github.com/RojerStorm/model-r/tree/main/backup/cinema" target="_blank" rel="noopener noreferrer">Исходные файлы ↗</a></footer>
   </div>
   <script>
     'use strict';
     const $ = id => document.getElementById(id);
     const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    const normalize = value => String(value ?? '').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[’‘]/g,"'").trim();
-    const people = [['R','Роджер'],['J','Юля'],['K','Катерина'],['M','Маруся']];
-    const docs = {inventory:'Kino_inventory_2026-09-29.md',recovery:'FAST101-recovery-status-2026-09-29.md',readme:'README.md'};
-    const textCache = new Map();
-    const dataCache = new Map();
-    let listRequest = 0, docRequest = 0;
+    const normalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[’‘]/g,"'").trim();
+    const people = {R:'Роджер',J:'Юля',K:'Катерина',M:'Маруся'};
+    const docs = {
+      recovery30:'recovery-2026-09-30/README.md',
+      conflicts:'catalog-discrepancies-2026-09-30.md',
+      inventory:'Kino_inventory_2026-09-29.md',
+      recovery:'FAST101-recovery-status-2026-09-29.md',
+      readme:'README.md'
+    };
+    const textCache=new Map(); let catalog=null, listRequest=0, docRequest=0;
 
-    async function readText(file) {
-      if (textCache.has(file)) return textCache.get(file);
-      const response = await fetch(file,{cache:'no-cache'});
-      if (!response.ok) throw new Error('Не удалось загрузить файл');
-      const text = await response.text();
-      if (/^\s*<!doctype html/i.test(text)) throw new Error('Вместо данных получена страница');
-      textCache.set(file,text);
-      return text;
+    async function readText(file){
+      if(textCache.has(file))return textCache.get(file);
+      const r=await fetch(file,{cache:'no-cache'});
+      if(!r.ok)throw new Error('Не удалось загрузить '+file);
+      const text=await r.text();
+      if(/^\s*<!doctype html/i.test(text))throw new Error('Вместо данных получена страница');
+      textCache.set(file,text); return text;
     }
-
-    // The source snapshot is CSV inside named sheet sections. Quoted commas and newlines are preserved.
-    function parseDelimited(text, separator=',') {
-      const rows=[];let row=[],field='',quoted=false;
-      for(let i=0;i<text.length;i++) {
-        const c=text[i];
-        if(c==='"' && (quoted || field==='')) {
-          if(quoted && text[i+1]==='"'){field+='"';i++;}else quoted=!quoted;
-        } else if(c===separator && !quoted){row.push(field);field='';}
-        else if((c==='\n'||c==='\r')&&!quoted){
-          if(c==='\r'&&text[i+1]==='\n')i++;
-          row.push(field);if(row.some(x=>x!==''))rows.push(row);row=[];field='';
-        } else field+=c;
-      }
-      if(field!==''||row.length){row.push(field);rows.push(row);}
-      return rows;
+    async function loadCatalog(){
+      if(catalog)return catalog;
+      const r=await fetch('catalog-2026-09-30.json',{cache:'no-cache'});
+      if(!r.ok)throw new Error('Каталог не загрузился');
+      catalog=await r.json(); return catalog;
     }
-
-    function sheet(text,name) {
-      const marker='TAB NAME: '+name+'>';
-      const start=text.indexOf(marker);
-      if(start<0)throw new Error('Вкладка не найдена');
-      const body=text.slice(start+marker.length).split('<PARSED TEXT FOR SHEET:')[0].trim();
-      const [headers,...rows]=parseDelimited(body);
-      if(!headers || !headers.includes('Title'))throw new Error('Неизвестный формат данных');
-      return rows.map(row=>Object.fromEntries(headers.map((key,i)=>[key,row[i]??''])));
+    function ratingText(v,profile){
+      if(v===null||v===undefined||v==='')return 'без оценки';
+      const s=String(v);
+      if(s==='0')return profile==='R'?'не смотрел':'не смотрела';
+      if(s==='?')return 'оценку не помнит';
+      return s+'/5';
     }
-
-    async function collection(kind) {
-      if(dataCache.has(kind))return dataCache.get(kind);
-      let rows;
-      if(kind==='legacy') {
-        const [, ...raw]=parseDelimited(await readText('legacy-rj-76.tsv'),'\t');
-        rows=raw.map(row=>{
-          const match=row[1].match(/^(.*?)\s+\((.*)\)(.*)$/);
-          return {Title:match?match[1]:row[1], 'RU title':match?match[2]+match[3]:row[1],R:row[3],J:row[5]};
+    function heatText(o){
+      if(o.reaction_raw)return o.reaction_raw;
+      if(o.heat===null||o.heat===undefined)return '';
+      if(Number(o.heat)===0)return 'без огонька';
+      return '🔥'.repeat(Number(o.heat));
+    }
+    function sourceLabel(o){
+      return {master:'master',legacy:'legacy',fast101_recovery:'FAST 101',master_watchlist:'M watchlist'}[o.source_layer]||o.source_layer;
+    }
+    function statusText(s){
+      return {watched:'просмотрено',not_watched:'не смотрел(а)',watched_forgot:'оценка не помнится',partial:'не досмотрено',unanswered:'без ответа',recommended:'рекомендовано',candidate:'кандидат',season_pending:'ждём сезон',watched_unclear:'статус уточняется'}[s]||s||'';
+    }
+    function profileSummary(title,profile){
+      const s=title.summary?.[profile]; if(!s)return '';
+      const values=s.values||[];
+      const text=values.length?values.map(v=>ratingText(v,profile)).join(' / '):'есть запись';
+      return '<span class="profile-score'+(s.conflict?' conflict':'')+'"><span>'+profile+'</span><strong>'+escapeHTML(text)+'</strong>'+(s.conflict?'<span class="conflict-note">⚠</span>':'')+'</span>';
+    }
+    function sourceRow(o){
+      const unconfirmed=o.verification==='unconfirmed_no_verbatim';
+      return '<div class="source-row"><div class="source-head"><strong>'+escapeHTML(o.profile+' · '+ratingText(o.rating,o.profile))+'</strong>'+
+        (heatText(o)?'<span>'+escapeHTML(heatText(o))+'</span>':'')+
+        '<span class="pill '+(unconfirmed?'warn':'ok')+'">'+escapeHTML(sourceLabel(o))+'</span>'+
+        (unconfirmed?'<span class="pill warn">не подтверждено</span>':'<span class="pill ok">снимок сохранён</span>')+
+        '</div><div class="source-meta">'+
+        [statusText(o.status),o.source_locator,o.source_time,o.evidence_ids?('evidence: '+o.evidence_ids):'',o.source_note,o.notes].filter(Boolean).map(escapeHTML).join(' · ')+
+        '</div></div>';
+    }
+    function card(t,data){
+      const obs=data.observations.filter(o=>o.title_id===t.id);
+      const title=t.ru_title||t.title, original=t.title&&t.title!==title?t.title:'';
+      const meta=[t.type,t.year].filter(Boolean);
+      const scores=['R','J','K','M'].map(p=>profileSummary(t,p)).filter(Boolean).join('');
+      const anyConflict=Object.values(t.conflicts||{}).some(Boolean);
+      return '<article class="card"><div class="meta">'+meta.map(x=>'<span>'+escapeHTML(x)+'</span>').join('')+'</div>'+
+        '<h2>'+escapeHTML(title)+'</h2><p class="original">'+escapeHTML(original)+'</p>'+
+        (anyConflict?'<span class="status" style="color:var(--orange-text)">⚠ Есть расхождение источников</span>':'')+
+        '<div class="ratings">'+(scores||'<span class="no-data">Оценок пока нет</span>')+'</div>'+
+        '<details><summary>Источники и история <span class="sources-count">('+obs.length+')</span></summary><div class="source-list">'+obs.map(sourceRow).join('')+'</div></details></article>';
+    }
+    async function showCards(){
+      const request=++listRequest; $('cards').setAttribute('aria-busy','true');
+      try{
+        const data=await loadCatalog(); if(request!==listRequest)return;
+        const q=normalize($('search').value), profile=$('profile').value, view=$('view').value;
+        const obsByTitle=new Map();
+        for(const o of data.observations){
+          if(!obsByTitle.has(o.title_id))obsByTitle.set(o.title_id,[]);
+          obsByTitle.get(o.title_id).push(o);
+        }
+        const filtered=data.titles.filter(t=>{
+          const obs=obsByTitle.get(t.id)||[];
+          if(q&&!normalize([t.title,t.ru_title,...(t.aliases||[])].join(' ')).includes(q))return false;
+          if(profile!=='all'&&!obs.some(o=>o.profile===profile))return false;
+          if(view==='conflicts'&&!Object.values(t.conflicts||{}).some(Boolean))return false;
+          if(view==='fast'&&!obs.some(o=>o.source_layer==='fast101_recovery'))return false;
+          if(view==='unconfirmed'&&!obs.some(o=>o.verification==='unconfirmed_no_verbatim'))return false;
+          if(view==='watchlist'&&!obs.some(o=>o.source_layer==='master_watchlist'))return false;
+          return true;
         });
-      } else {
-        const text=await readText('model-rjkm-master-2026-09-29.txt');
-        rows=sheet(text,kind==='marusya'?'M_watchlist':'Ratings');
-        if(kind==='marusya')rows=rows.map(row=>({...row,M:row['M rating'],onlyM:true}));
-      }
-      dataCache.set(kind,rows);
-      return rows;
-    }
-
-    function rating(code,name,value,reaction) {
-      const v=String(value??'').trim();
-      if(!v)return '';
-      let detail;
-      if(v==='0')detail='<span class="meaning">'+(code==='R'?'не смотрел':'не смотрела')+'</span>';
-      else if(v==='?')detail='<span class="meaning">оценку не помнит</span>';
-      else detail='<strong>'+escapeHTML(v)+'/5</strong>';
-      const heat=String(reaction??'').match(/🔥|🧊/gu)?.join('')??'';
-      const heatLabel=heat.includes('🧊')?'Холодное впечатление':('Сила впечатления: '+Array.from(heat).length+' из 3');
-      return '<span class="rating'+(v==='5'?' high':'')+'"><span class="name">'+name+'</span>'+detail+(heat?'<span class="reaction" role="img" aria-label="'+heatLabel+'">'+heat+'</span>':'')+'</span>';
-    }
-
-    function card(row) {
-      const title=row['RU title']||row.Title;
-      const year=row.Year?String(row.Year).replace(/\.0$/,''):'';
-      const type={film:'Фильм',series:'Сериал',animation:'Мультфильм','film franchise':'Серия фильмов'}[row.Type]||'';
-      const scores=(row.onlyM?[people[3]]:people).map(([code,name])=>rating(code,name,row[code],row['Reaction '+code])).join('');
-      const status={recommended:'В планах',candidate:'На примете',watched:'Уже смотрела',not_watched:'Ещё не смотрела',season_pending:'Ждём новый сезон',watched_unclear:'Просмотр уточняется'}[row['Status for M']]||'';
-      let note=row.Notes||'';
-      // Internal English recovery notes are provenance, not film impressions.
-      if(!/[а-яА-ЯёЁ]/.test(note))note='';
-      note=note.replace(/watchlist/gi,'список просмотра');
-      return '<article class="card"><div class="meta">'+[type,year].filter(Boolean).map(x=>'<span>'+escapeHTML(x)+'</span>').join('')+'</div><h2>'+escapeHTML(title)+'</h2><p class="original">'+(row.Title!==title?escapeHTML(row.Title):'')+'</p>'+(status?'<span class="status">'+status+'</span>':'')+'<div class="ratings">'+(scores||'<span class="no-data">Оценка пока не указана</span>')+'</div>'+(note?'<details><summary>Наши впечатления</summary><p>'+escapeHTML(note)+'</p></details>':'')+'</article>';
-    }
-
-    async function showCards() {
-      const request=++listRequest;
-      $('cards').setAttribute('aria-busy','true');
-      try {
-        const kind=$('collection').value;
-        const rows=await collection(kind);
+        $('count').textContent='Показано: '+filtered.length+' из '+data.titles.length+' тайтлов · '+data.stats.observations+' записей-источников';
+        $('legend').textContent='Значения не перезаписываются: при расхождении показаны все источники.';
+        $('cards').innerHTML=filtered.length?filtered.map(t=>card(t,data)).join(''):'<div class="state"><h2>Ничего не найдено</h2><p>Измени поиск или фильтр.</p><button type="button" id="clear-search">Сбросить фильтры</button></div>';
+        $('clear-search')?.addEventListener('click',()=>{$('search').value='';$('profile').value='all';$('view').value='all';showCards();});
+      }catch(e){
         if(request!==listRequest)return;
-        const q=normalize($('search').value);
-        const filtered=rows.filter(row=>normalize(row.Title+' '+row['RU title']).includes(q));
-        $('count').textContent=q?'Найдено: '+filtered.length+' из '+rows.length:'Всего в списке: '+rows.length;
-        $('legend').textContent=kind==='legacy'?'Ранние оценки хранятся отдельно и могут отличаться от более поздних.':'Оценки — от 1 до 5. Огоньки — сила впечатления.';
-        $('cards').innerHTML=filtered.length?filtered.map(card).join(''):'<div class="state"><h2>Такого названия пока нет</h2><p>Попробуй другое слово или выбери другой список.</p><button type="button" id="clear-search">Очистить поиск</button></div>';
-        $('clear-search')?.addEventListener('click',()=>{$('search').value='';showCards();$('search').focus();});
-      } catch(error) {
-        if(request!==listRequest)return;
-        $('count').textContent='Коллекция не загрузилась';
-        $('cards').innerHTML='<div class="state" role="alert"><h2>Не получилось открыть коллекцию</h2><p>Проверь соединение и попробуй ещё раз.</p><button type="button" id="retry-list">Попробовать снова</button></div>';
+        $('count').textContent='Каталог не загрузился';
+        $('cards').innerHTML='<div class="state" role="alert"><h2>Не получилось открыть каталог</h2><p>'+escapeHTML(e.message)+'</p><button type="button" id="retry-list">Попробовать снова</button></div>';
         $('retry-list').addEventListener('click',showCards);
-      } finally {if(request===listRequest)$('cards').setAttribute('aria-busy','false');}
+      }finally{if(request===listRequest)$('cards').setAttribute('aria-busy','false');}
     }
-
-    function safeURL(url) {
-      const trimmed=url.trim();
-      if(/^(?:https?:\/\/|#)/i.test(trimmed))return trimmed;
-      if(!/^[a-z][a-z\d+.-]*:/i.test(trimmed)&&!trimmed.startsWith('//'))return trimmed;
-      return '#';
-    }
-
-    // Small, escaped Markdown reader for the text files in this folder. No remote scripts or HTML execution.
-    function inline(text) {
-      const tokens=[];
-      let source=text.replace(/`([^`]+)`|\[([^\]]+)\]\(([^\s)]+)\)/g,(match,code,label,url)=>{
-        const html=code!==undefined?'<code>'+escapeHTML(code)+'</code>':'<a href="'+escapeHTML(safeURL(url))+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(label)+'</a>';
-        tokens.push(html);return '\u0000'+(tokens.length-1)+'\u0000';
+    function safeURL(url){const t=url.trim();if(/^(?:https?:\/\/|#)/i.test(t))return t;if(!/^[a-z][a-z\d+.-]*:/i.test(t)&&!t.startsWith('//'))return t;return '#';}
+    function inline(text){
+      const tokens=[];let source=text.replace(/`([^`]+)`|\[([^\]]+)\]\(([^\s)]+)\)/g,(m,code,label,url)=>{
+        const h=code!==undefined?'<code>'+escapeHTML(code)+'</code>':'<a href="'+escapeHTML(safeURL(url))+'" target="_blank" rel="noopener noreferrer">'+escapeHTML(label)+'</a>';
+        tokens.push(h);return '\u0000'+(tokens.length-1)+'\u0000';
       });
       source=escapeHTML(source).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>');
       return source.replace(/\u0000(\d+)\u0000/g,(_,i)=>tokens[Number(i)]);
     }
-
-    function markdown(text) {
-      const lines=text.replace(/\r\n?/g,'\n').split('\n');
-      const html=[];let i=0;
+    function markdown(text){
+      const lines=text.replace(/\r\n?/g,'\n').split('\n'),html=[];let i=0;
       const tableRow=line=>line.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(x=>x.trim());
       const startsBlock=line=>/^(#{1,6}\s|[-*]\s|\d+\.\s|```|>\s|---+$)/.test(line);
-      while(i<lines.length) {
-        const line=lines[i].trim();
-        if(!line){i++;continue;}
-        if(line.startsWith('```')){const body=[];i++;while(i<lines.length&&!lines[i].trim().startsWith('```'))body.push(lines[i++]);i++;html.push('<pre><code>'+escapeHTML(body.join('\n'))+'</code></pre>');continue;}
-        const heading=line.match(/^(#{1,6})\s+(.+)$/);
-        if(heading){const level=heading[1].length;html.push('<h'+level+'>'+inline(heading[2])+'</h'+level+'>');i++;continue;}
+      while(i<lines.length){
+        const line=lines[i].trim(); if(!line){i++;continue;}
+        if(line.startsWith('```')){const b=[];i++;while(i<lines.length&&!lines[i].trim().startsWith('```'))b.push(lines[i++]);i++;html.push('<pre><code>'+escapeHTML(b.join('\n'))+'</code></pre>');continue;}
+        const h=line.match(/^(#{1,6})\s+(.+)$/);if(h){html.push('<h'+h[1].length+'>'+inline(h[2])+'</h'+h[1].length+'>');i++;continue;}
         if(/^---+$/.test(line)){html.push('<hr>');i++;continue;}
         if(line.includes('|')&&i+1<lines.length&&/^\|?\s*:?-+:?\s*\|/.test(lines[i+1].trim())){
-          const head=tableRow(line);i+=2;const body=[];
-          while(i<lines.length&&lines[i].trim().includes('|'))body.push(tableRow(lines[i++]));
-          html.push('<div class="table-scroll"><table><thead><tr>'+head.map(x=>'<th scope="col">'+inline(x)+'</th>').join('')+'</tr></thead><tbody>'+body.map(row=>'<tr>'+row.map(x=>'<td>'+inline(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>');continue;
+          const head=tableRow(line);i+=2;const body=[];while(i<lines.length&&lines[i].trim().includes('|'))body.push(tableRow(lines[i++]));
+          html.push('<div class="table-scroll"><table><thead><tr>'+head.map(x=>'<th scope="col">'+inline(x)+'</th>').join('')+'</tr></thead><tbody>'+body.map(r=>'<tr>'+r.map(x=>'<td>'+inline(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>');continue;
         }
-        if(/^[-*]\s|^\d+\.\s/.test(line)){
-          const ordered=/^\d+\./.test(line),tag=ordered?'ol':'ul',pattern=ordered?/^\d+\.\s+/:/^[-*]\s+/;const items=[];
-          while(i<lines.length&&pattern.test(lines[i].trim()))items.push('<li>'+inline(lines[i++].trim().replace(pattern,''))+'</li>');
-          html.push('<'+tag+'>'+items.join('')+'</'+tag+'>');continue;
-        }
+        if(/^[-*]\s|^\d+\.\s/.test(line)){const ord=/^\d+\./.test(line),tag=ord?'ol':'ul',pat=ord?/^\d+\.\s+/:/^[-*]\s+/;const its=[];while(i<lines.length&&pat.test(lines[i].trim()))its.push('<li>'+inline(lines[i++].trim().replace(pat,''))+'</li>');html.push('<'+tag+'>'+its.join('')+'</'+tag+'>');continue;}
         if(line.startsWith('> ')){html.push('<blockquote>'+inline(line.slice(2))+'</blockquote>');i++;continue;}
-        const paragraph=[line];i++;
-        while(i<lines.length&&lines[i].trim()&&!startsBlock(lines[i].trim())&&!(lines[i].includes('|')&&lines[i+1]?.includes('---')))paragraph.push(lines[i++].trim());
-        html.push('<p>'+inline(paragraph.join(' '))+'</p>');
-      }
-      return html.join('\n');
+        const p=[line];i++;while(i<lines.length&&lines[i].trim()&&!startsBlock(lines[i].trim())&&!(lines[i].includes('|')&&lines[i+1]?.includes('---')))p.push(lines[i++].trim());
+        html.push('<p>'+inline(p.join(' '))+'</p>');
+      }return html.join('\n');
     }
-
-    async function showDocument() {
-      const request=++docRequest;
-      const file=docs[$('document').value];
-      $('download').href=file;
-      $('document-body').setAttribute('aria-busy','true');
-      $('document-body').innerHTML='<p role="status">Открываем заметку…</p>';
-      try {
-        const text=await readText(file);
-        if(request!==docRequest)return;
-        $('document-body').innerHTML=markdown(text);
-      } catch(error) {
-        if(request!==docRequest)return;
-        $('document-body').innerHTML='<div class="state" role="alert"><h2>Не получилось открыть заметку</h2><p>Попробуй загрузить её ещё раз.</p><button type="button" id="retry-doc">Попробовать снова</button></div>';
-        $('retry-doc').addEventListener('click',showDocument);
-      } finally {if(request===docRequest)$('document-body').setAttribute('aria-busy','false');}
+    async function showDocument(){
+      const request=++docRequest,file=docs[$('document').value];$('download').href=file;$('document-body').setAttribute('aria-busy','true');$('document-body').innerHTML='<p role="status">Открываем заметку…</p>';
+      try{const text=await readText(file);if(request!==docRequest)return;$('document-body').innerHTML=markdown(text);}
+      catch(e){if(request!==docRequest)return;$('document-body').innerHTML='<div class="state" role="alert"><h2>Не получилось открыть заметку</h2><p>Попробуй ещё раз.</p></div>';}
+      finally{if(request===docRequest)$('document-body').setAttribute('aria-busy','false');}
     }
-
-    function navigate() {
-      const notes=location.hash==='#notes';
-      $('films').hidden=notes;$('notes').hidden=!notes;
-      for(const [id,active] of [['films-link',!notes],['notes-link',notes]]){
-        if(active)$(id).setAttribute('aria-current','page');else $(id).removeAttribute('aria-current');
-      }
+    function navigate(){
+      const notes=location.hash==='#notes';$('films').hidden=notes;$('notes').hidden=!notes;
+      for(const [id,active] of [['films-link',!notes],['notes-link',notes]]){if(active)$(id).setAttribute('aria-current','page');else $(id).removeAttribute('aria-current');}
       if(notes)showDocument();else showCards();
     }
     $('search').addEventListener('input',showCards);
-    $('collection').addEventListener('change',()=>{$('search').value='';showCards();});
+    $('profile').addEventListener('change',showCards);
+    $('view').addEventListener('change',showCards);
     $('document').addEventListener('change',showDocument);
     window.addEventListener('hashchange',navigate);
     navigate();
