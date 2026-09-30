@@ -39,6 +39,12 @@
       "path": "backup/cinema/model-rjkm-master-2026-09-29.txt",
       "sha": "553616b38412448333243b8fc07c1b9f3c1c8c13",
       "verification": "preserved_snapshot"
+    },
+    {
+      "layer": "user_explicit",
+      "path": null,
+      "verification": "current_user_explicit",
+      "description": "Explicit ratings/statuses supplied by the user in chat after recovery review."
     }
   ],
   "fast101_counts": {
@@ -93,42 +99,70 @@
       "subject": "R — The Prestige / Престиж",
       "historical": "master: 5",
       "retrieved": "FAST recovery: ?",
-      "status": "архивный конфликт",
-      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя."
+      "status": "разрешено пользователем",
+      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя.",
+      "resolution": "R=5/5 confirmed by user on 2026-09-30.",
+      "resolved_at": "2026-09-30T16:40:00+03:00"
     },
     {
       "id": "R_SOURCE_CODE",
       "subject": "R — Source Code / Исходный код",
       "historical": "master: 5",
       "retrieved": "FAST recovery: 0",
-      "status": "архивный конфликт",
-      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя."
+      "status": "разрешено пользователем",
+      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя.",
+      "resolution": "R confirmed not watched on 2026-09-30.",
+      "resolved_at": "2026-09-30T16:40:00+03:00"
     },
     {
       "id": "R_PRISONERS",
       "subject": "R — Prisoners / Пленницы",
       "historical": "master: 0",
       "retrieved": "FAST recovery: ?",
-      "status": "архивный конфликт",
-      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя."
+      "status": "разрешено пользователем",
+      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя.",
+      "resolution": "R confirmed not watched on 2026-09-30.",
+      "resolved_at": "2026-09-30T16:40:00+03:00"
     },
     {
       "id": "K_DROP",
       "subject": "K — Drop / Дроп",
       "historical": "master: 4",
       "retrieved": "FAST recovery: 0",
-      "status": "архивный конфликт",
-      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя."
+      "status": "разрешено пользователем",
+      "reason": "Обе записи сохранены; победитель не выбирается без новой явной оценки пользователя.",
+      "resolution": "K=4/5 confirmed by user on 2026-09-30.",
+      "resolved_at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "id": "R_CABARET",
+      "subject": "R — Cabaret / Кабаре",
+      "historical": "master/FAST: 5; legacy: 4",
+      "retrieved": "current user: 4",
+      "status": "разрешено пользователем",
+      "resolution": "R=4/5 confirmed by user on 2026-09-30.",
+      "resolved_at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "id": "R_CHERBOURG",
+      "subject": "R — Les Parapluies de Cherbourg / Шербурские зонтики",
+      "historical": "FAST: ?; legacy: 5",
+      "retrieved": "current user: 5",
+      "status": "разрешено пользователем",
+      "resolution": "R=5/5 confirmed by user on 2026-09-30.",
+      "resolved_at": "2026-09-30T16:40:00+03:00"
     }
   ],
   "stats": {
     "titles": 409,
-    "observations": 742,
-    "detected_conflicts": 6,
+    "observations": 748,
+    "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
     "legacy_rows": 75,
-    "fast101_rows": 404
+    "fast101_rows": 404,
+    "archive_title_conflicts": 6,
+    "active_title_conflicts": 0
   },
   "titles": [
     {
@@ -3318,11 +3352,10 @@
         "o_0103",
         "o_0104",
         "o_0193",
-        "o_0397"
+        "o_0397",
+        "o_0744"
       ],
-      "conflicts": {
-        "K": true
-      },
+      "conflicts": {},
       "summary": {
         "R": {
           "values": [
@@ -3345,9 +3378,13 @@
             "4",
             "0"
           ],
-          "conflict": true,
-          "observation_count": 2,
-          "recovered_secondary": true
+          "conflict": false,
+          "observation_count": 3,
+          "recovered_secondary": true,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": true
         }
       }
     },
@@ -4336,20 +4373,23 @@
       "observations": [
         "o_0053",
         "o_0054",
-        "o_0203"
+        "o_0203",
+        "o_0746"
       ],
-      "conflicts": {
-        "R": true
-      },
+      "conflicts": {},
       "summary": {
         "R": {
           "values": [
             "5",
             "0"
           ],
-          "conflict": true,
-          "observation_count": 2,
-          "recovered_secondary": true
+          "conflict": false,
+          "observation_count": 3,
+          "recovered_secondary": true,
+          "current_value": "0",
+          "current_status": "not_watched",
+          "current_source": "user_explicit",
+          "archive_conflict": true
         },
         "J": {
           "values": [
@@ -4484,20 +4524,23 @@
         "o_0123",
         "o_0227",
         "o_0657",
-        "o_0658"
+        "o_0658",
+        "o_0745"
       ],
-      "conflicts": {
-        "R": true
-      },
+      "conflicts": {},
       "summary": {
         "R": {
           "values": [
             "5",
             "4"
           ],
-          "conflict": true,
-          "observation_count": 3,
-          "recovered_secondary": true
+          "conflict": false,
+          "observation_count": 4,
+          "recovered_secondary": true,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": true
         },
         "J": {
           "values": [
@@ -8780,20 +8823,23 @@
         "o_0066",
         "o_0239",
         "o_0312",
-        "o_0404"
+        "o_0404",
+        "o_0747"
       ],
-      "conflicts": {
-        "R": true
-      },
+      "conflicts": {},
       "summary": {
         "R": {
           "values": [
             "0",
             "?"
           ],
-          "conflict": true,
-          "observation_count": 2,
-          "recovered_secondary": true
+          "conflict": false,
+          "observation_count": 3,
+          "recovered_secondary": true,
+          "current_value": "0",
+          "current_status": "not_watched",
+          "current_source": "user_explicit",
+          "archive_conflict": true
         },
         "J": {
           "values": [
@@ -9292,20 +9338,23 @@
       "observations": [
         "o_0045",
         "o_0046",
-        "o_0200"
+        "o_0200",
+        "o_0748"
       ],
-      "conflicts": {
-        "R": true
-      },
+      "conflicts": {},
       "summary": {
         "R": {
           "values": [
             "5",
             "?"
           ],
-          "conflict": true,
-          "observation_count": 2,
-          "recovered_secondary": true
+          "conflict": false,
+          "observation_count": 3,
+          "recovered_secondary": true,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": true
         },
         "J": {
           "values": [
@@ -13225,20 +13274,23 @@
       "observations": [
         "o_0226",
         "o_0653",
-        "o_0654"
+        "o_0654",
+        "o_0743"
       ],
-      "conflicts": {
-        "R": true
-      },
+      "conflicts": {},
       "summary": {
         "R": {
           "values": [
             "?",
             "5"
           ],
-          "conflict": true,
-          "observation_count": 2,
-          "recovered_secondary": true
+          "conflict": false,
+          "observation_count": 3,
+          "recovered_secondary": true,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": true
         },
         "J": {
           "values": [
@@ -27471,6 +27523,114 @@
       "recovery_state": "snapshot",
       "verification": "preserved_snapshot",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0743",
+      "title_id": "t_d95bd29b",
+      "profile": "R",
+      "rating": "5",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": null,
+      "source_locator": "Chat clarification · 2026-09-30",
+      "source_time": "2026-09-30T16:40:00+03:00",
+      "source_note": "Explicit current rating/status supplied by user after recovery review.",
+      "notes": "Resolves previous archive conflict; historical observations retained.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0744",
+      "title_id": "t_b2d8daff",
+      "profile": "K",
+      "rating": "4",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": null,
+      "source_locator": "Chat clarification · 2026-09-30",
+      "source_time": "2026-09-30T16:40:00+03:00",
+      "source_note": "Explicit current rating/status supplied by user after recovery review.",
+      "notes": "Resolves previous archive conflict; historical observations retained.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0745",
+      "title_id": "t_3a259202",
+      "profile": "R",
+      "rating": "4",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": null,
+      "source_locator": "Chat clarification · 2026-09-30",
+      "source_time": "2026-09-30T16:40:00+03:00",
+      "source_note": "Explicit current rating/status supplied by user after recovery review.",
+      "notes": "Resolves previous archive conflict; historical observations retained.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0746",
+      "title_id": "t_e74eecbb",
+      "profile": "R",
+      "rating": "0",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "not_watched",
+      "source_layer": "user_explicit",
+      "source_file": null,
+      "source_locator": "Chat clarification · 2026-09-30",
+      "source_time": "2026-09-30T16:40:00+03:00",
+      "source_note": "Explicit current rating/status supplied by user after recovery review.",
+      "notes": "Resolves previous archive conflict; historical observations retained.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0747",
+      "title_id": "t_ea2202ac",
+      "profile": "R",
+      "rating": "0",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "not_watched",
+      "source_layer": "user_explicit",
+      "source_file": null,
+      "source_locator": "Chat clarification · 2026-09-30",
+      "source_time": "2026-09-30T16:40:00+03:00",
+      "source_note": "Explicit current rating/status supplied by user after recovery review.",
+      "notes": "Resolves previous archive conflict; historical observations retained.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0748",
+      "title_id": "t_366ae457",
+      "profile": "R",
+      "rating": "5",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": null,
+      "source_locator": "Chat clarification · 2026-09-30",
+      "source_time": "2026-09-30T16:40:00+03:00",
+      "source_note": "Explicit current rating/status supplied by user after recovery review.",
+      "notes": "Resolves previous archive conflict; historical observations retained.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -27479,5 +27639,56 @@
   "sources_not_used_by_final_decision": [
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
+  ],
+  "updated_at": "2026-09-30T16:40:00+03:00",
+  "last_explicit_corrections": [
+    {
+      "profile": "R",
+      "title": "Les Parapluies de Cherbourg",
+      "ru_title": "Шербурские зонтики",
+      "rating": "5",
+      "status": "watched",
+      "at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "profile": "K",
+      "title": "Drop",
+      "ru_title": "Дроп",
+      "rating": "4",
+      "status": "watched",
+      "at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "profile": "R",
+      "title": "Cabaret",
+      "ru_title": "Кабаре",
+      "rating": "4",
+      "status": "watched",
+      "at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "profile": "R",
+      "title": "Source Code",
+      "ru_title": "Исходный код",
+      "rating": "0",
+      "status": "not_watched",
+      "at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "profile": "R",
+      "title": "Prisoners",
+      "ru_title": "Пленницы",
+      "rating": "0",
+      "status": "not_watched",
+      "at": "2026-09-30T16:40:00+03:00"
+    },
+    {
+      "profile": "R",
+      "title": "The Prestige",
+      "ru_title": "Престиж",
+      "rating": "5",
+      "status": "watched",
+      "at": "2026-09-30T16:40:00+03:00"
+    }
   ]
 }
