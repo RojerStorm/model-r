@@ -162,7 +162,9 @@
     "legacy_rows": 75,
     "fast101_rows": 404,
     "archive_title_conflicts": 6,
-    "active_title_conflicts": 0
+    "active_title_conflicts": 0,
+    "recommendation_records": 15,
+    "recommendation_titles": 12
   },
   "titles": [
     {
@@ -13761,6 +13763,142 @@
           "recovered_secondary": true
         }
       }
+    },
+    {
+      "id": "t_06faac91",
+      "title": "RRR",
+      "ru_title": "RRR: Рядом ревёт революция",
+      "year": 2022,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "RRR",
+        "RRR: Рядом ревёт революция"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_069df945",
+      "title": "Tetris",
+      "ru_title": "Тетрис",
+      "year": 2023,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "Tetris",
+        "Тетрис"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_a80c1bc4",
+      "title": "KPop Demon Hunters",
+      "ru_title": "Кей-поп-охотницы на демонов",
+      "year": 2025,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "KPop Demon Hunters",
+        "Кей-поп-охотницы на демонов"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_ec807acf",
+      "title": "The Devil's Hour",
+      "ru_title": "Час дьявола",
+      "year": 2022,
+      "type": "series",
+      "types": [
+        "series"
+      ],
+      "aliases": [
+        "The Devil's Hour",
+        "Час дьявола"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_87a29eda",
+      "title": "Widow's Bay",
+      "ru_title": "Бухта вдов",
+      "year": 2026,
+      "type": "series",
+      "types": [
+        "series"
+      ],
+      "aliases": [
+        "Widow's Bay",
+        "Бухта вдов"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_681db60e",
+      "title": "Murderbot",
+      "ru_title": "Дневники киллербота",
+      "year": 2025,
+      "type": "series",
+      "types": [
+        "series"
+      ],
+      "aliases": [
+        "Murderbot",
+        "Дневники киллербота"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_96b88522",
+      "title": "Star City",
+      "ru_title": "Звездный городок",
+      "year": 2026,
+      "type": "series",
+      "types": [
+        "series"
+      ],
+      "aliases": [
+        "Star City",
+        "Звездный городок"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
+    },
+    {
+      "id": "t_0f6101b3",
+      "title": "Paradise",
+      "ru_title": "Рай",
+      "year": 2025,
+      "type": "series",
+      "types": [
+        "series"
+      ],
+      "aliases": [
+        "Paradise",
+        "Рай"
+      ],
+      "observations": [],
+      "conflicts": {},
+      "summary": {}
     }
   ],
   "observations": [
@@ -27640,7 +27778,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-09-30T16:40:00+03:00",
+  "updated_at": "2026-09-30T16:45:00+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -27689,6 +27827,233 @@
       "rating": "5",
       "status": "watched",
       "at": "2026-09-30T16:40:00+03:00"
+    }
+  ],
+  "recommendation_history": [
+    {
+      "recommendation_id": "rec_001",
+      "snapshot": "v0.93",
+      "title_id": "t_53f040be",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "музыка + сильные актёры + эмоция + жанровая смелость + payoff (развязка)",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_002",
+      "snapshot": "v0.93",
+      "title_id": "t_06faac91",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": "5",
+      "confidence": null,
+      "reason": "музыка, дружба, безумный экшен, юмор, огромное сердце",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_003",
+      "snapshot": "v0.93",
+      "title_id": "t_4362d318",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": "4",
+      "confidence": null,
+      "reason": "мощная главная героиня + манипуляция ожиданиями + стиль + винтажный аудиоряд",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_004",
+      "snapshot": "v0.93",
+      "title_id": "t_069df945",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "Cold War thriller (триллер холодной войны) + игры + 80-е + очень специальный саундтрек",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_005",
+      "snapshot": "v0.93",
+      "title_id": "t_a80c1bc4",
+      "profile_scope": "R+J",
+      "predicted_R": "4–5",
+      "predicted_heat": "🔥🔥–🔥🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "wildcard (тёмная лошадка): музыка + сильные героини + юмор + фэнтези-экшен + эмоция",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_006",
+      "snapshot": "v0.93",
+      "title_id": "t_ec807acf",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "сейчас мой главный новый сериал-тест",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_007",
+      "snapshot": "v0.93",
+      "title_id": "t_87a29eda",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥–🔥🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "всё ещё чрезвычайно сильное попадание",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_008",
+      "snapshot": "v0.93",
+      "title_id": "t_681db60e",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "sci-fi (фантастика) + чёрный юмор + характер + сердце",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_009",
+      "snapshot": "v0.93",
+      "title_id": "t_96b88522",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥",
+      "predicted_J": "3–4",
+      "confidence": null,
+      "reason": "сильнейший R-кандидат, но возможен знакомый R/J split (разрыв R/J)",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_010",
+      "snapshot": "v0.93",
+      "title_id": "t_0f6101b3",
+      "profile_scope": "R+J",
+      "predicted_R": "4–5",
+      "predicted_heat": "🔥🔥",
+      "predicted_J": "4–5",
+      "confidence": null,
+      "reason": "mystery (тайна) + закрытая система + политика + эмоциональный слой",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_011",
+      "snapshot": "legacy-confidence",
+      "title_id": "t_53f040be",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": null,
+      "confidence": "88%",
+      "reason": "актёрская игра + эмоциональность + музыка + яркая авторская идентичность + сильная развязка",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_012",
+      "snapshot": "legacy-confidence",
+      "title_id": "t_f6d5b9af",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥–🔥🔥🔥",
+      "predicted_J": null,
+      "confidence": "87%",
+      "reason": "закрытая система + правила + сильная ГГ + чёрный юмор + постоянно растущее напряжение",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_013",
+      "snapshot": "legacy-confidence",
+      "title_id": "t_4362d318",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": null,
+      "confidence": "85%",
+      "reason": "мощная центральная роль + сюрпризы + стиль + переосмысление происходящего",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_014",
+      "snapshot": "legacy-confidence",
+      "title_id": "t_06faac91",
+      "profile_scope": "R+J",
+      "predicted_R": "5",
+      "predicted_heat": "🔥🔥🔥",
+      "predicted_J": null,
+      "confidence": "82%",
+      "reason": "дружба + эмоция + музыка + абсолютно безумный масштаб + жанровое удовольствие",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
+    },
+    {
+      "recommendation_id": "rec_015",
+      "snapshot": "legacy-confidence",
+      "title_id": "t_422e5099",
+      "profile_scope": "R+J",
+      "predicted_R": "4–5, скорее 5",
+      "predicted_heat": "🔥🔥",
+      "predicted_J": null,
+      "confidence": "77%",
+      "reason": "сильный ансамбль + экшен + юмор + музыка + нестандартная энергия",
+      "source_layer": "user_supplied_historical_recommendation",
+      "source_note": "Historical recommendation from an earlier model version, supplied by user on 2026-09-30.",
+      "actual_rating_effect": "none",
+      "status_effect": "none"
     }
   ]
 }
