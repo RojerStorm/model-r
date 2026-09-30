@@ -1,0 +1,101 @@
+{
+  "as_of": "2026-09-30",
+  "repository": "RojerStorm/model-r",
+  "commit": "934b1c52fe64da51054f3db2819e175befd36d11",
+  "tree": "76acd055f38fe352adaa2b81930dd9a160c87bbd",
+  "files": [
+    {
+      "path": "backup/cinema/FAST101-recovery-status-2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2f31b2b09b5ce0f8ffd8e4e6f62d38f988d58ea",
+      "size": 2003,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/e2f31b2b09b5ce0f8ffd8e4e6f62d38f988d58ea"
+    },
+    {
+      "path": "backup/cinema/Kino_inventory_2026-09-29.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1361aaebeb354df93df98b37d1551c01aa5dfa4e",
+      "size": 8345,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/1361aaebeb354df93df98b37d1551c01aa5dfa4e"
+    },
+    {
+      "path": "backup/cinema/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d88832c65e034de0c1893347d82abfa7930911c",
+      "size": 1040,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/5d88832c65e034de0c1893347d82abfa7930911c"
+    },
+    {
+      "path": "backup/cinema/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3403227dc2a33cea1c571ba8e5db7154624af402",
+      "size": 24254,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/3403227dc2a33cea1c571ba8e5db7154624af402"
+    },
+    {
+      "path": "backup/cinema/legacy-rj-76.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f768a3c98fc7cac01f7af615fb21ff30d6aee0d",
+      "size": 3689,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/0f768a3c98fc7cac01f7af615fb21ff30d6aee0d"
+    },
+    {
+      "path": "backup/cinema/model-rjkm-master-2026-09-29.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "553616b38412448333243b8fc07c1b9f3c1c8c13",
+      "size": 18324,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/553616b38412448333243b8fc07c1b9f3c1c8c13"
+    },
+    {
+      "path": "backup/cinema/source-forms/j_fast101_external_ratings.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc36c345585f8f34943525b9a0c764e015d19cda",
+      "size": 54674,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/cc36c345585f8f34943525b9a0c764e015d19cda"
+    },
+    {
+      "path": "backup/cinema/source-forms/k_101_shots_mgik_v4_verified.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31115bb5e922840d8ae5aad62c0200acf8b59792",
+      "size": 79125,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/31115bb5e922840d8ae5aad62c0200acf8b59792"
+    },
+    {
+      "path": "backup/cinema/source-forms/model_m_fast101_quiz.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bc626af8d958171d8cd6e7c00ff57c4e6f077a0",
+      "size": 26625,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/6bc626af8d958171d8cd6e7c00ff57c4e6f077a0"
+    },
+    {
+      "path": "backup/cinema/source-forms/model_r_101_films_v2_exact_wiki.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6191bf165d60dd6a497bf85f2c31a6ce4dcae70",
+      "size": 50186,
+      "url": "https://api.github.com/repos/RojerStorm/model-r/git/blobs/b6191bf165d60dd6a497bf85f2c31a6ce4dcae70"
+    }
+  ],
+  "row_counts": {
+    "Ratings": 94,
+    "M_watchlist": 30,
+    "legacy_rj": 75
+  },
+  "form_questions": {
+    "R": 101,
+    "J": 101,
+    "K": 101,
+    "M": 101
+  },
+  "complete_answer_dumps_in_directory": [],
+  "scope": "Existing snapshots inventoried without alteration. Earlier chat-retrieval fragments have not been committed."
+}

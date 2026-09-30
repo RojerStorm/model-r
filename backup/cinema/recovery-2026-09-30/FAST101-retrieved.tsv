@@ -1,0 +1,405 @@
+profile	question_number	title	ru_title	year	form_type	rating	heat	status	evidence_ids	reported_source_time	recovery_state	source_form	notes
+R	1	Companion	Компаньон	2025		5	3	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	2	Obsession	Обсессия	2025		5	3	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	3	Mayday	Мэйдэй	2026		5	3	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	4	The Wrecking Crew	Опасный дуэт	2026		5	0	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	5	Drop	Дроп	2025		4	0	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	6	Fight or Flight	Рейс навылет	2025		5	3	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	7	Death of a Unicorn	Смерть единорога	2025		1	0	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	8	The Dead Don't Die	Мёртвые не умирают	2019		1	0	watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	9	The Menu	Меню	2022		?		watched_forgot	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	10	10 Cloverfield Lane	Кловерфилд, 10	2016		0		not_watched	e11-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	11	Ex Machina	Из машины	2014		?		watched_forgot	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	12	The Prestige	Престиж	2006		?		watched_forgot	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	13	Inception	Начало	2010		5	3	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	14	Gone Girl	Исчезнувшая	2014		5	3	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	15	Source Code	Исходный код	2011		0		not_watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	16	Edge of Tomorrow	Грань будущего	2014		5	3	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	17	Oblivion	Обливион	2013		5	3	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	18	The Martian	Марсианин	2015		5	3	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	19	Gattaca	Гаттака	1997		5	3	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	20	Blade Runner 2049	Бегущий по лезвию 2049	2017		5	2	watched	e11-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	21	Equilibrium	Эквилибриум	2002		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	22	The Fifth Element	Пятый элемент	1997		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	23	The Terminator	Терминатор	1984		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	24	Terminator 2: Judgment Day	Терминатор 2: Судный день	1991		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	25	Back to the Future	Назад в будущее	1985		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	26	Back to the Future Part II	Назад в будущее 2	1989		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	27	Back to the Future Part III	Назад в будущее 3	1990		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	28	Point Break	На гребне волны	1991		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	29	John Wick	Джон Уик	2014		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	30	Snatch	Большой куш	2000		5	3	watched	e05-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	31	The Gentlemen	Джентльмены	2019		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	32	The Wolf of Wall Street	Волк с Уолл-стрит	2013		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	33	The Green Mile	Зелёная миля	1999		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	34	The Shawshank Redemption	Побег из Шоушенка	1994		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	35	Rain Man	Человек дождя	1988		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	36	Le Fabuleux Destin d'Amélie Poulain	Амели	2001		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	37	Ghost	Привидение	1990		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	38	Les Parapluies de Cherbourg	Шербурские зонтики	1964		?		watched_forgot	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск написал missing, но явно уточнил: смотрел, оценку не помню. Сохранено как ?.
+R	39	Cabaret	Кабаре	1972		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	40	Moulin Rouge!	Мулен Руж	2001		5	3	watched	e05-2	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	41	Mamma Mia!	Мамма MIA!	2008		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	42	Six-String Samurai	Шестиструнный самурай	1998		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	43	1408	1408	2007		5	1	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	44	The Fugitive	Беглец	1993		?		watched_forgot	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	45	L.A. Confidential	Секреты Лос-Анджелеса	1997		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	46	The Big Lebowski	Большой Лебовски	1998		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	47	Barton Fink	Бартон Финк	1991		?		watched_forgot	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	48	Se7en	Семь	1995		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	49	Memento	Помни	2000		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	50	The Game	Игра	1997		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	51	Prisoners	Пленницы	2013		?		watched_forgot	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	52	Zodiac	Зодиак	2007		?		watched_forgot	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	53	Shutter Island	Остров проклятых	2010		5	3	watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	54	The Girl with the Dragon Tattoo	Девушка с татуировкой дракона	2011		?		watched_forgot	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	55	Wind River	Ветреная река	2017		0		not_watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	56	Searching	Поиск	2018		0		not_watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	57	Missing	Пропавшая без вести	2023		0		not_watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	58	The Outfit	Костюм	2022		0		not_watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	59	The Accountant	Расплата	2016		?		watched_forgot	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	60	Bullet Train	Быстрее пули	2022		0		not_watched	e01-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	61	Nobody	Никто	2021		5	3	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	62	Baby Driver	Малыш на драйве	2017		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	63	The Nice Guys	Славные парни	2016		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	64	The Man from U.N.C.L.E.	Агенты А.Н.К.Л.	2015		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	65	Palm Springs	Палм-Спрингс	2020		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	66	Game Night	Ночные игры	2018		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	67	Jojo Rabbit	Кролик Джоджо	2019		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	68	The Grand Budapest Hotel	Отель «Гранд Будапешт»	2014		5	3	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	69	Everything Everywhere All at Once	Всё везде и сразу	2022		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	70	Barbie	Барби	2023		4	1	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	71	Oppenheimer	Оппенгеймер	2023		5	3	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	72	Dune	Дюна	2021		?		watched_forgot	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	73	Dune: Part Two	Дюна: Часть вторая	2024		?		watched_forgot	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	74	Arrival	Прибытие	2016		5	1	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	75	Interstellar	Интерстеллар	2014		5	2	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	76	District 9	Район № 9	2009		5	2	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	77	Snowpiercer	Сквозь снег	2013		3	2	watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	78	Life of Pi	Жизнь Пи	2012		?		watched_forgot	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	79	Parasite	Паразиты	2019		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	80	The Invisible Man	Человек-невидимка	2020		0		not_watched	e02-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	81	Strange Darling	Сталкер	2024		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	82	Knives Out	Достать ножи	2019		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	83	Glass Onion: A Knives Out Mystery	Достать ножи: Стеклянная луковица	2022		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	84	A Haunting in Venice	Призраки в Венеции	2023		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	85	Murder on the Orient Express	Убийство в Восточном экспрессе	2017		?		watched_forgot	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	86	Death on the Nile	Смерть на Ниле	2022		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	87	Nightmare Alley	Аллея кошмаров	2021		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	88	The Lighthouse	Маяк	2019		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	89	Uncut Gems	Неогранённые драгоценности	2019		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	90	Saltburn	Солтберн	2023		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	91	Nope	Нет	2022		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	92	Get Out	Прочь	2017		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	93	Ready or Not	Я иду искать	2019		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	94	The Cabin in the Woods	Хижина в лесу	2011		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	95	The Substance	Субстанция	2024		3	0	watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	96	Poor Things	Бедные-несчастные	2023		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	97	Three Billboards Outside Ebbing, Missouri	Три билборда на границе Эббинга, Миссури	2017		4	2	watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	98	The Banshees of Inisherin	Банши Инишерина	2022		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	99	Burn After Reading	После прочтения сжечь	2008		0		not_watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	Поиск вернул 0/🧊/n. Статус и 0 сохранены; Heat оставлен пустым: для not_watched исходная форма удаляет Heat. Исходный фрагмент сохранён в evidence.md.
+R	100	Once Upon a Time in Hollywood	Однажды в… Голливуде	2019		5	3	watched	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+R	101	Django Unchained	Джанго освобождённый	2012		?		watched_forgot	e03-1	2026-09-16T09:25:10Z	retrieval_summary	../source-forms/model_r_101_films_v2_exact_wiki.html	
+J	1	Parasite	Паразиты	2019	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	2	The Menu	Меню	2022	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	3	The Invisible Man	Человек-невидимка	2020	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	4	Uncut Gems	Неогранённые алмазы	2019	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	5	Saltburn	Солтберн	2023	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	6	Nightmare Alley	Аллея кошмаров	2021	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	7	The Lighthouse	Маяк	2019	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	8	One Battle After Another	Битва за битвой	2025	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	9	Sinners	Грешники	2025	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	10	Strange Darling	Сталкер	2024	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	11	The Gorge	Ущелье	2025	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	12	Novocaine	Новокаин	2025	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	13	Heads of State	Главы государств	2025	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	14	Deep Cover	Под прикрытием	2025	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	15	The Fall Guy	Каскадёры	2024	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	16	The Ministry of Ungentlemanly Warfare	Министерство неджентльменских дел	2024	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	17	Wolfs	Одинокие волки	2024	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	18	Knives Out	Достать ножи	2019	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	19	Glass Onion: A Knives Out Mystery	Достать ножи: Стеклянная луковица	2022	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	20	A Haunting in Venice	Призраки в Венеции	2023	ФИЛЬМ	0		not_watched	e06-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	21	Murder on the Orient Express	Убийство в Восточном экспрессе	2017	ФИЛЬМ	4	2	watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	22	Death on the Nile	Смерть на Ниле	2022	ФИЛЬМ	?		watched_forgot	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	23	Prisoners	Пленницы	2013	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	24	Zodiac	Зодиак	2007	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	25	Shutter Island	Остров проклятых	2010	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	26	Gone Baby Gone	Прощай, детка, прощай	2007	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	27	The Girl with the Dragon Tattoo	Девушка с татуировкой дракона	2011	ФИЛЬМ	?		watched_forgot	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	28	Wind River	Ветреная река	2017	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	29	The Guilty	Виновный	2021	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	30	Searching	Поиск	2018	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	31	Missing	Пропавшая без вести	2023	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	32	The Outfit	Костюм	2022	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	33	The Accountant	Расплата	2016	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	34	The Accountant 2	Расплата 2	2025	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	35	Bullet Train	Быстрее пули	2022	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	36	Nobody	Никто	2021	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	37	Atomic Blonde	Взрывная блондинка	2017	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	38	Baby Driver	Малыш на драйве	2017	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	39	The Nice Guys	Славные парни	2016	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	40	Logan Lucky	Удача Логана	2017	ФИЛЬМ	0		not_watched	e09-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	41	Ocean's Eight	8 подруг Оушена	2018	ФИЛЬМ	5	3	watched	e01-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	42	The Man from U.N.C.L.E.	Агенты А.Н.К.Л.	2015	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	43	Red Notice	Красное уведомление	2021	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	44	Palm Springs	Палм-Спрингс	2020	ФИЛЬМ	?		watched_forgot	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	45	Game Night	Ночные игры	2018	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	46	The Lost City	Затерянный город	2022	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	47	Ticket to Paradise	Билет в рай	2022	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	48	Crazy Rich Asians	Безумно богатые азиаты	2018	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	49	The Holiday	Отпуск по обмену	2006	ФИЛЬМ	?		watched_forgot	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	50	About Time	Бойфренд из будущего	2013	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	51	La La Land	Ла-Ла Ленд	2016	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	52	A Star Is Born	Звезда родилась	2018	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	53	Begin Again	Хоть раз в жизни	2013	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	54	Yesterday	Yesterday	2019	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	55	Bohemian Rhapsody	Богемская рапсодия	2018	ФИЛЬМ	5	3	watched	e01-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	56	Rocketman	Рокетмен	2019	ФИЛЬМ	5	3	watched	e01-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	57	Elvis	Элвис	2022	ФИЛЬМ	5	3	watched	e01-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	58	The Holdovers	Оставленные	2023	ФИЛЬМ	?		watched_forgot	e01-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	59	Little Miss Sunshine	Маленькая мисс Счастье	2006	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	60	The Intouchables	1+1	2011	ФИЛЬМ	0		not_watched	e05-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	61	Jojo Rabbit	Кролик Джоджо	2019	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	62	The Grand Budapest Hotel	Отель «Гранд Будапешт»	2014	ФИЛЬМ	5	3	watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	63	The French Dispatch	Французский вестник	2021	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	64	Everything Everywhere All at Once	Всё везде и сразу	2022	ФИЛЬМ	4	2	watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	65	Poor Things	Бедные-несчастные	2023	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	66	Barbie	Барби	2023	ФИЛЬМ	4	2	watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	67	Oppenheimer	Оппенгеймер	2023	ФИЛЬМ	5	3	watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	68	Dune	Дюна	2021	ФИЛЬМ	4	2	watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	69	Dune: Part Two	Дюна: Часть вторая	2024	ФИЛЬМ	4	2	watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	70	Annihilation	Аннигиляция	2018	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	71	Ad Astra	К звёздам	2019	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	72	Moon	Луна 2112	2009	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	73	Passengers	Пассажиры	2016	ФИЛЬМ	?		watched_forgot	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	74	Upgrade	Апгрейд	2018	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	75	The Creator	Создатель	2023	ФИЛЬМ	?		watched_forgot	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	76	Nope	Нет	2022	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	77	Get Out	Прочь	2017	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	78	Us	Мы	2019	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	79	Ready or Not	Я иду искать	2019	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	80	Happy Death Day	Счастливого дня смерти	2017	ФИЛЬМ	0		not_watched	e04-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	81	Freaky	Дичь	2020	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	82	Last Night in Soho	Прошлой ночью в Сохо	2021	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	83	Split	Сплит	2016	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	84	The Visit	Визит	2015	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	85	The Autopsy of Jane Doe	Демон внутри	2016	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	86	A Quiet Place	Тихое место	2018	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	87	A Quiet Place Part II	Тихое место 2	2021	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	88	Talk to Me	Два, три, демон, приди!	2023	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	89	Smile	Улыбка	2022	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	90	Smile 2	Улыбка 2	2024	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	91	The Black Phone	Чёрный телефон	2021	ФИЛЬМ	0		not_watched	e07-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	92	The Substance	Субстанция	2024	ФИЛЬМ	5	3	watched	e03-2	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	93	Promising Young Woman	Девушка, подающая надежды	2020	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	94	The Worst Person in the World	Худший человек на свете	2021	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	95	Anatomy of a Fall	Анатомия падения	2023	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	96	The Banshees of Inisherin	Банши Инишерина	2022	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	97	The Invisible Guest	Невидимый гость	2016	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	98	The Handmaiden	Служанка	2016	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	99	The Gift	Подарок	2015	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	100	The Secret in Their Eyes	Тайна в его глазах	2009	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+J	101	The Talented Mr. Ripley	Талантливый мистер Рипли	1999	ФИЛЬМ	0		not_watched	e08-3	2026-09-15T18:43:04Z	retrieval_summary	../source-forms/j_fast101_external_ratings.html	
+K	1	Parasite	Паразиты	2019	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	2	The Menu	Меню	2022	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	3	The Invisible Man	Человек-невидимка	2020	ФИЛЬМ	?		watched_forgot	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	4	Strange Darling	Сталкер	2024	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	5	Companion	Компаньон	2025	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	6	Obsession	Обсессия	2025	ФИЛЬМ	5	2	watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	7	Drop	Дроп	2025	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	8	Fight or Flight	Рейс навылет	2025	ФИЛЬМ	3	1	watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	9	Knives Out	Достать ножи	2019	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	10	Glass Onion: A Knives Out Mystery	Достать ножи: Стеклянная луковица	2022	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	11	A Haunting in Venice	Призраки в Венеции	2023	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	12	Murder on the Orient Express	Убийство в Восточном экспрессе	2017	ФИЛЬМ	5	2	watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	13	Death on the Nile	Смерть на Ниле	2022	ФИЛЬМ	0		not_watched	e06-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	14	Prisoners	Пленницы	2013	ФИЛЬМ	0		not_watched	e08-1	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	15	Zodiac	Зодиак	2007	ФИЛЬМ	?		watched_forgot	e08-1	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	16	Shutter Island	Остров проклятых	2010	ФИЛЬМ	4	1	watched	e08-1	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	17	The Girl with the Dragon Tattoo	Девушка с татуировкой дракона	2011	ФИЛЬМ	0		not_watched	e08-1	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	18	Wind River	Ветреная река	2017	ФИЛЬМ	0		not_watched	e08-1	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	19	Searching	Поиск	2018	ФИЛЬМ	0		not_watched	e08-1	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	20	Missing	Пропавшая без вести	2023	ФИЛЬМ	3	0	watched	e08-1;e11-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	Слова источника: K=3 / без огонька. В сохранённой форме K это Heat=0, не буквальная реакция 🧊.
+K	21	The Outfit	Костюм	2022	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	22	The Accountant	Расплата	2016	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	23	Bullet Train	Быстрее пули	2022	ФИЛЬМ	?		watched_forgot	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	24	Nobody	Никто	2021	ФИЛЬМ	4	2	watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	25	Baby Driver	Малыш на драйве	2017	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	26	The Nice Guys	Славные парни	2016	ФИЛЬМ	?		watched_forgot	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	27	The Man from U.N.C.L.E.	Агенты А.Н.К.Л.	2015	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	28	Palm Springs	Палм-Спрингс	2020	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	29	Game Night	Ночные игры	2018	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	30	La La Land	Ла-Ла Ленд	2016	ФИЛЬМ	3	1	watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	31	Moulin Rouge!	Мулен Руж	2001	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	32	Bohemian Rhapsody	Богемская рапсодия	2018	ФИЛЬМ	?		watched_forgot	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	33	Rocketman	Рокетмен	2019	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	34	Jojo Rabbit	Кролик Джоджо	2019	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	35	The Grand Budapest Hotel	Отель «Гранд Будапешт»	2014	ФИЛЬМ	?		watched_forgot	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	36	Everything Everywhere All at Once	Всё везде и сразу	2022	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	37	Barbie	Барби	2023	ФИЛЬМ	4	1	watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	38	Oppenheimer	Оппенгеймер	2023	ФИЛЬМ	4	0	watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	39	Dune	Дюна	2021	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	40	Dune: Part Two	Дюна: Часть вторая	2024	ФИЛЬМ	0		not_watched	e09-4	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	41	Ex Machina	Из машины	2015	ФИЛЬМ	0		not_watched	e08-2	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	42	Arrival	Прибытие	2016	ФИЛЬМ	0		not_watched	e08-2	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	43	Silo	Укрытие	2023	СЕРИАЛ	5	3	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	44	Severance	Разделение	2022	СЕРИАЛ	5	3	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	45	Black Mirror	Чёрное зеркало	2011	СЕРИАЛ	4	1	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	46	Dark	Тьма	2017	СЕРИАЛ	2	0	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	47	Chernobyl	Чернобыль	2019	СЕРИАЛ	5	1	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	48	The Last of Us	Одни из нас	2023	СЕРИАЛ	5	3	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	49	Fallout	Fallout	2024	СЕРИАЛ	?		watched_forgot	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	50	Wednesday	Уэнсдэй	2022	СЕРИАЛ	4	1	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	51	Lockwood & Co.	Агентство «Локвуд и компания»	2023	СЕРИАЛ	3	0	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	52	Stranger Things	Очень странные дела	2016	СЕРИАЛ	5	3	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	53	The Mandalorian	Мандалорец	2019	СЕРИАЛ	4	1	watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	54	Andor	Андор	2022	СЕРИАЛ	0		not_watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	55	Loki	Локи	2021	СЕРИАЛ	?		watched_forgot	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	56	Foundation	Основание	2021	СЕРИАЛ	0		not_watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	57	Dark Matter	Тёмная материя	2024	СЕРИАЛ	0		not_watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	58	Arcane	Аркейн	2021	СЕРИАЛ	0		not_watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	59	Love, Death & Robots	Любовь. Смерть. Роботы	2019	СЕРИАЛ	0		not_watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	60	Fleabag	Дрянь	2016	СЕРИАЛ	0		not_watched	e02-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	61	Better Call Saul	Лучше звоните Солу	2015	СЕРИАЛ	3	0	partial	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	62	Fargo	Фарго	2014	СЕРИАЛ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	63	Slow Horses	Медленные лошади	2022	СЕРИАЛ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	64	Mindhunter	Охотник за разумом	2017	СЕРИАЛ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	65	Mare of Easttown	Мейр из Исттауна	2021	СЕРИАЛ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	66	Presumed Innocent	Презумпция невиновности	2024	СЕРИАЛ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	67	The Talented Mr. Ripley	Талантливый мистер Рипли	1999	ФИЛЬМ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	68	Ripley	Рипли	2024	СЕРИАЛ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	69	The Sopranos	Клан Сопрано	1999	СЕРИАЛ	4	1	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	70	The Big Lebowski	Большой Лебовски	1998	ФИЛЬМ	5	3	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	71	Barton Fink	Бартон Финк	1991	ФИЛЬМ	4	0	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	72	L.A. Confidential	Секреты Лос-Анджелеса	1997	ФИЛЬМ	5	1	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	73	Rain Man	Человек дождя	1988	ФИЛЬМ	4	0	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	74	Le Fabuleux destin d'Amélie Poulain	Амели	2001	ФИЛЬМ	5	1	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	75	Six-String Samurai	Шестиструнный самурай	1998	ФИЛЬМ	0		not_watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	76	Pirates of the Caribbean: The Curse of the Black Pearl	Пираты Карибского моря: Проклятие «Чёрной жемчужины»	2003	ФИЛЬМ	5	2	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	77	Волшебный участок		2023	СЕРИАЛ	4	1	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	78	Вампиры средней полосы		2021	СЕРИАЛ	5	2	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	79	Пищеблок		2021	СЕРИАЛ	?		watched_forgot	e08-2	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	В e03-3 ответ был искажён как 0/?/w; e08-2 отдельно подтверждает Пищеблок: смотрела, оценку не помнит.
+K	80	Перевал Дятлова		2020	СЕРИАЛ	4	0	watched	e03-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	81	Мастер и Маргарита		2024	ФИЛЬМ	5	3	watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	82	Бригада		2002	СЕРИАЛ	5	3	watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	83	Живой		2006	ФИЛЬМ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	84	Тайга. Курс выживания		2002	СЕРИАЛ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	85	Переводчик		2013	СЕРИАЛ	?		watched_forgot	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	86	22 минуты		2014	ФИЛЬМ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	87	Закон		2002	СЕРИАЛ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	88	Нелюбовь		2017	ФИЛЬМ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	89	Левиафан		2014	ФИЛЬМ	?		watched_forgot	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	90	Аритмия		2017	ФИЛЬМ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	91	Капитан Волконогов бежал		2021	ФИЛЬМ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	92	Дылда		2019	ФИЛЬМ	4	2	watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	93	Петровы в гриппе		2021	ФИЛЬМ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	94	Нулевой пациент		2022	СЕРИАЛ	?		watched_forgot	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	95	Хрустальный		2021	СЕРИАЛ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	96	Фишер		2023	СЕРИАЛ	?		watched_forgot	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	97	Топи		2021	СЕРИАЛ	4	0	watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	98	Слово пацана. Кровь на асфальте		2023	СЕРИАЛ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	99	Чики		2020	СЕРИАЛ	0		not_watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	100	Кибердеревня		2023	СЕРИАЛ	2	0	watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+K	101	Сто лет тому вперёд		2024	ФИЛЬМ	2	0	watched	e04-3	2026-09-15T21:39:27Z	retrieval_summary	../source-forms/k_101_shots_mgik_v4_verified.html	
+M	1	Lilo & Stitch	Лило и Стич		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	2	Zootopia	Зверополис		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	3	Raya and the Last Dragon	Райя и последний дракон		Мультфильм	?		watched_forgot	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	4	Bolt	Вольт		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	5	The Secret Life of Pets	Тайная жизнь домашних животных		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	6	Sing	Зверопой		Мультфильм	?		watched_forgot	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	7	Tangled	Рапунцель: Запутанная история		Мультфильм	4	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	8	Frozen	Холодное сердце		Мультфильм	3	2	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	9	Brave	Храбрая сердцем		Мультфильм	2	1	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	10	The Princess and the Frog	Принцесса и лягушка		Мультфильм	?		watched_forgot	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	11	WALL·E	ВАЛЛ·И		Мультфильм	4	2	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	12	Inside Out	Головоломка		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	13	Inside Out 2	Головоломка 2		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	14	Elemental	Элементарно		Мультфильм	4	2	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	15	Soul	Душа		Мультфильм	3	1	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	16	Onward	Вперёд		Мультфильм	0		not_watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	17	The Croods	Семейка Крудс		Мультфильм	5	3	watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	18	Rise of the Guardians	Хранители снов		Мультфильм	0		not_watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	19	The Sea Beast	Морской монстр		Мультфильм	0		not_watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	20	Wish Dragon	Дракон желаний		Мультфильм	0		not_watched	e09-1	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	21	Abominable	Эверест		Мультфильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	22	Vivo	Виво		Мультфильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	23	The Bad Guys	Плохие парни		Мультфильм	5	2	partial	e09-2;e07-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	24	The Super Mario Bros. Movie	Братья Супер Марио в кино		Мультфильм	4	2	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	25	Migration	Миграция		Мультфильм	5	3	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	26	Kung Fu Panda	Кунг-фу Панда		Мультфильм	5	3	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	27	The Lego Movie	Лего. Фильм		Мультфильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	28	The Lego Batman Movie	Лего Фильм: Бэтмен		Мультфильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	29	Spider-Man: Into the Spider-Verse	Человек-паук: Через вселенные		Мультфильм	4	3	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	30	The Wild Robot	Дикий робот		Мультфильм	4	2	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	31	Harry Potter and the Sorcerer's Stone	Гарри Поттер и философский камень		Фильм	5	3	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	32	Harry Potter and the Prisoner of Azkaban	Гарри Поттер и узник Азкабана		Фильм	4	2	watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	33	The Chronicles of Narnia: The Lion, the Witch and the Wardrobe	Хроники Нарнии: Лев, колдунья и волшебный шкаф		Фильм	?		watched_forgot	e09-2;e07-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	34	Stardust	Звёздная пыль		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	35	The School for Good and Evil	Школа добра и зла		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	36	Slumberland	Страна снов		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	37	A Wrinkle in Time	Излом времени		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	38	The Kid Who Would Be King	Рождённый стать королём		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	39	The House with a Clock in Its Walls	Тайна дома с часами		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	40	Nightbooks	Ночные тетради		Фильм	0		not_watched	e09-2	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	41	Goosebumps	Ужастики		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	42	The Spiderwick Chronicles	Спайдервик: Хроники		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	43	Miss Peregrine's Home for Peculiar Children	Дом странных детей Мисс Перегрин		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	44	Cruella	Круэлла		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	45	Maleficent	Малефисента		Фильм	5	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	46	Beauty and the Beast	Красавица и чудовище		Фильм	5	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	47	Aladdin	Аладдин		Фильм	5	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	48	Peter Rabbit	Кролик Питер		Фильм	4	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	49	A Dog's Purpose	Собачья жизнь		Фильм	5	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	50	Togo	Того		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	51	Hachi: A Dog's Tale	Хатико: Самый верный друг		Фильм	5	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	52	Belle and Sebastian	Белль и Себастьян		Фильм	?		watched_forgot	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	53	Mia and the White Lion	Миа и белый лев		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	54	Paddington	Приключения Паддингтона		Фильм	5	3	partial	e01-4;e07-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	55	Christopher Robin	Кристофер Робин		Фильм	4	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	56	Mary Poppins Returns	Мэри Поппинс возвращается		Фильм	5	3	watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	57	Matilda the Musical	Матильда		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	58	The Greatest Showman	Величайший шоумен		Фильм	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	59	Anne with an E	Энн		Сериал	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	60	A Good Girl's Guide to Murder	Хороших девочек не убивают		Сериал	0		not_watched	e01-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	61	The Bureau of Magical Things	Бюро магических дел		Сериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	62	Just Add Magic	Просто добавь магии		Сериал	?		watched_forgot	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	63	The Worst Witch	Самая плохая ведьма		Сериал	?		watched_forgot	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	64	Julie and the Phantoms	Джули и призраки		Сериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	65	The Baby-Sitters Club	Клуб нянь		Сериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	66	Heartstopper	Трепет сердца		Сериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	67	Geek Girl	Девушка-гик		Сериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	68	My Life with the Walter Boys	Моя жизнь с мальчиками Уолтер		Сериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	69	Avatar: The Last Airbender	Аватар: Легенда об Аанге		Мультсериал	4	3	watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	70	The Dragon Prince	Принц-дракон		Мультсериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	71	Amphibia	Амфибия		Мультсериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	72	The Owl House	Дом совы		Мультсериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	73	DuckTales	Утиные истории		Мультсериал	4	3	watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	74	Over the Garden Wall	По ту сторону изгороди		Мультсериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	75	Carmen Sandiego	Кармен Сандиего		Мультсериал	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	76	Чебурашка 2			Фильм			unanswered	e02-4;e07-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	Прямо указано «без ответа»; не заменено на 0, ? или потерянную запись.
+M	77	Летучий корабль			Фильм	3	2	watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	78	Конёк-Горбунок			Фильм	3	1	watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	79	Серебряные коньки			Фильм	?		watched_forgot	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	80	Гром: Трудное детство			Фильм	0		not_watched	e02-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	81	Майор Гром: Игра			Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	82	Девочка Нина и похитители пианино			Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	83	Чук и Гек. Большое приключение			Фильм	4	3	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	84	Приключения Петрова и Васечкина			Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	85	Каникулы Петрова и Васечкина			Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	86	Гостья из будущего			Сериал	4	2	partial	e04-4;e07-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	87	Приключения Электроника			Сериал	4	3	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	88	Чародеи			Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	89	Тайна третьей планеты			Мультфильм	4	3	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	90	Смешарики. Начало			Мультфильм	5	3	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	91	Смешарики. Легенда о золотом драконе			Мультфильм	5	3	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	92	Три богатыря и Шамаханская царица			Мультфильм	4	2	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	93	Иван Царевич и Серый Волк			Мультфильм	4	2	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	94	Снежная королева			Мультфильм	4	2	watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	95	Free Guy	Главный герой		Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	96	Ready Player One	Первому игроку приготовиться		Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	97	Pokémon: Mewtwo Strikes Back — Evolution	Покемон: Мьюту наносит ответный удар — Эволюция		Мультфильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	98	Shazam!	Шазам!		Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	99	Blue Beetle	Синий Жук		Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	100	The Adam Project	Проект «Адам»		Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	
+M	101	Secret Headquarters	Секретный штаб		Фильм	0		not_watched	e04-4	2026-09-15T18:00:13Z	retrieval_summary	../source-forms/model_m_fast101_quiz.html	

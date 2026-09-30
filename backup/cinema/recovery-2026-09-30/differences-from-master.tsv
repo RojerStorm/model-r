@@ -1,0 +1,5 @@
+profile	question_number	title	year	field	existing_value	retrieved_value	existing_file	existing_row_index	existing_source_note	retrieval_evidence	decision
+R	12	The Prestige	2006	rating	5	?	../model-rjkm-master-2026-09-29.txt	11	V2 R/J + later explicit updates	e11-2	preserve_both_no_overwrite
+R	15	Source Code	2011	rating	5	0	../model-rjkm-master-2026-09-29.txt	15	V2 R/J + later explicit updates	e11-2	preserve_both_no_overwrite
+R	51	Prisoners	2013	rating	0	?	../model-rjkm-master-2026-09-29.txt	21	V2 R/J + later explicit updates	e01-1	preserve_both_no_overwrite
+K	7	Drop	2025	rating	4	0	../model-rjkm-master-2026-09-29.txt	40	2026-09-13..16	e06-3	preserve_both_no_overwrite
