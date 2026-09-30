@@ -113,7 +113,7 @@
     </nav>
     <main id="main">
       <section id="films" aria-label="Фильмы и сериалы">
-        <div class="notice"><strong>Объединённый каталог.</strong> Master, legacy и FAST 101 связаны по тайтлам; каждое значение хранится вместе с источником. FAST 101 пока помечен как «не подтверждено» до дословного экспорта двух исходных чатов. <a href="#notes">Что осталось проверить →</a></div>
+        <div class="notice"><strong>Каталог v1.0 завершён.</strong> Master, legacy и восстановленный FAST 101 связаны по тайтлам; каждое значение хранится вместе с источником. Расхождения сохранены как история и не замаскированы. <a href="#notes">Как устроена финальная база →</a></div>
         <div class="toolbar">
           <div class="field search-field">
             <label for="search">Поиск по названию</label>
@@ -138,7 +138,7 @@
               <option value="all">Все тайтлы</option>
               <option value="conflicts">Только расхождения</option>
               <option value="fast">Есть FAST 101</option>
-              <option value="unconfirmed">Есть неподтверждённое</option>
+              <option value="recovered">Восстановлено из FAST 101</option>
               <option value="watchlist">Watchlist M</option>
             </select>
           </div>
@@ -151,8 +151,8 @@
           <div class="field">
             <label for="document">Что почитать</label>
             <select id="document">
-              <option value="recovery30">Восстановление FAST 101 — 30 сентября</option>
-              <option value="conflicts">Расхождения объединённого каталога</option>
+              <option value="recovery30">Финальный статус v1.0 — 30 сентября</option>
+              <option value="conflicts">Архивные конфликты</option>
               <option value="inventory">Итоги проверки — 29 сентября</option>
               <option value="recovery">Старый статус FAST 101 — 29 сентября</option>
               <option value="readme">О резервной копии</option>
@@ -164,7 +164,7 @@
       </section>
       <noscript><p class="notice">Для просмотра карточек включи JavaScript в браузере. Отчёт можно <a href="Kino_inventory_2026-09-29.md">скачать здесь</a>.</p></noscript>
     </main>
-    <footer><span>Наше кино · объединённый каталог на 30 сентября 2026</span><a href="https://github.com/RojerStorm/model-r/tree/main/backup/cinema" target="_blank" rel="noopener noreferrer">Исходные файлы ↗</a></footer>
+    <footer><span>Наше кино · каталог v1.0 · 30 сентября 2026</span><a href="https://github.com/RojerStorm/model-r/tree/main/backup/cinema" target="_blank" rel="noopener noreferrer">Исходные файлы ↗</a></footer>
   </div>
   <script>
     'use strict';
@@ -173,7 +173,7 @@
     const normalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[’‘]/g,"'").trim();
     const people = {R:'Роджер',J:'Юля',K:'Катерина',M:'Маруся'};
     const docs = {
-      recovery30:'recovery-2026-09-30/README.md',
+      recovery30:'catalog-discrepancies-2026-09-30.md',
       conflicts:'catalog-discrepancies-2026-09-30.md',
       inventory:'Kino_inventory_2026-09-29.md',
       recovery:'FAST101-recovery-status-2026-09-29.md',
@@ -221,11 +221,11 @@
       return '<span class="profile-score'+(s.conflict?' conflict':'')+'"><span>'+profile+'</span><strong>'+escapeHTML(text)+'</strong>'+(s.conflict?'<span class="conflict-note">⚠</span>':'')+'</span>';
     }
     function sourceRow(o){
-      const unconfirmed=o.verification==='unconfirmed_no_verbatim';
+      const recovered=o.verification==='recovered_secondary_final';
       return '<div class="source-row"><div class="source-head"><strong>'+escapeHTML(o.profile+' · '+ratingText(o.rating,o.profile))+'</strong>'+
         (heatText(o)?'<span>'+escapeHTML(heatText(o))+'</span>':'')+
-        '<span class="pill '+(unconfirmed?'warn':'ok')+'">'+escapeHTML(sourceLabel(o))+'</span>'+
-        (unconfirmed?'<span class="pill warn">не подтверждено</span>':'<span class="pill ok">снимок сохранён</span>')+
+        '<span class="pill '+(recovered?'warn':'ok')+'">'+escapeHTML(sourceLabel(o))+'</span>'+
+        (recovered?'<span class="pill warn">восстановлено по истории</span>':'<span class="pill ok">снимок сохранён</span>')+
         '</div><div class="source-meta">'+
         [statusText(o.status),o.source_locator,o.source_time,o.evidence_ids?('evidence: '+o.evidence_ids):'',o.source_note,o.notes].filter(Boolean).map(escapeHTML).join(' · ')+
         '</div></div>';
@@ -258,7 +258,7 @@
           if(profile!=='all'&&!obs.some(o=>o.profile===profile))return false;
           if(view==='conflicts'&&!Object.values(t.conflicts||{}).some(Boolean))return false;
           if(view==='fast'&&!obs.some(o=>o.source_layer==='fast101_recovery'))return false;
-          if(view==='unconfirmed'&&!obs.some(o=>o.verification==='unconfirmed_no_verbatim'))return false;
+          if(view==='recovered'&&!obs.some(o=>o.verification==='recovered_secondary_final'))return false;
           if(view==='watchlist'&&!obs.some(o=>o.source_layer==='master_watchlist'))return false;
           return true;
         });
