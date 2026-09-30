@@ -140,6 +140,7 @@
               <option value="fast">Есть FAST 101</option>
               <option value="recovered">Восстановлено из FAST 101</option>
               <option value="watchlist">Watchlist M</option>
+              <option value="recommendations">История рекомендаций</option>
             </select>
           </div>
         </div>
@@ -232,6 +233,7 @@
     }
     function card(t,data){
       const obs=data.observations.filter(o=>o.title_id===t.id);
+      const recs=(data.recommendation_history||[]).filter(r=>r.title_id===t.id);
       const title=t.ru_title||t.title, original=t.title&&t.title!==title?t.title:'';
       const meta=[t.type,t.year].filter(Boolean);
       const scores=['R','J','K','M'].map(p=>profileSummary(t,p)).filter(Boolean).join('');
@@ -240,7 +242,9 @@
         '<h2>'+escapeHTML(title)+'</h2><p class="original">'+escapeHTML(original)+'</p>'+
         (anyConflict?'<span class="status" style="color:var(--orange-text)">⚠ Есть расхождение источников</span>':'')+
         '<div class="ratings">'+(scores||'<span class="no-data">Оценок пока нет</span>')+'</div>'+
-        '<details><summary>Источники и история <span class="sources-count">('+obs.length+')</span></summary><div class="source-list">'+obs.map(sourceRow).join('')+'</div></details></article>';
+        '<details><summary>Источники и история <span class="sources-count">('+obs.length+')</span></summary><div class="source-list">'+obs.map(sourceRow).join('')+'</div></details>'+
+        (recs.length?'<details><summary>Старые прогнозы <span class="sources-count">('+recs.length+')</span></summary><div class="source-list">'+recs.map(r=>'<div class="source-row"><div class="source-head"><strong>'+escapeHTML(r.snapshot)+'</strong><span class="pill warn">прогноз, не оценка</span></div><div class="source-meta">'+escapeHTML(['R '+(r.predicted_R||'—'),r.predicted_heat||'',r.predicted_J?('J '+r.predicted_J):'',r.confidence?('уверенность '+r.confidence):'',r.reason].filter(Boolean).join(' · '))+'</div></div>').join('')+'</div></details>':'')+
+        '</article>';
     }
     async function showCards(){
       const request=++listRequest; $('cards').setAttribute('aria-busy','true');
@@ -260,6 +264,7 @@
           if(view==='fast'&&!obs.some(o=>o.source_layer==='fast101_recovery'))return false;
           if(view==='recovered'&&!obs.some(o=>o.verification==='recovered_secondary_final'))return false;
           if(view==='watchlist'&&!obs.some(o=>o.source_layer==='master_watchlist'))return false;
+          if(view==='recommendations'&&!(data.recommendation_history||[]).some(r=>r.title_id===t.id))return false;
           return true;
         });
         $('count').textContent='Показано: '+filtered.length+' из '+data.titles.length+' тайтлов · '+data.stats.observations+' записей-источников';
