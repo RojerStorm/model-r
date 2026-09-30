@@ -23,3 +23,13 @@ Do not infer missing ratings. Keep `0`, `?`, status and Heat as separate signals
 Obsession and Absentia (2011) are different films and must never be merged.
 
 Snapshot date: 2026-09-29.
+
+
+## Unified catalog — 30.09.2026
+
+- `catalog-2026-09-30.json` — canonical linked catalog for the viewer. Same titles are linked; every R/J/K/M observation keeps its source and verification state.
+- `catalog-observations-2026-09-30.tsv` — flat audit-friendly export of all observations.
+- `catalog-discrepancies-2026-09-30.md` — unresolved conflicts, including J 12/13, M 43/42, R Prestige/Source Code/Prisoners and K Drop.
+- `index.html` now reads the unified JSON and shows source history instead of hiding conflicts.
+
+FAST 101 rows are marked `unconfirmed_no_verbatim` until exports of «Накопление кинопредпочтений» and «Список фильмов сериалов» are available. Existing master, legacy, recovery package and source forms remain historical snapshots and were not overwritten.
