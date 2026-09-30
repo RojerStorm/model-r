@@ -25,11 +25,21 @@ Obsession and Absentia (2011) are different films and must never be merged.
 Snapshot date: 2026-09-29.
 
 
-## Unified catalog — 30.09.2026
+## Unified catalog v1.0 — final · 30.09.2026
 
-- `catalog-2026-09-30.json` — canonical linked catalog for the viewer. Same titles are linked; every R/J/K/M observation keeps its source and verification state.
-- `catalog-observations-2026-09-30.tsv` — flat audit-friendly export of all observations.
-- `catalog-discrepancies-2026-09-30.md` — unresolved conflicts, including J 12/13, M 43/42, R Prestige/Source Code/Prisoners and K Drop.
-- `index.html` now reads the unified JSON and shows source history instead of hiding conflicts.
+- `catalog-2026-09-30.json` — канонический объединённый каталог для интерфейса.
+- `catalog-observations-2026-09-30.tsv` — плоский аудит всех наблюдений с источниками.
+- `catalog-discrepancies-2026-09-30.md` — финально зафиксированные архивные конфликты.
+- `index.html` — браузерный интерфейс каталога.
 
-FAST 101 rows are marked `unconfirmed_no_verbatim` until exports of «Накопление кинопредпочтений» and «Список фильмов сериалов» are available. Existing master, legacy, recovery package and source forms remain historical snapshots and were not overwritten.
+### Final recovery policy
+
+Recovery is **closed without exporting the two old chats**.
+
+FAST 101 is accepted as a `recovered_secondary_final` source layer: the rows came from saved search/history evidence, not verbatim chat exports. This provenance remains visible, but it is no longer treated as an unfinished task.
+
+Conflicting values are never silently resolved. Both values and both sources remain in the catalog. A conflict can be superseded later only by a new explicit user rating.
+
+Existing master, legacy, recovery package and source forms remain historical snapshots and are not overwritten.
+
+**Catalog status: v1.0 final / closed.**
