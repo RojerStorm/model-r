@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 409,
-    "observations": 748,
+    "observations": 752,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -13843,11 +13843,79 @@
       ],
       "aliases": [
         "Widow's Bay",
-        "Бухта вдов"
+        "Бухта вдов",
+        "Остров вдов"
       ],
-      "observations": [],
+      "observations": [
+        "o_0749",
+        "o_0750",
+        "o_0751",
+        "o_0752"
+      ],
       "conflicts": {},
-      "summary": {}
+      "summary": {
+        "R": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "0"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "0",
+          "current_status": "not_watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "M": {
+          "values": [
+            "0"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "0",
+          "current_status": "not_watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-05T20:01:46+03:00",
+          "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+          "season": null,
+          "episodes_1_2": "слабо",
+          "from_episode": 3,
+          "through": "финал сезона",
+          "heat": 3,
+          "profile_attribution": "не указана отдельно",
+          "raw_text": "Остров Вдов. R 5, J 5, K и M не смотрели. Вначале 1-2 серия слабо, а начиная с 3 и до финала сезона 🔥🔥🔥"
+        }
+      ]
     },
     {
       "id": "t_681db60e",
@@ -27769,6 +27837,78 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0749",
+      "title_id": "t_87a29eda",
+      "profile": "R",
+      "rating": "5",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+      "source_locator": "User message · 2026-10-05",
+      "source_time": "2026-10-05T20:01:46+03:00",
+      "source_note": "Новая явная оценка пользователя.",
+      "notes": "Первые 1–2 серии — слабо; начиная с 3-й и до финала сезона — 🔥🔥🔥. Реакция относится к этой части сезона; отдельный Heat каждого профиля не указан.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0750",
+      "title_id": "t_87a29eda",
+      "profile": "J",
+      "rating": "5",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+      "source_locator": "User message · 2026-10-05",
+      "source_time": "2026-10-05T20:01:46+03:00",
+      "source_note": "Новая явная оценка пользователя.",
+      "notes": "Первые 1–2 серии — слабо; начиная с 3-й и до финала сезона — 🔥🔥🔥. Реакция относится к этой части сезона; отдельный Heat каждого профиля не указан.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0751",
+      "title_id": "t_87a29eda",
+      "profile": "K",
+      "rating": "0",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "not_watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+      "source_locator": "User message · 2026-10-05",
+      "source_time": "2026-10-05T20:01:46+03:00",
+      "source_note": "Новая явная оценка пользователя.",
+      "notes": "Пользователь явно указал: не смотрели.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0752",
+      "title_id": "t_87a29eda",
+      "profile": "M",
+      "rating": "0",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "not_watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+      "source_locator": "User message · 2026-10-05",
+      "source_time": "2026-10-05T20:01:46+03:00",
+      "source_note": "Новая явная оценка пользователя.",
+      "notes": "Пользователь явно указал: не смотрели.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -27778,7 +27918,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-09-30T16:45:00+03:00",
+  "updated_at": "2026-10-05T20:01:46+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28055,5 +28195,16 @@
       "actual_rating_effect": "none",
       "status_effect": "none"
     }
-  ]
+  ],
+  "last_explicit_update": {
+    "at": "2026-10-05T20:01:46+03:00",
+    "title_id": "t_87a29eda",
+    "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+    "observation_ids": [
+      "o_0749",
+      "o_0750",
+      "o_0751",
+      "o_0752"
+    ]
+  }
 }
