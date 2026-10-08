@@ -154,8 +154,8 @@
     }
   ],
   "stats": {
-    "titles": 409,
-    "observations": 752,
+    "titles": 418,
+    "observations": 760,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -1209,19 +1209,78 @@
         "Билет в рай"
       ],
       "observations": [
-        "o_0336"
+        "o_0336",
+        "o_0757",
+        "o_0758",
+        "o_0759",
+        "o_0760"
       ],
       "conflicts": {},
       "summary": {
         "J": {
           "values": [
-            "0"
+            "0",
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 2,
+          "recovered_secondary": true,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "R": {
+          "values": [
+            "4"
           ],
           "conflict": false,
           "observation_count": 1,
-          "recovered_secondary": true
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "M": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-08T21:05:23+03:00",
+          "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": 0,
+          "raw_text": "Ticket to Paradise - оценка та же что и выше"
+        }
+      ]
     },
     {
       "id": "t_422e5099",
@@ -13967,6 +14026,91 @@
       "observations": [],
       "conflicts": {},
       "summary": {}
+    },
+    {
+      "id": "t_9a343c21",
+      "title": "Fly Me to the Moon",
+      "ru_title": "Покажи мне Луну",
+      "year": 2024,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "Fly Me to the Moon",
+        "Покажи мне Луну"
+      ],
+      "observations": [
+        "o_0753",
+        "o_0754",
+        "o_0755",
+        "o_0756"
+      ],
+      "conflicts": {},
+      "summary": {
+        "R": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "M": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-08T21:04:22+03:00",
+          "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": 0,
+          "raw_text": "Fly Me to the Moon - просмотрен. Никто не помнит и не может дать оценок - явный проходняк - пусть будут холодны 4 от всех"
+        }
+      ]
     }
   ],
   "observations": [
@@ -27909,6 +28053,150 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0753",
+      "title_id": "t_9a343c21",
+      "profile": "R",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:04:22+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0754",
+      "title_id": "t_9a343c21",
+      "profile": "J",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:04:22+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0755",
+      "title_id": "t_9a343c21",
+      "profile": "K",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:04:22+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0756",
+      "title_id": "t_9a343c21",
+      "profile": "M",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:04:22+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0757",
+      "title_id": "t_054abc5f",
+      "profile": "R",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:05:23+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям. Значение перенесено по прямой ссылке пользователя «оценка та же что и выше».",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0758",
+      "title_id": "t_054abc5f",
+      "profile": "J",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:05:23+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям. Значение перенесено по прямой ссылке пользователя «оценка та же что и выше».",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0759",
+      "title_id": "t_054abc5f",
+      "profile": "K",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:05:23+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям. Значение перенесено по прямой ссылке пользователя «оценка та же что и выше».",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0760",
+      "title_id": "t_054abc5f",
+      "profile": "M",
+      "rating": "4",
+      "heat": 0,
+      "reaction_raw": "холодная 4",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:05:23+03:00",
+      "source_note": "Явно назначенная пользователем текущая оценка всем четырём профилям.",
+      "notes": "Просмотрено; фильм не запомнился, «явный проходняк». Пользователь назначил всем холодные 4/5, несмотря на отсутствие уверенной оценки по воспоминаниям. Значение перенесено по прямой ссылке пользователя «оценка та же что и выше».",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -27918,7 +28206,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-05T20:01:46+03:00",
+  "updated_at": "2026-10-08T21:05:23+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28197,14 +28485,22 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-05T20:01:46+03:00",
-    "title_id": "t_87a29eda",
-    "source_file": "backup/cinema/updates/2026-10-05-ostrov-vdov.md",
+    "at": "2026-10-08T21:05:23+03:00",
+    "title_id": "t_054abc5f",
+    "title_ids": [
+      "t_9a343c21",
+      "t_054abc5f"
+    ],
+    "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
     "observation_ids": [
-      "o_0749",
-      "o_0750",
-      "o_0751",
-      "o_0752"
+      "o_0753",
+      "o_0754",
+      "o_0755",
+      "o_0756",
+      "o_0757",
+      "o_0758",
+      "o_0759",
+      "o_0760"
     ]
   }
 }
