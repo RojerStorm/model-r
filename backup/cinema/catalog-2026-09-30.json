@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 418,
-    "observations": 760,
+    "observations": 761,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -2368,7 +2368,8 @@
         "Главы государств"
       ],
       "observations": [
-        "o_0302"
+        "o_0302",
+        "o_0761"
       ],
       "conflicts": {},
       "summary": {
@@ -2379,6 +2380,18 @@
           "conflict": false,
           "observation_count": 1,
           "recovered_secondary": true
+        },
+        "R": {
+          "values": [
+            "0"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "0",
+          "current_status": "not_watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
       }
     },
@@ -28197,6 +28210,24 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0761",
+      "title_id": "t_5acbb087",
+      "profile": "R",
+      "rating": "0",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "not_watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-08-heads-of-state-r.md",
+      "source_locator": "User message · 2026-10-08",
+      "source_time": "2026-10-08T21:08:02+03:00",
+      "source_note": "Пользователь явно подтвердил для R: «точно не просмотрен».",
+      "notes": "Пользователь чувствует потенциал и запросил прогноз по базе R с внешними оценками. Это ожидание, не оценка после просмотра; Heat неизвестен.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28206,7 +28237,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-08T21:05:23+03:00",
+  "updated_at": "2026-10-08T21:08:02+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28485,22 +28516,11 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-08T21:05:23+03:00",
-    "title_id": "t_054abc5f",
-    "title_ids": [
-      "t_9a343c21",
-      "t_054abc5f"
-    ],
-    "source_file": "backup/cinema/updates/2026-10-08-cold-fours.md",
+    "at": "2026-10-08T21:08:02+03:00",
+    "title_id": "t_5acbb087",
+    "source_file": "backup/cinema/updates/2026-10-08-heads-of-state-r.md",
     "observation_ids": [
-      "o_0753",
-      "o_0754",
-      "o_0755",
-      "o_0756",
-      "o_0757",
-      "o_0758",
-      "o_0759",
-      "o_0760"
+      "o_0761"
     ]
   }
 }
