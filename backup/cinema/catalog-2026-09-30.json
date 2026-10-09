@@ -154,8 +154,8 @@
     }
   ],
   "stats": {
-    "titles": 418,
-    "observations": 772,
+    "titles": 419,
+    "observations": 776,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -14288,6 +14288,91 @@
           ],
           "heat": 0,
           "raw_text": "Fly Me to the Moon - просмотрен. Никто не помнит и не может дать оценок - явный проходняк - пусть будут холодны 4 от всех"
+        }
+      ]
+    },
+    {
+      "id": "t_da5fd3e0",
+      "title": "Jungle Cruise",
+      "ru_title": "Круиз по джунглям",
+      "year": 2021,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "Jungle Cruise",
+        "Круиз по джунглям"
+      ],
+      "observations": [
+        "o_0777",
+        "o_0778",
+        "o_0779",
+        "o_0780"
+      ],
+      "conflicts": {},
+      "summary": {
+        "R": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "M": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-09T21:37:41+03:00",
+          "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": 1,
+          "raw_text": "«Круиз по джунглям» / Jungle Cruise (2021) - просмотрено от всех 5 но только один огонек - обновляй фильмы"
         }
       ]
     }
@@ -28592,6 +28677,78 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0777",
+      "title_id": "t_da5fd3e0",
+      "profile": "R",
+      "rating": "5",
+      "heat": 1,
+      "reaction_raw": "только один огонек",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:37:41+03:00",
+      "source_note": "Пользователь явно подтвердил: просмотрено всеми, всем 5/5 и один огонёк.",
+      "notes": "«От всех» относится к R/J/K/M. Heat=1 сохранён отдельно от оценки 5. Дата просмотра не указана.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0778",
+      "title_id": "t_da5fd3e0",
+      "profile": "J",
+      "rating": "5",
+      "heat": 1,
+      "reaction_raw": "только один огонек",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:37:41+03:00",
+      "source_note": "Пользователь явно подтвердил: просмотрено всеми, всем 5/5 и один огонёк.",
+      "notes": "«От всех» относится к R/J/K/M. Heat=1 сохранён отдельно от оценки 5. Дата просмотра не указана.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0779",
+      "title_id": "t_da5fd3e0",
+      "profile": "K",
+      "rating": "5",
+      "heat": 1,
+      "reaction_raw": "только один огонек",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:37:41+03:00",
+      "source_note": "Пользователь явно подтвердил: просмотрено всеми, всем 5/5 и один огонёк.",
+      "notes": "«От всех» относится к R/J/K/M. Heat=1 сохранён отдельно от оценки 5. Дата просмотра не указана.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0780",
+      "title_id": "t_da5fd3e0",
+      "profile": "M",
+      "rating": "5",
+      "heat": 1,
+      "reaction_raw": "только один огонек",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:37:41+03:00",
+      "source_note": "Пользователь явно подтвердил: просмотрено всеми, всем 5/5 и один огонёк.",
+      "notes": "«От всех» относится к R/J/K/M. Heat=1 сохранён отдельно от оценки 5. Дата просмотра не указана.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28601,7 +28758,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-09T21:17:54+03:00",
+  "updated_at": "2026-10-09T21:37:41+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28880,14 +29037,14 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-09T21:17:54+03:00",
-    "title_id": "t_ba9ac1e9",
-    "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
+    "at": "2026-10-09T21:37:41+03:00",
+    "title_id": "t_da5fd3e0",
+    "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
     "observation_ids": [
-      "o_0773",
-      "o_0774",
-      "o_0775",
-      "o_0776"
+      "o_0777",
+      "o_0778",
+      "o_0779",
+      "o_0780"
     ]
   }
 }
