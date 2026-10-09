@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 418,
-    "observations": 761,
+    "observations": 764,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -4786,19 +4786,64 @@
         "Каскадёры"
       ],
       "observations": [
-        "o_0304"
+        "o_0304",
+        "o_0762",
+        "o_0763",
+        "o_0764"
       ],
       "conflicts": {},
       "summary": {
         "J": {
           "values": [
-            "0"
+            "0",
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 2,
+          "recovered_secondary": true,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "R": {
+          "values": [
+            "4"
           ],
           "conflict": false,
           "observation_count": 1,
-          "recovered_secondary": true
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "4"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "4",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-09T09:27:36+03:00",
+          "source_file": "backup/cinema/updates/2026-10-09-the-fall-guy.md",
+          "profiles": [
+            "R",
+            "J",
+            "K"
+          ],
+          "heat": 2,
+          "raw_text": "«Каскадёры» / The Fall Guy (2024) R/J/K - 4 + пара огоньков"
+        }
+      ]
     },
     {
       "id": "t_d4e07968",
@@ -28228,6 +28273,60 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0762",
+      "title_id": "t_8dadd786",
+      "profile": "R",
+      "rating": "4",
+      "heat": 2,
+      "reaction_raw": "пара огоньков",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-fall-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T09:27:36+03:00",
+      "source_note": "Новая явная оценка пользователя: R/J/K — 4/5 и два огонька.",
+      "notes": "«Пара огоньков» = Heat 2 для каждого из явно перечисленных R/J/K. Оценка и статус M не указаны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0763",
+      "title_id": "t_8dadd786",
+      "profile": "J",
+      "rating": "4",
+      "heat": 2,
+      "reaction_raw": "пара огоньков",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-fall-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T09:27:36+03:00",
+      "source_note": "Новая явная оценка пользователя: R/J/K — 4/5 и два огонька.",
+      "notes": "«Пара огоньков» = Heat 2 для каждого из явно перечисленных R/J/K. Оценка и статус M не указаны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0764",
+      "title_id": "t_8dadd786",
+      "profile": "K",
+      "rating": "4",
+      "heat": 2,
+      "reaction_raw": "пара огоньков",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-fall-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T09:27:36+03:00",
+      "source_note": "Новая явная оценка пользователя: R/J/K — 4/5 и два огонька.",
+      "notes": "«Пара огоньков» = Heat 2 для каждого из явно перечисленных R/J/K. Оценка и статус M не указаны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28237,7 +28336,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-08T21:08:02+03:00",
+  "updated_at": "2026-10-09T09:27:36+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28516,11 +28615,13 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-08T21:08:02+03:00",
-    "title_id": "t_5acbb087",
-    "source_file": "backup/cinema/updates/2026-10-08-heads-of-state-r.md",
+    "at": "2026-10-09T09:27:36+03:00",
+    "title_id": "t_8dadd786",
+    "source_file": "backup/cinema/updates/2026-10-09-the-fall-guy.md",
     "observation_ids": [
-      "o_0761"
+      "o_0762",
+      "o_0763",
+      "o_0764"
     ]
   }
 }
