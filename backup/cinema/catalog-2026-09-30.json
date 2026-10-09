@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 418,
-    "observations": 764,
+    "observations": 768,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -2340,19 +2340,79 @@
       ],
       "observations": [
         "o_0162",
-        "o_0586"
+        "o_0586",
+        "o_0769",
+        "o_0770",
+        "o_0771",
+        "o_0772"
       ],
       "conflicts": {},
       "summary": {
         "M": {
           "values": [
-            "0"
+            "0",
+            "?"
           ],
           "conflict": false,
-          "observation_count": 2,
-          "recovered_secondary": true
+          "observation_count": 3,
+          "recovered_secondary": true,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "R": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-09T21:14:45+03:00",
+          "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": null,
+          "raw_text": "Free Guy просмотрен - оценок никто не помнит, но скорее положительные",
+          "impression": "скорее положительные"
+        }
+      ]
     },
     {
       "id": "t_5acbb087",
@@ -28327,6 +28387,78 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0769",
+      "title_id": "t_804e8118",
+      "profile": "R",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее положительные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:14:45+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит, впечатления скорее положительные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0770",
+      "title_id": "t_804e8118",
+      "profile": "J",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее положительные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:14:45+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит, впечатления скорее положительные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0771",
+      "title_id": "t_804e8118",
+      "profile": "K",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее положительные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:14:45+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит, впечатления скорее положительные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0772",
+      "title_id": "t_804e8118",
+      "profile": "M",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее положительные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:14:45+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит, впечатления скорее положительные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28336,7 +28468,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-09T09:27:36+03:00",
+  "updated_at": "2026-10-09T21:14:45+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28615,13 +28747,14 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-09T09:27:36+03:00",
-    "title_id": "t_8dadd786",
-    "source_file": "backup/cinema/updates/2026-10-09-the-fall-guy.md",
+    "at": "2026-10-09T21:14:45+03:00",
+    "title_id": "t_804e8118",
+    "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
     "observation_ids": [
-      "o_0762",
-      "o_0763",
-      "o_0764"
+      "o_0769",
+      "o_0770",
+      "o_0771",
+      "o_0772"
     ]
   }
 }
