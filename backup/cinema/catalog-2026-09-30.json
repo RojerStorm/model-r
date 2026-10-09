@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 419,
-    "observations": 776,
+    "observations": 780,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -3916,19 +3916,78 @@
         "Затерянный город"
       ],
       "observations": [
-        "o_0335"
+        "o_0335",
+        "o_0781",
+        "o_0782",
+        "o_0783",
+        "o_0784"
       ],
       "conflicts": {},
       "summary": {
         "J": {
           "values": [
-            "0"
+            "0",
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 2,
+          "recovered_secondary": true,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "R": {
+          "values": [
+            "?"
           ],
           "conflict": false,
           "observation_count": 1,
-          "recovered_secondary": true
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "M": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-09T21:54:55+03:00",
+          "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": null,
+          "raw_text": "The Lost City - просмотре - оценки никто не помнит"
+        }
+      ]
     },
     {
       "id": "t_1e7b8c7e",
@@ -28749,6 +28808,78 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0781",
+      "title_id": "t_bd4268ed",
+      "profile": "R",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:54:55+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Впечатление не указано. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0782",
+      "title_id": "t_bd4268ed",
+      "profile": "J",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:54:55+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Впечатление не указано. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0783",
+      "title_id": "t_bd4268ed",
+      "profile": "K",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:54:55+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Впечатление не указано. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0784",
+      "title_id": "t_bd4268ed",
+      "profile": "M",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:54:55+03:00",
+      "source_note": "Пользователь подтвердил просмотр; оценки никто не помнит.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Впечатление не указано. Числовые оценки и Heat не назначены.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28758,7 +28889,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-09T21:37:41+03:00",
+  "updated_at": "2026-10-09T21:54:55+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -29037,14 +29168,14 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-09T21:37:41+03:00",
-    "title_id": "t_da5fd3e0",
-    "source_file": "backup/cinema/updates/2026-10-09-jungle-cruise.md",
+    "at": "2026-10-09T21:54:55+03:00",
+    "title_id": "t_bd4268ed",
+    "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
     "observation_ids": [
-      "o_0777",
-      "o_0778",
-      "o_0779",
-      "o_0780"
+      "o_0781",
+      "o_0782",
+      "o_0783",
+      "o_0784"
     ]
   }
 }
