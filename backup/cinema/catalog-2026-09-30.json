@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 418,
-    "observations": 768,
+    "observations": 772,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -6775,17 +6775,78 @@
         "Митчеллы против машин"
       ],
       "observations": [
-        "o_0169"
+        "o_0169",
+        "o_0773",
+        "o_0774",
+        "o_0775",
+        "o_0776"
       ],
       "conflicts": {},
       "summary": {
         "M": {
-          "values": [],
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 2,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "R": {
+          "values": [
+            "?"
+          ],
           "conflict": false,
           "observation_count": 1,
-          "recovered_secondary": false
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "?"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "?",
+          "current_status": "watched_forgot",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-09T21:17:54+03:00",
+          "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": null,
+          "raw_text": "# Митчеллы против машин\n\nThe Mitchells vs. the Machines - просмотрен - никто не помнит результат, скорее всего позитивные",
+          "impression": "скорее всего позитивные"
+        }
+      ]
     },
     {
       "id": "t_7c77678b",
@@ -28459,6 +28520,78 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0773",
+      "title_id": "t_ba9ac1e9",
+      "profile": "R",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее всего позитивные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:17:54+03:00",
+      "source_note": "Пользователь подтвердил просмотр; никто не помнит результат, впечатления скорее всего позитивные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Положительное впечатление предположительное, в точную оценку не преобразовано. Баллы и Heat неизвестны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0774",
+      "title_id": "t_ba9ac1e9",
+      "profile": "J",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее всего позитивные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:17:54+03:00",
+      "source_note": "Пользователь подтвердил просмотр; никто не помнит результат, впечатления скорее всего позитивные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Положительное впечатление предположительное, в точную оценку не преобразовано. Баллы и Heat неизвестны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0775",
+      "title_id": "t_ba9ac1e9",
+      "profile": "K",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее всего позитивные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:17:54+03:00",
+      "source_note": "Пользователь подтвердил просмотр; никто не помнит результат, впечатления скорее всего позитивные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Положительное впечатление предположительное, в точную оценку не преобразовано. Баллы и Heat неизвестны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0776",
+      "title_id": "t_ba9ac1e9",
+      "profile": "M",
+      "rating": "?",
+      "heat": null,
+      "reaction_raw": "скорее всего позитивные",
+      "status": "watched_forgot",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
+      "source_locator": "User message · 2026-10-09",
+      "source_time": "2026-10-09T21:17:54+03:00",
+      "source_note": "Пользователь подтвердил просмотр; никто не помнит результат, впечатления скорее всего позитивные.",
+      "notes": "Семейная формулировка «никто» применена к R/J/K/M. Положительное впечатление предположительное, в точную оценку не преобразовано. Баллы и Heat неизвестны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28468,7 +28601,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-09T21:14:45+03:00",
+  "updated_at": "2026-10-09T21:17:54+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -28747,14 +28880,14 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-09T21:14:45+03:00",
-    "title_id": "t_804e8118",
-    "source_file": "backup/cinema/updates/2026-10-09-free-guy.md",
+    "at": "2026-10-09T21:17:54+03:00",
+    "title_id": "t_ba9ac1e9",
+    "source_file": "backup/cinema/updates/2026-10-09-mitchells-vs-machines.md",
     "observation_ids": [
-      "o_0769",
-      "o_0770",
-      "o_0771",
-      "o_0772"
+      "o_0773",
+      "o_0774",
+      "o_0775",
+      "o_0776"
     ]
   }
 }
