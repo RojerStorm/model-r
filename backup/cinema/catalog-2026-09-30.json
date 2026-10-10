@@ -154,8 +154,8 @@
     }
   ],
   "stats": {
-    "titles": 419,
-    "observations": 780,
+    "titles": 420,
+    "observations": 781,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -14432,6 +14432,49 @@
           ],
           "heat": 1,
           "raw_text": "«Круиз по джунглям» / Jungle Cruise (2021) - просмотрено от всех 5 но только один огонек - обновляй фильмы"
+        }
+      ]
+    },
+    {
+      "id": "t_piter_fm_2006",
+      "title": "Питер FM",
+      "ru_title": "Питер FM",
+      "year": 2006,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "Питер FM",
+        "Piter FM"
+      ],
+      "observations": [
+        "o_0785"
+      ],
+      "conflicts": {},
+      "summary": {
+        "R": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-10T10:16:57+03:00",
+          "source_file": "backup/cinema/updates/2026-10-10-piter-fm.md",
+          "profiles": [
+            "R"
+          ],
+          "heat": 3,
+          "raw_text": "Не помню, ставил ли оценку - ещё одни из любимейших фильмов - Питер FM - 5🔥🔥🔥"
         }
       ]
     }
@@ -28880,6 +28923,24 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0785",
+      "title_id": "t_piter_fm_2006",
+      "profile": "R",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": "один из любимейших фильмов",
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-10-piter-fm.md",
+      "source_locator": "User message · 2026-10-10",
+      "source_time": "2026-10-10T10:16:57+03:00",
+      "source_note": "Пользователь явно назвал «Питер FM» одним из любимейших фильмов: 5 и три огонька.",
+      "notes": "Дата просмотра неизвестна. J/K/M не указаны.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28889,7 +28950,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-09T21:54:55+03:00",
+  "updated_at": "2026-10-10T10:16:57+03:00",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -29168,14 +29229,11 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-09T21:54:55+03:00",
-    "title_id": "t_bd4268ed",
-    "source_file": "backup/cinema/updates/2026-10-09-the-lost-city.md",
+    "at": "2026-10-10T10:16:57+03:00",
+    "title_id": "t_piter_fm_2006",
+    "source_file": "backup/cinema/updates/2026-10-10-piter-fm.md",
     "observation_ids": [
-      "o_0781",
-      "o_0782",
-      "o_0783",
-      "o_0784"
+      "o_0785"
     ]
   }
 }
