@@ -154,8 +154,8 @@
     }
   ],
   "stats": {
-    "titles": 420,
-    "observations": 781,
+    "titles": 421,
+    "observations": 788,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -9322,17 +9322,77 @@
         "Подземелья и драконы: Честь среди воров"
       ],
       "observations": [
-        "o_0159"
+        "o_0159",
+        "o_0789",
+        "o_0790",
+        "o_0791",
+        "o_0792"
       ],
       "conflicts": {},
       "summary": {
         "M": {
-          "values": [],
+          "values": [
+            "5"
+          ],
           "conflict": false,
+          "observation_count": 2,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "R": {
+          "values": [
+            "5"
+          ],
           "observation_count": 1,
-          "recovered_secondary": false
+          "recovered_secondary": false,
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "5"
+          ],
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "5"
+          ],
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-20",
+          "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+          "profiles": [
+            "R",
+            "J",
+            "K",
+            "M"
+          ],
+          "heat": 2,
+          "raw_text": "Фильм «Подземелья и драконы: Честь среди воров\" R/J/K/M 5 и 2 огонька"
+        }
+      ]
     },
     {
       "id": "t_3fa5f782",
@@ -14490,6 +14550,77 @@
             "Любовная линия простенькая, но миленькая"
           ],
           "verification": "current_user_explicit"
+        }
+      ]
+    },
+    {
+      "id": "t_kaos",
+      "title": "Kaos",
+      "ru_title": "Каос",
+      "year": null,
+      "type": "series",
+      "types": [
+        "series"
+      ],
+      "aliases": [
+        "Kaos",
+        "Каос"
+      ],
+      "observations": [
+        "o_0786",
+        "o_0787",
+        "o_0788"
+      ],
+      "conflicts": {},
+      "summary": {
+        "R": {
+          "values": [
+            "5"
+          ],
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [
+            "5"
+          ],
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "5"
+          ],
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-20",
+          "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+          "profiles": [
+            "R",
+            "J",
+            "K"
+          ],
+          "heat": 3,
+          "raw_text": "Сериал Kaos - R/J/K 5 и 3 огонька"
         }
       ]
     }
@@ -28956,6 +29087,132 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0786",
+      "title_id": "t_kaos",
+      "profile": "R",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K — 5/5 и 3 огонька.",
+      "notes": "Дата просмотра неизвестна. M и конкретные сезоны не указаны. Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0787",
+      "title_id": "t_kaos",
+      "profile": "J",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K — 5/5 и 3 огонька.",
+      "notes": "Дата просмотра неизвестна. M и конкретные сезоны не указаны. Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0788",
+      "title_id": "t_kaos",
+      "profile": "K",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K — 5/5 и 3 огонька.",
+      "notes": "Дата просмотра неизвестна. M и конкретные сезоны не указаны. Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0789",
+      "title_id": "t_45d4d4c9",
+      "profile": "R",
+      "rating": "5",
+      "heat": 2,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K/M — 5/5 и 2 огонька.",
+      "notes": "Дата просмотра неизвестна.  Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0790",
+      "title_id": "t_45d4d4c9",
+      "profile": "J",
+      "rating": "5",
+      "heat": 2,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K/M — 5/5 и 2 огонька.",
+      "notes": "Дата просмотра неизвестна.  Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0791",
+      "title_id": "t_45d4d4c9",
+      "profile": "K",
+      "rating": "5",
+      "heat": 2,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K/M — 5/5 и 2 огонька.",
+      "notes": "Дата просмотра неизвестна.  Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0792",
+      "title_id": "t_45d4d4c9",
+      "profile": "M",
+      "rating": "5",
+      "heat": 2,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+      "source_locator": "User message · 2026-10-20",
+      "source_time": "2026-10-20",
+      "source_note": "Пользователь явно подтвердил: R/J/K/M — 5/5 и 2 огонька.",
+      "notes": "Дата просмотра неизвестна.  Точное время сообщения неизвестно.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -28965,7 +29222,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-10T10:21:51+03:00",
+  "updated_at": "2026-10-20",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -29244,11 +29501,20 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-10T10:16:57+03:00",
-    "title_id": "t_piter_fm_2006",
-    "source_file": "backup/cinema/updates/2026-10-10-piter-fm.md",
+    "at": "2026-10-20",
+    "title_ids": [
+      "t_kaos",
+      "t_45d4d4c9"
+    ],
+    "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
     "observation_ids": [
-      "o_0785"
+      "o_0786",
+      "o_0787",
+      "o_0788",
+      "o_0789",
+      "o_0790",
+      "o_0791",
+      "o_0792"
     ]
   }
 }
