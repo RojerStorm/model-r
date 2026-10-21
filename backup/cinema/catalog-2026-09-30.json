@@ -155,7 +155,7 @@
   ],
   "stats": {
     "titles": 421,
-    "observations": 788,
+    "observations": 791,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -2429,31 +2429,63 @@
       ],
       "observations": [
         "o_0302",
-        "o_0761"
+        "o_0761",
+        "o_0793",
+        "o_0794",
+        "o_0795"
       ],
       "conflicts": {},
       "summary": {
         "J": {
           "values": [
-            "0"
+            "0",
+            "5"
           ],
           "conflict": false,
-          "observation_count": 1,
-          "recovered_secondary": true
+          "observation_count": 2,
+          "recovered_secondary": true,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
         },
         "R": {
           "values": [
-            "0"
+            "0",
+            "5"
           ],
           "conflict": false,
+          "observation_count": 2,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [
+            "5"
+          ],
           "observation_count": 1,
           "recovered_secondary": false,
-          "current_value": "0",
-          "current_status": "not_watched",
+          "conflict": false,
+          "current_value": "5",
+          "current_status": "watched",
           "current_source": "user_explicit",
           "archive_conflict": false
         }
-      }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-21",
+          "source_file": "backup/cinema/updates/2026-10-21-heads-of-state.md",
+          "profiles": [
+            "R"
+          ],
+          "heat": 3,
+          "raw_text": "«Главы государств» / Heads of State (2025) R 5 и три огонька, J и K 5."
+        }
+      ]
     },
     {
       "id": "t_ff41c96f",
@@ -29213,6 +29245,60 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0793",
+      "title_id": "t_5acbb087",
+      "profile": "R",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-heads-of-state.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Пользователь явно подтвердил: R — 5 и три огонька; J/K — 5.",
+      "notes": "Дата просмотра и точное время сообщения не указаны. Heat J/K неизвестен. По M новых данных нет.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0794",
+      "title_id": "t_5acbb087",
+      "profile": "J",
+      "rating": "5",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-heads-of-state.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Пользователь явно подтвердил: R — 5 и три огонька; J/K — 5.",
+      "notes": "Дата просмотра и точное время сообщения не указаны. Heat J/K неизвестен. По M новых данных нет.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0795",
+      "title_id": "t_5acbb087",
+      "profile": "K",
+      "rating": "5",
+      "heat": null,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-heads-of-state.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Пользователь явно подтвердил: R — 5 и три огонька; J/K — 5.",
+      "notes": "Дата просмотра и точное время сообщения не указаны. Heat J/K неизвестен. По M новых данных нет.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -29222,7 +29308,7 @@
     "Chat export: «Накопление кинопредпочтений»",
     "Chat export: «Список фильмов сериалов»"
   ],
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-10-21",
   "last_explicit_corrections": [
     {
       "profile": "R",
@@ -29501,20 +29587,13 @@
     }
   ],
   "last_explicit_update": {
-    "at": "2026-10-20",
-    "title_ids": [
-      "t_kaos",
-      "t_45d4d4c9"
-    ],
-    "source_file": "backup/cinema/updates/2026-10-20-kaos-dungeons-dragons.md",
+    "at": "2026-10-21",
+    "title_id": "t_5acbb087",
+    "source_file": "backup/cinema/updates/2026-10-21-heads-of-state.md",
     "observation_ids": [
-      "o_0786",
-      "o_0787",
-      "o_0788",
-      "o_0789",
-      "o_0790",
-      "o_0791",
-      "o_0792"
+      "o_0793",
+      "o_0794",
+      "o_0795"
     ]
   }
 }
