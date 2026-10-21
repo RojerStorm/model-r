@@ -154,8 +154,8 @@
     }
   ],
   "stats": {
-    "titles": 421,
-    "observations": 791,
+    "titles": 423,
+    "observations": 797,
     "detected_conflicts": 0,
     "master_rating_rows": 94,
     "master_m_watchlist_rows": 30,
@@ -14653,6 +14653,136 @@
           ],
           "heat": 3,
           "raw_text": "Сериал Kaos - R/J/K 5 и 3 огонька"
+        }
+      ]
+    },
+    {
+      "id": "t_zombieland",
+      "title": "Zombieland",
+      "ru_title": "Добро пожаловать в Zомбилэнд",
+      "year": null,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "Zombieland",
+        "Добро пожаловать в Zомбилэнд"
+      ],
+      "observations": [
+        "o_0796",
+        "o_0797",
+        "o_0798"
+      ],
+      "conflicts": {},
+      "summary": {
+        "R": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": null,
+          "current_status": "unknown",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": null,
+          "current_status": "unknown",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-21",
+          "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+          "profiles": [
+            "R"
+          ],
+          "heat": 3,
+          "raw_text": "R 5 три огонька - J/K без оценки"
+        }
+      ]
+    },
+    {
+      "id": "t_zombieland_double_tap",
+      "title": "Zombieland: Double Tap",
+      "ru_title": "Zомбилэнд: Контрольный выстрел",
+      "year": null,
+      "type": "film",
+      "types": [
+        "film"
+      ],
+      "aliases": [
+        "Zombieland: Double Tap",
+        "Zомбилэнд: Контрольный выстрел"
+      ],
+      "observations": [
+        "o_0799",
+        "o_0800",
+        "o_0801"
+      ],
+      "conflicts": {},
+      "summary": {
+        "R": {
+          "values": [
+            "5"
+          ],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": "5",
+          "current_status": "watched",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "J": {
+          "values": [],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": null,
+          "current_status": "unknown",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        },
+        "K": {
+          "values": [],
+          "conflict": false,
+          "observation_count": 1,
+          "recovered_secondary": false,
+          "current_value": null,
+          "current_status": "unknown",
+          "current_source": "user_explicit",
+          "archive_conflict": false
+        }
+      },
+      "viewing_impressions": [
+        {
+          "reported_at": "2026-10-21",
+          "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+          "profiles": [
+            "R"
+          ],
+          "heat": 3,
+          "raw_text": "R 5 три огонька - J/K без оценки"
         }
       ]
     }
@@ -29299,6 +29429,114 @@
       "recovery_state": "current_explicit",
       "verification": "current_user_explicit",
       "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0796",
+      "title_id": "t_zombieland",
+      "profile": "R",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Для обоих фильмов: R 5 три огонька - J/K без оценки.",
+      "notes": "Для J/K факт просмотра и Heat не указаны. M не упомянут. Дата просмотра неизвестна.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0797",
+      "title_id": "t_zombieland",
+      "profile": "J",
+      "rating": null,
+      "heat": null,
+      "reaction_raw": null,
+      "status": "unknown",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Для обоих фильмов: R 5 три огонька - J/K без оценки.",
+      "notes": "Для J/K факт просмотра и Heat не указаны. M не упомянут. Дата просмотра неизвестна.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0798",
+      "title_id": "t_zombieland",
+      "profile": "K",
+      "rating": null,
+      "heat": null,
+      "reaction_raw": null,
+      "status": "unknown",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Для обоих фильмов: R 5 три огонька - J/K без оценки.",
+      "notes": "Для J/K факт просмотра и Heat не указаны. M не упомянут. Дата просмотра неизвестна.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0799",
+      "title_id": "t_zombieland_double_tap",
+      "profile": "R",
+      "rating": "5",
+      "heat": 3,
+      "reaction_raw": null,
+      "status": "watched",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Для обоих фильмов: R 5 три огонька - J/K без оценки.",
+      "notes": "Для J/K факт просмотра и Heat не указаны. M не упомянут. Дата просмотра неизвестна.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0800",
+      "title_id": "t_zombieland_double_tap",
+      "profile": "J",
+      "rating": null,
+      "heat": null,
+      "reaction_raw": null,
+      "status": "unknown",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Для обоих фильмов: R 5 три огонька - J/K без оценки.",
+      "notes": "Для J/K факт просмотра и Heat не указаны. M не упомянут. Дата просмотра неизвестна.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
+    },
+    {
+      "obs_id": "o_0801",
+      "title_id": "t_zombieland_double_tap",
+      "profile": "K",
+      "rating": null,
+      "heat": null,
+      "reaction_raw": null,
+      "status": "unknown",
+      "source_layer": "user_explicit",
+      "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
+      "source_locator": "User message · 2026-10-21",
+      "source_time": "2026-10-21",
+      "source_note": "Для обоих фильмов: R 5 три огонька - J/K без оценки.",
+      "notes": "Для J/K факт просмотра и Heat не указаны. M не упомянут. Дата просмотра неизвестна.",
+      "recovery_state": "current_explicit",
+      "verification": "current_user_explicit",
+      "evidence_ids": null
     }
   ],
   "status": "closed",
@@ -29588,12 +29826,18 @@
   ],
   "last_explicit_update": {
     "at": "2026-10-21",
-    "title_id": "t_5acbb087",
-    "source_file": "backup/cinema/updates/2026-10-21-heads-of-state.md",
+    "title_ids": [
+      "t_zombieland",
+      "t_zombieland_double_tap"
+    ],
+    "source_file": "backup/cinema/updates/2026-10-21-zombieland.md",
     "observation_ids": [
-      "o_0793",
-      "o_0794",
-      "o_0795"
+      "o_0796",
+      "o_0797",
+      "o_0798",
+      "o_0799",
+      "o_0800",
+      "o_0801"
     ]
   }
 }
